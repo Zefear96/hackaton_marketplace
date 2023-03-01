@@ -1,14 +1,14 @@
 import React from "react";
 import MainRoutes from "./MainRoutes";
 import Navbar from "./components/Navbar/Navbar";
+import ProductContextProvider from "./contexts/ProductContextProvider";
 
 const App = () => {
   return (
-    <div>
+    <ProductContextProvider>
       <Navbar />
       <MainRoutes />
-    </div>
+    </ProductContextProvider>
   );
 };
-
 export default App;

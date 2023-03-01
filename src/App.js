@@ -11,5 +11,4 @@ const App = () => {
     </ProductContextProvider>
   );
 };
-
 export default App;

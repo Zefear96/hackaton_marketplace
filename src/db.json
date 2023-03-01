@@ -1,0 +1,1284 @@
+{
+  "products": [
+    {
+      "name": "MacBook Pro 16",
+      "description": "10-ядерный процессор 32-ядерный графический процессор 16-ядерная система Neural Engine 64 ГБ объединённой памяти SSD-накопитель 2 ТБ Дисплей Liquid Retina XDR 16 дюймов Три порта Thunderbolt 4 Порт HDMI Слот для карт SDXC Разъём питания MagSafe 3 Клавиатура Magic Keyboard с Touch ID Трекпад Force Touch Адаптер питания USB-C 140 Вт",
+      "price": 550,
+      "picture": "https://www.istore.kg/media/products/Pro-16-M1-SP-US-1_hZ4eLKK.webp",
+      "type": "electronics",
+      "id": 1
+    },
+    {
+      "name": "MacBook Pro 14",
+      "description": "10-ядерный процессор 16-ядерный графический процессор 16-ядерная система Neural Engine 32 ГБ объединённой памяти SSD-накопитель 1 ТБ Дисплей Liquid Retina XDR 14 дюймов Три порта Thunderbolt 4 Порт HDMI Слот для карт SDXC Разъём питания MagSafe 3 Клавиатура Magic Keyboard с Touch ID Трекпад Force Touch Адаптер питания USB-C 96 Вт",
+      "price": 3200,
+      "picture": "https://www.istore.kg/media/products/Pro-14-M1-Silver-US-1_lzqer6g.webp",
+      "type": "electronics",
+      "id": 2
+    },
+    {
+      "name": "MacBook Pro 13",
+      "description": "8-ядерный процессор 10-ядерный графический процессор 16-ядерная система Neural Engine 8 ГБ объединённой памяти SSD-накопитель 256 ГБ Дисплей Retina 13 дюймов Два порта Thunderbolt 4 Magic Keyboard Touch Bar и Touch ID Трекпад Force Touch Адаптер питания USB-C 67 Вт",
+      "price": 1500,
+      "picture": "https://www.istore.kg/media/products/mbp-spacegray-gallery1-202206.webp",
+      "type": "electronics",
+      "id": 3
+    },
+    {
+      "name": "MacBook Air 13",
+      "description": "8-ядерный процессор 10-ядерный графический процессор 16-ядерная система Neural Engine 8 ГБ объединённой памяти SSD-накопитель 512 ГБ Liquid Retina 13.6 дюймов Камера FaceTime 1080p Два порта Thunderbolt 4 Порт MagSafe 3 Magic Keyboard with Touch ID Адаптер питания USB-C 35 Вт",
+      "price": 1900,
+      "picture": "https://www.istore.kg/media/products/macbook-air-midnight-gallery1-20220606_uai9Xx3.webp",
+      "type": "electronics",
+      "id": 4
+    },
+    {
+      "name": "Mac mini",
+      "description": "Чип Apple M1 с 8‑ядерным процессором, 8‑ядерным графическим процессором и 16‑ядерной системой Neural Engine 8 ГБ объединённой памяти SSD‑накопитель 256 ГБ Порт Gigabit Ethernet",
+      "price": 1900,
+      "picture": "https://www.istore.kg/media/products/mini-intel-1.webp",
+      "type": "electronics",
+      "id": 5
+    },
+    {
+      "name": "Mac Studio",
+      "description": "20-ядерный процессор 48-ядерный графический процессор 32-ядерная система Neural Engine 64 ГБ объединённой памяти SSD-накопитель 1 ТБ Front: Два порта Thunderbolt4,  Слот для карт SDXC Back: Четыре порта Thunderbolt4 Два порта USB-A 10-гигабитный Ethernet порт Порт HDMI Разъём для наушников 3.5 мм",
+      "price": 5200,
+      "picture": "https://www.istore.kg/media/products/mac-studio-202203-gallery-3.webp",
+      "type": "electronics",
+      "id": 6
+    },
+    {
+      "name": "Studio Display",
+      "description": "Потрясающий 27-дюймовый дисплей Retina 5K, и миллиард цветов. Ультраширокая камера 12 МП с функцией 'В центре внимания' Три микрофона студийного качества и звуковая система с шестью динамиками и функцией Spatial Audio. Порты для подключения и зарядки",
+      "price": 2000,
+      "picture": "https://www.istore.kg/media/products/studio-display-1.webp",
+      "type": "electronics",
+      "id": 7
+    },
+    {
+      "name": "iPhone 13 Pro Max",
+      "description": "Потрясающий 27-дюймовый дисплей Retina 5K, и миллиард цветов. Ультраширокая камера 12 МП с функцией 'В центре внимания' Три микрофона студийного качества и звуковая система с шестью динамиками и функцией Spatial Audio. Порты для подключения и зарядки",
+      "price": 1250,
+      "picture": "https://www.istore.kg/media/products/iphone-13-pro-max-green-select.webp",
+      "type": "electronics",
+      "id": 8
+    },
+    {
+      "name": "iPhone 11",
+      "description": "12-Мп фронтальная камера TrueDepth с режимом портрета, видео 4K и slo-mo,Чип A13 Bionic с 4-ядерным графическим процессором,6,1-дюймовый дисплей Liquid Retina HD,Дисплей из прочного стекла, торцы из алюминия",
+      "price": 580,
+      "picture": "https://www.istore.kg/media/products/11-black_qdkqJZQ.webp",
+      "type": "electronics",
+      "id": 9
+    },
+    {
+      "name": "Studio Display",
+      "description": "Потрясающий 27-дюймовый дисплей Retina 5K, и миллиард цветов. Ультраширокая камера 12 МП с функцией 'В центре внимания' Три микрофона студийного качества и звуковая система с шестью динамиками и функцией Spatial Audio. Порты для подключения и зарядки",
+      "price": 2000,
+      "picture": "https://www.istore.kg/media/products/studio-display-1.webp",
+      "type": "electronics",
+      "id": 10
+    },
+    {
+      "name": "iPhone 12",
+      "description": "Потрясающий 27-дюймовый дисплей Retina 5K, и миллиард цветов. Ультраширокая каУсовершенствованная система с двумя камерами и записью Dolby Vision HDR,Сверхмощный чип A14 Bionic с 4-ядерным GPU,6,1-дюймовый дисплей Super Retina XDR с True Tone,Дисплей Ceramic Shield прочнее, чем любое стекло смартфона",
+      "price": 650,
+      "picture": "https://www.istore.kg/media/products/12-Black.webp",
+      "type": "electronics",
+      "id": 11
+    },
+    {
+      "name": "Mac Mini(M1,2020)",
+      "description": "Чип Apple M1 с 8-ядерным процессором, 8-ядерным графическим процессором и 16-ядерной системой Neural Engine 8 ГБ объединённой памяти SSD-накопитель 256 ГБ Порт Gigabit Ethernet",
+      "price": 790,
+      "picture": "https://www.istore.kg/media/products/mini-m1-1_ioi2c2Q.webp",
+      "type": "electronics",
+      "id": 12
+    },
+    {
+      "name": "Mac mini (Intel, 2018)",
+      "description": "Процессор 3,6 ГГц, 4‑ядерный, Intel Core i3 8‑го поколения, с графическим процессором Intel UHD Graphics 630,8 ГБ  памяти,SSD‑накопитель 256 ГБ,Порт Gigabit Ethernet",
+      "price": 600,
+      "picture": "https://www.istore.kg/media/products/mini-intel-1.webp",
+      "type": "electronics",
+      "id": 13
+    },
+    {
+      "name": "Watch Series 7 with Stainless Steel Case",
+      "description": "На сегодняшний день, это самый большой дисплей Always-On Retina,Дисплей устойчив к царапинам, а также пыле-влагозащищенный,Датчик измерения уровня кислорода в крови,Сделайте ЭКГ, в любое время и в любом месте",
+      "price": 850,
+      "picture": "https://www.istore.kg/media/products/stainless-graphite-41.webp",
+      "type": "electronics",
+      "id": 14
+    },
+    {
+      "name": "Watch Series 7 Nike with Aluminum Case",
+      "description": "Ремешки Nike и эксклюзивные циферблаты, а также приложения Nike Run Club,На сегодняшний день, это самый большой дисплей Always-On Retina,Дисплей устойчив к царапинам, а также пыле-влагозащищенный,Измерьте уровень кислорода в крови, и проверьте сердечный ритм с помощью приложения ЭКГ",
+      "price": 430,
+      "picture": "https://www.istore.kg/media/products/7-41-Nike-Starlight-GPS.webp",
+      "type": "electronics",
+      "id": 15
+    },
+    {
+      "name": "Watch Series 7 with Aluminum Case",
+      "description": "На сегодняшний день, это самый большой дисплей Always-On Retina,Датчик измерения уровня кислорода в крови,Дисплей устойчив к царапинам, а также пыле-влагозащищенный,Сделайте ЭКГ, в любое время и в любом месте",
+      "price": 420,
+      "picture": "https://www.istore.kg/media/products/7-41-Green-GPS.webp",
+      "type": "electronics",
+      "id": 16
+    },
+    {
+      "name": "Watch Series 6 Nike with Aluminum Case",
+      "description": "Ремешки Nike и эксклюзивные циферблаты, а также приложения Nike Run Club,Невероятный дисплей Always-On Retina на 40 и 44мм,Дисплей устойчив к царапинам, а также пыле-влагозащищенный,Измерьте уровень кислорода в крови, и проверьте сердечный ритм с помощью приложения ЭКГ",
+      "price": 420,
+      "picture": "https://www.istore.kg/media/products/SE-Nike-40-GPS-Anthracite-Black.webp",
+      "type": "electronics",
+      "id": 17
+    },
+    {
+      "name": "Watch SE with Aluminum Case",
+      "description": "Отслеживайте все свои любимые тренировки, такие как плавание, бег, пилатес и тай-чи,Проверяйте пульс в любое время и получайте данные о показателях пульса,Помощь при обнаружении падений или при вызове SOS, даже если вы за границей,В 2 раза более быстрый процессор, чем в модели Series 3",
+      "price": 310,
+      "picture": "https://www.istore.kg/media/products/MKU83_VW_34FRwatch-40-alum-spacegray-nc-se_VW_34FR_WF_CO.webp",
+      "type": "electronics",
+      "id": 18
+    },
+    {
+      "name": "AirPods Max",
+      "description": "Чип Apple H1 в каждой чашке наушников, отвечающий за рендеринг аудио и стабильное подключение,Пространственное аудио с динамическим отслеживанием головы,Активное шумоподавление и Режим прозрачности,Умный чехол-бюстгальтер с запасом прочности",
+      "price": 550,
+      "picture": "https://www.istore.kg/media/products/AirPods-Max-Blue.webp",
+      "type": "electronics",
+      "id": 19
+    },
+    {
+      "name": "AirPods Pro",
+      "description": "Чип Apple H1 отвечающий за рендеринг аудио и стабильное подключение,Активное шумоподавление и Режим прозрачности,Пространственное аудио с динамическим отслеживанием головы,Кейс с поддержкой беспроводной зарядки и MagSafe",
+      "price": 225,
+      "picture": "https://www.istore.kg/media/products/AirPods-Pro-1.webp",
+      "type": "electronics",
+      "id": 20
+    },
+    {
+      "name": "AirPods 3 with Wireless Charging Case",
+      "description": "Чип Apple H1 отвечающий за рендеринг аудио и стабильное подключение, рендеринг аудио и стабильное подключение,Пространственное аудио с динамическим отслеживанием головы,До 30 часов работы в режиме прослушивания с зарядным чехлом,Кейс с поддержкой беспроводной зарядки и MagSafe",
+      "price": 190,
+      "picture": "https://www.istore.kg/media/products/MME73_AV2.webp",
+      "type": "electronics",
+      "id": 21
+    },
+    {
+      "name": "AirPods 2 with Charging Case",
+      "description": "Чип Apple H1 отвечающий за рендеринг аудио и стабильное подключение,До 24 часов работы в режиме прослушивания с зарядным чехлом,Функция 'привет siri'бОбычный кейс, заряжаемый кабелем Lightning",
+      "price": 140,
+      "picture": "https://www.istore.kg/media/products/AirPods-1.webp",
+      "type": "electronics",
+      "id": 22
+    },
+    {
+      "name": "Apple TV 4K (2021)",
+      "description": "A12 Bionic с 64-битной архитектурой,Siri Remote для точного управления,Вещания в формате 4K и HDRDolby Vision и Dolby Atmos",
+      "price": 230,
+      "picture": "https://www.istore.kg/media/products/apple-tv-4k-5th-1_2xQxn0L.webp",
+      "type": "electronics",
+      "id": 23
+    },
+    {
+      "name": "Mount for Apple TV",
+      "description": "TotalMount - это гибкая система крепления, которая прикрепляет Apple TV непосредственно к задней панели вашего телевизора, упрощая установку и устраняя беспорядок в зоне просмотра телевизора. TotalMount особенно полезен для настенных телевизоров, поскольку он размещает Apple TV рядом с портом HDMI, избавляя от необходимости прокладывать кабель HDMI через стену",
+      "price": 40,
+      "picture": "https://www.istore.kg/media/products/mount1_iqSTNxY.jpeg",
+      "type": "electronics",
+      "id": 24
+    },
+    {
+      "name": "DJI Air 2S Fly More Combo",
+      "description": "Дюймовая матрица,Передача FHD до 12 км,Видео до 5.4K,Чувствительность к препятствиям в 4 направлениях",
+      "price": 1350,
+      "picture": "https://www.istore.kg/media/products/dji-air-2s-fly-more-combo-1.webp",
+      "type": "electronics",
+      "id": 25
+    },
+    {
+      "name": "DJI Phantom 4 Advanced",
+      "description": "белый красивый дрон",
+      "price": 800,
+      "picture": "https://www.istore.kg/media/products/phantom-4-advanced.webp",
+      "type": "electronics",
+      "id": 26
+    },
+    {
+      "name": "DJI FPV",
+      "description": "Погружение в атмосферу полета,Передача HD видео с низкой задержкой,4K при 60 кадров в секунду и широкое поле зрения,Интуитивный контроллер движения",
+      "price": 1200,
+      "picture": "https://www.istore.kg/media/products/dji-fpv-combo-1.webp",
+      "type": "electronics",
+      "id": 27
+    },
+    {
+      "name": "DJI FPV Fly More Kit",
+      "description": "Комплект DJI FPV Fly More Kit содержит две интеллектуальные летные батареи и зарядную станцию для увеличения времени полета. Номинальная мощность каждой батареи составляет до 44,4 Втч, что поддерживает полет в течение примерно 20 минут. Встроенная интеллектуальная система управления батареей отслеживает состояние батареи в режиме реального времени для более беспроблемного полета.Используйте зарядную станцию для последовательной зарядки до трех батарей.",
+      "price": 350,
+      "picture": "https://www.istore.kg/media/products/dji-fpv-fly-more-kit-1.webp",
+      "type": "electronics",
+      "id": 28
+    },
+    {
+      "name": "Parrot Bebop Drone 2",
+      "description": "Квадрокоптер Parrot Bebop Drone 2 - лёгкий, компактный, простой в использовании квадрокоптер, оснащённый видеокамерой. Это первый любительский квадрокоптер в весовой категории 500 грамм со временем автономной работы 25 минутУправляйте квадрокоптером с Вашего смартфона или планшета. Простота в управлении: Интерфейс Bebop 2 оснащен акселерометром и сенсорным управлением, благодаря чему он может моментально реагировать на движения вашего смартфона/планшета. Всего одно прикосновение, и ваш дрон уже в небе или снова на земле, пилотировать квадрокоптер никогда не было так просто.",
+      "price": 350,
+      "picture": "https://www.istore.kg/media/products/bebop-1.webp",
+      "type": "electronics",
+      "id": 29
+    },
+    {
+      "name": "GoPro HERO10 Black",
+      "description": "Впечатляющие 23 мегапикселя,Наша лучшая камера — снимайте потрясающие кадры там, где справится только GoPro.",
+      "price": 450,
+      "picture": "https://www.istore.kg/media/products/GoPro-HERO-10-1.webp",
+      "type": "electronics",
+      "id": 30
+    },
+    {
+      "name": "fēnix® 7X – Sapphire Solar Edition",
+      "description": "Батарея с подзарядкой от солнца,Карты TopoActive,Встроенный фонарик,Выносливость в реальном времени",
+      "price": 1100,
+      "picture": "hhttps://www.istore.kg/media/products/fenix-7x-sapphire-solar-edition-black-dlc-1.webp",
+      "type": "electronics",
+      "id": 31
+    },
+    {
+      "name": "fēnix® 7 – Sapphire Solar Edition",
+      "description": "Батарея с подзарядкой от солнца,Карты TopoActive,Встроенный фонарик,Выносливость в реальном времени",
+      "price": 1050,
+      "picture": "https://www.istore.kg/media/products/7-sapphire-solar-edition-carbon-gray-dlc-1.webp",
+      "type": "electronics",
+      "id": 32
+    },
+    {
+      "name": "fēnix® 7X – Solar Edition",
+      "description": "Батарея с подзарядкой от солнца, Отслеживание статистики,Выносливость в реальном времени,строенный фонарик       ",
+      "price": 1000,
+      "picture": "https://www.istore.kg/media/products/7x-solar-edition-slate-gray-1.webp",
+      "type": "electronics",
+      "id": 33
+    },
+    {
+      "name": "fēnix® 7 – Standard Edition",
+      "description": "Выносливость в реальном времени,Умная навигация,Отслеживание статистики,Подготовка к следующему старту",
+      "price": 900,
+      "picture": "https://www.istore.kg/media/products/fenix-7-standard-edition-silver-1.webp",
+      "type": "electronics",
+      "id": 34
+    },
+    {
+      "name": "fēnix® 6 Pro – Standard Edition",
+      "description": "Узнай больше, благодаря Pulse Ox,Отслеживание статистики,Умная навигация,Подготовка к следующему старту",
+      "price": 620,
+      "picture": "hhttps://www.istore.kg/media/products/fenix-6-pro-black.webp",
+      "type": "electronics",
+      "id": 35
+    },
+    {
+      "name": "Garmin Forerunner® 945 Blue Bundle ",
+      "description": "Часы премиум-класса для бега/триатлона с GPS и музыкой. Синхронизация с премиальными музыкальными сервисами или хранение до 1000 песен на устройстве и подключение к наушникам (продаются отдельно) с технологией Bluetooth® для прослушивания музыки без телефона",
+      "price": 780,
+      "picture": "https://www.istore.kg/media/products/blue-bundle-1_OoTqzYT_kScmLC8.webp",
+      "type": "electronics",
+      "id": 36
+    },
+    {
+      "name": "Garmin Forerunner® 745",
+      "description": "Эти беговые часы с GPS предназначены для бегунов и триатлонистов, которые хотят получить подробные спортивные показатели и тренировки на устройстве, а также интеллектуальные функции. ",
+      "price": 490,
+      "picture": "https://www.istore.kg/media/products/745-whitestone-1.webp",
+      "type": "electronics",
+      "id": 37
+    },
+    {
+      "name": "Garmin Forerunner® 935",
+      "description": "Мультиспортивные часы с GPS/ГЛОНАСС и встроенным оптическим пульсометром. Вес часов всего 49 грамм. Мультиспортивные профили, в том числе триатлон, бег/плавание. Подходят для ежедневного ношения. Мониторинг 24/7: шаги, калории, пульс, сон. Встроенный барометр и альтиметр для отслеживания изменений высоты, а также электронный компас для определения азимута",
+      "price": 390,
+      "picture": "hhttps://www.istore.kg/media/products/935-1.webp",
+      "type": "electronics",
+      "id": 38
+    },
+    {
+      "name": "Garmin Forerunner® 645 Music",
+      "description": "Беговые часы с GPS, музыкой и бесконтактными платежами. Простая загрузка на часы до 500 песен и подключение наушников Bluetooth® (продаются отдельно) для прослушивания музыки без телефона. Синхронизация музыки с некоторых сервисов потокового вещания для прослушивания в режиме оффлайн. Система бесконтактных платежей Garmin Pay™ позволяет выполнять оплату с помощью часов, чтобы вы могли оставлять бумажник и банковские карты дома",
+      "price": 290,
+      "picture": "https://www.istore.kg/media/products/645-music-silver.webp",
+      "type": "electronics",
+      "id": 39
+    },
+    {
+      "name": " Garmin Venu® Sq",
+      "description": "Смарт-часы Venu® Sq Music Edition с GPS-приемником включают яркий цветной дисплей, сочетая повседневный стиль с функциями для наблюдения за здоровьем и занятиями спортом. Это устройство вдохновляет вас продолжать движение.",
+      "price": 260,
+      "picture": "https://www.istore.kg/media/products/venu-sq-light-gold-1_wAw6qsF.webp",
+      "type": "electronics",
+      "id": 40
+    },
+    {
+      "name": " Garmin vívomove® HR",
+      "description": "Стильные умные часы со стрелками и отдельным цифровым экраном.Круглосуточное наблюдение за частотой пульса с помощью пульсометра Elevate™ на запястье. Инструменты для наблюдения за физической формой (круглосуточное отслеживание уровня стресса и таймер для расслабления) помогут вам управлять стрессом.Включены инструменты для контроля спортивной формы: VO2 max и спортивный возраст",
+      "price": 220,
+      "picture": "https://www.istore.kg/media/products/cf-lg-b2b30caa.webp",
+      "type": "electronics",
+      "id": 41
+    },
+    {
+      "name": "Garmin HRM-Pro™  ",
+      "description": "Этот ремешок для измерения пульса премиум-класса передает данные о частоте пульса в режиме реального времени через соединение ANT+ ® и технологию BLUETOOTH® Low Energy, предоставляя вам больше возможностей для тренировок. Постоянно получайте точную частоту пульса на своем устройстве Garmin, в онлайн-приложениях для тренировок, таких как Zwift, или даже на совместимом фитнес-оборудовании в тренажерном зале",
+      "price": 150,
+      "picture": "https://www.istore.kg/media/products/hrm-pro_F0POxTF.webp",
+      "type": "electronics",
+      "id": 42
+    },
+    {
+      "name": "Garmin HRM-Tri™",
+      "description": "Разработано специально для триатлетов.Самый маленький и легкий пульсометр от Garmin (HRM). Удобный, легко регулируемый ремешок. Хранит данные частоты пульса и направляет информацию в Forerunner® 920XT",
+      "price": 130,
+      "picture": "https://www.istore.kg/media/products/hrm-tri_fAReBhw.webp",
+      "type": "electronics",
+      "id": 43
+    },
+    {
+      "name": "Garmin HRM-Dual™",
+      "description": "Этот премиальный ремешок для мониторинга сердечного ритма передает данные о частоте сердечных сокращений в режиме реального времени через соединения ANT+ и Bluetooth Low Energy, предоставляя вам больше возможностей для тренировок в помещении, на улице или даже в Интернете. С его помощью вы сможете постоянно получать точную частоту сердечных сокращений на своем устройстве Garmin, а также в приложениях для онлайн-тренировок, таких как Zwift, Trainer Road, или даже на совместимом фитнес-оборудовании в вашем тренажерном зале. Выбирая любой способ тренировок вы получите точную частоту сердечных сокращений в режиме реального времени, необходимую для улучшения вашего спортивного состояния.",
+      "price": 110,
+      "picture": "https://www.istore.kg/media/products/hrm-dual_VdFZYPj.webp",
+      "type": "electronics",
+      "id": 44
+    },
+    {
+      "name": "Garmin Charging/Data Cable",
+      "description": "Выполните 2 задачи с 1 кабелем, используя наш зажим для зарядки и передачи данных. Подключите кабель к USB-порту компьютера, чтобы зарядить совместимое устройство и передавать данные на компьютер и с него. Этот кабель также соединяется с дополнительным адаптером переменного тока (продается отдельно).",
+      "price": 40,
+      "picture": "https://www.istore.kg/media/products/chargin-cable-0-5-1.webp",
+      "type": "electronics",
+      "id": 45
+    },
+    {
+      "name": "AirPods Max",
+      "description": "Чип Apple H1 в каждой чашке наушников, отвечающий за рендеринг аудио и стабильное подключение, Пространственное аудио с динамическим отслеживанием головы, Активное шумоподавление и Режим прозрачности, Умный чехол-бюстгальтер :) с запасом прочности",
+      "price": 550,
+      "picture": "https://www.istore.kg/media/products/AirPods-Max-Blue.webp",
+      "type": "electronics",
+      "id": 46
+    },
+    {
+      "name": "AirPods Pro by Switch",
+      "description": "Чип Apple H1 отвечающий за рендеринг аудио и стабильное подключение, Пространственное аудио с динамическим отслеживанием головы, Активное шумоподавление и Режим прозрачности, Кейс с поддержкой беспроводной зарядки и MagSafe",
+      "price": 290,
+      "picture": "https://www.istore.kg/media/products/PacificBlueGloss-1.webp",
+      "type": "electronics",
+      "id": 47
+    },
+    {
+      "name": "AirPods Pro",
+      "description": "Чип Apple H1 отвечающий за рендеринг аудио и стабильное подключение, Пространственное аудио с динамическим отслеживанием головы, Активное шумоподавление и Режим прозрачности, Кейс с поддержкой беспроводной зарядки и MagSafe",
+      "price": 225,
+      "picture": "https://www.istore.kg/media/products/AirPods-Pro-1.webp",
+      "type": "electronics",
+      "id": 48
+    },
+    {
+      "name": "AirPods 3 with Wireless Charging Case",
+      "description": "Чип Apple H1 отвечающий за рендеринг аудио и стабильное подключение, До 30 часов работы в режиме прослушивания с зарядным чехлом, Кейс с поддержкой беспроводной зарядки и MagSafe, Пространственное аудио с динамическим отслеживанием головы",
+      "price": 190,
+      "picture": "https://www.istore.kg/media/products/MME73_AV2.webp",
+      "type": "electronics",
+      "id": 49
+    },
+    {
+      "name": "iPhone 13 Pro Max",
+      "description": "Самая большая модернизация системы камер Pro. A15 Bionic с 5-ядерным GPU - самый быстрый чип в смартфоне, 6,7-дюймовый дисплей Super Retina XDR с функцией ProMotion 120Гц, Дисплей Ceramic Shield прочнее, чем любое стекло смартфона",
+      "price": 1250,
+      "picture": "https://www.istore.kg/media/products/iphone-13-pro-max-green-select.webp",
+      "type": "electronics",
+      "id": 50
+    },
+    {
+      "name": "iPhone 13 Pro",
+      "description": "Самая большая модернизация системы камер Pro. A15 Bionic с 5-ядерным GPU - самый быстрый чип в смартфоне, 6,7-дюймовый дисплей Super Retina XDR с функцией ProMotion 120Гц, Дисплей Ceramic Shield прочнее, чем любое стекло смартфона",
+      "price": 1150,
+      "picture": "https://www.istore.kg/media/products/iphone-13-pro-blue-select.webp",
+      "type": "electronics",
+      "id": 51
+    },
+    {
+      "name": "iPhone 13",
+      "description": "Система с двумя камерами для съемки фото и видео в условиях низкой освещенности, A15 Bionic с 4-ядерным графическим процессором - быстрее, чем у конкурентов, 6,1-дюймовый дисплей Super Retina XDR с True Tone, Дисплей Ceramic Shield прочнее, чем любое стекло смартфона",
+      "price": 880,
+      "picture": "https://www.istore.kg/media/products/iphone-13-blue-select-2021_QT6ur4J.webp",
+      "type": "electronics",
+      "id": 52
+    },
+    {
+      "name": "iPhone 13 mini",
+      "description": "5,4-дюймовый дисплей Super Retina XDR с True Tone, Система с двумя камерами для съемки фото и видео в условиях низкой освещенности, Дисплей Ceramic Shield прочнее, чем любое стекло смартфона. A15 Bionic с 4-ядерным графическим процессором - быстрее, чем у конкуренто",
+      "price": 790,
+      "picture": "https://www.istore.kg/media/products/iphone-13-mini-pink-select-2021.webp",
+      "type": "electronics",
+      "id": 53
+    },
+    {
+      "name": "iPhone 12",
+      "description": "Усовершенствованная система с двумя камерами и записью Dolby Vision HDR. Сверхмощный чип A14 Bionic с 4-ядерным GPU. 6,1-дюймовый дисплей Super Retina XDR с True Tone. Дисплей Ceramic Shield прочнее, чем любое стекло смартфона",
+      "price": 650,
+      "picture": "https://www.istore.kg/media/products/12-Black.webp",
+      "type": "electronics",
+      "id": 54
+    },
+    {
+      "name": "iPhone SE",
+      "description": "Система с одной умной камерой, которая автоматически корректирует экспозицию, A15 Bionic, тот же сверхмощный чип, что и в iPhone 13, Дисплей из прочного стекла, торцы из алюминия, 4,7-дюймовый дисплей Retina HD, яркий, красочный и четкий",
+      "price": 430,
+      "picture": "https://www.istore.kg/media/products/iphone-se-midnight.webp",
+      "type": "electronics",
+      "id": 55
+    },
+    {
+      "name": "Magic Mouse",
+      "description": "Её можно перезаряжать. И значит, вам больше не нужны обычные батарейки.   Magic Mouse стала более лёгкой, у неё меньше подвижных частей, встроенный аккумулятор и цельное основание — вот почему она скользит с меньшим сопротивлением.",
+      "price": 100,
+      "picture": "https://www.istore.kg/media/products/MK2E3.webp",
+      "type": "electronics",
+      "id": 56
+    },
+    {
+      "name": "Magic Trackpad",
+      "description": "Magic Trackpad подключается к Mac автоматически и сразу готов к работе. Встроенный аккумулятор позволяет использовать трекпад без подзарядки примерно в течение месяца — и даже дольше. В комплект входит кабель USB-C на Lightning — с его помощью трекпад можно подключать к Mac для зарядки.",
+      "price": 190,
+      "picture": "https://www.istore.kg/media/products/MK2D3.webp",
+      "type": "electronics",
+      "id": 57
+    },
+    {
+      "name": "Magic Keyboard with Numeric Keypad, Touch ID",
+      "description": "Magic Keyboard with Touch ID and Numeric Keypad  USB-C to Lightning Cable. Возможности подключения и расширения  Bluetooth Порт Lightning Беспроводное подключение",
+      "price": 200,
+      "picture": "https://www.istore.kg/media/products/MK2C3.webp",
+      "type": "electronics",
+      "id": 58
+    },
+    {
+      "name": "Magic Keyboard for iPad Pro 12.9",
+      "description": "Клавиатура точно реагирует на ваши действия и позволяет печатать почти бесшумно: удобные клавиши с подсветкой оснащены механизмом «ножницы» с ходом 1 мм. Встроенный трекпад поддерживает жесты Multi‑Touch и курсор в iPadOS.",
+      "price": 420,
+      "picture": "https://www.istore.kg/media/products/MJQK3.webp",
+      "type": "electronics",
+      "id": 59
+    },
+    {
+      "name": "Magic Keyboard for iPad Pro 11",
+      "description": "Клавиатура точно реагирует на ваши действия и позволяет печатать почти бесшумно: удобные клавиши с подсветкой оснащены механизмом «ножницы» с ходом 1 мм. Встроенный трекпад поддерживает жесты Multi‑Touch и курсор в iPadOS.",
+      "price": 340,
+      "picture": "https://www.istore.kg/media/products/MXQT2.webp",
+      "type": "electronics",
+      "id": 60
+    },
+    {
+      "name": "Smart Keyboard Folio",
+      "description": " Smart Keyboard Folio для iPad Pro/Air — это удобная клавиатура, которая всегда у вас под рукой. Она фиксирует iPad в двух комфортных положениях и служит элегантной обложкой, защищающей устройство с обеих сторон. Заряжать её или создавать пару с iPad не придётся — просто присоедините клавиатуру, и можно печатать.  ",
+      "price": 250,
+      "picture": "https://www.istore.kg/media/products/MXNK2_F44dwcG.webp",
+      "type": "electronics",
+      "id": 61
+    },
+    {
+      "name": "iMac 24",
+      "description": "Чип Apple M1 обеспечивает мощную производительность CPU, GPU и машинного обучения. Поразительно тонкий дизайн 11,5 мм в семи ярких цветах, FaceTime 1080p, звуковая система с шестью динамиками и микрофоны студийного качества. Совпадающие по цвету мышь Magic Mouse и клавиатура Magic Keyboard",
+      "price": 2260,
+      "picture": "https://www.istore.kg/media/products/8-core-blue-1_O9Lleb3.webp",
+      "type": "electronics",
+      "id": 62
+    },
+    {
+      "name": "VIVE Cosmos",
+      "description": "1. Беспрецедентный эффект присутствия с пространственным 3D звуком. 2. Комфортное погружение в VR с более высоким разрешением экрана и улучшенной эргономикой шлема. 3. Технология безопасности Chaperone ",
+      "price": 690,
+      "picture": "https://www.istore.kg/media/products/HTC-VIVE-Cosmos.webp",
+      "type": "electronics",
+      "id": 63
+    },
+    {
+      "name": "GALVANOX Charger Stand",
+      "description": "Док-станции для смартфонов и планшетников это удобно. Конструкция док-станции продумана таким образом, что телефон фиксируется в ней вертикально.",
+      "price": 34,
+      "picture": "https://www.istore.kg/media/products/galvanox-1.webp",
+      "type": "electronics",
+      "id": 64
+    },
+    {
+      "name": "Magic Keyboard",
+      "description": "Magic Keyboard — это удобная беспроводная клавиатура, обеспечивающая удивительно точный ввод текста.",
+      "price": 120,
+      "picture": "https://www.istore.kg/media/products/MK2A3.webp",
+      "type": "electronics",
+      "id": 65
+    },
+    {
+      "name": "Magic Keyboard with Numeric Keypad",
+      "description": "У клавиатуры Magic Keyboard с цифровой панелью расширенная раскладка с дополнительными клавишами навигации для быстрой прокрутки документов и полноразмерными клавишами-стрелками для игр.",
+      "price": 165,
+      "picture": "https://www.istore.kg/media/products/MQ052_jK6FToQ.webp",
+      "type": "electronics",
+      "id": 66
+    },
+    {
+      "name": "iPad 10.2",
+      "description": "Чип A13 Bionic с Neural Engine делает все ваши действия более отзывчивыми. 10,2-дюймовый дисплей Retina с функцией True Tone для невероятной детализации и ярких цветов. Touch ID встроен в кнопку Home для безопасной аутентификации и Apple Pay. Быстрое соединение с Wi-Fi 802.11ac и сотовой связью LTE гигабитного класса",
+      "price": 380,
+      "picture": "https://www.istore.kg/media/products/iPad-8-Cellular-Gold.webp",
+      "type": "electronics",
+      "id": 67
+    },
+    {
+      "name": "AIR JORDAN 1 LOW OG",
+      "description": "The Air Jordan 1 Low OG “Bleached Coral” is a clean look for the original version of the retro basketball shoe primed for the warm weather season. ",
+      "price": 165,
+      "picture": "https://img.stadiumgoods.com/18/55/54/60/18555460_40160154_2048.jpg",
+      "type": "clothes",
+      "id": 70
+    },
+    {
+      "name": "AIR JORDAN 11 RETRO",
+      "description": "The Air Jordan 11 “Cool Grey 2021” is the third-ever release of the popular, non-original colorway of Michael Jordan’s retro basketball shoe that originally debuted in 2001. ",
+      "price": 269,
+      "picture": "https://img.stadiumgoods.com/17/56/54/19/17565419_36444742_2048.jpg",
+      "type": "clothes",
+      "id": 71
+    },
+    {
+      "name": "SERIES MID",
+      "description": "The Maison Chateau Rouge x Jordan Series Mid is a collaboration between the Parisian fashion brand and Jordan that honors the former’s African heritage, and its love of all things basketball",
+      "price": 140,
+      "picture": "https://img.stadiumgoods.com/18/74/50/77/18745077_40495394_2048.jpg",
+      "type": "clothes",
+      "id": 72
+    },
+    {
+      "name": "AIR JORDAN RETRO 2",
+      "description": "The Maison Chateau Rouge x Air Jordan 2 is one of the many outstanding collaborative editions of the classic Air Jordan model that released in 2022.",
+      "price": 309,
+      "picture": "https://img.stadiumgoods.com/18/64/75/84/18647584_40493519_2048.jpg",
+      "type": "clothes",
+      "id": 73
+    },
+    {
+      "name": "AIR FORCE 1 LOW '07",
+      "description": "The Nike Air Force 1 Low “White on White” is one of the most popular and best-selling sneakers of all time. An essential for any collection, the all-white Air Force 1 Low is a versatile design that can be worn with virtually anything.",
+      "price": 100,
+      "picture": "https://img.stadiumgoods.com/16/35/26/08/16352608_34368100_2048.jpg",
+      "type": "clothes",
+      "id": 74
+    },
+    {
+      "name": "DUNK LOW",
+      "description": "The Nike Dunk Low “Georgetown” is an semi-original colorway of the retro basketball shoe from Nike’s college basketball-inspired “Be True to Your School” collection of Dunks from 1985.",
+      "price": 319,
+      "picture": "https://img.stadiumgoods.com/17/30/27/25/17302725_36247900_2048.jpg",
+      "type": "clothes",
+      "id": 75
+    },
+    {
+      "name": "AIR MAX 1",
+      "description": "The Travis Scott x Nike Air Max 1 “Baroque Brown” is a limited edition collaboration between the hip-hop superstar and Nike that modifies the iconic retro running shoe with rugged, outdoors-inspired details.",
+      "price": 379,
+      "picture": "https://img.stadiumgoods.com/17/61/67/11/17616711_36735285_2048.jpg",
+      "type": "clothes",
+      "id": 76
+    },
+    {
+      "name": "YEEZY FOAM RUNNER",
+      "description": "The adidas Yeezy Foam Runner “Onyx” is a monochromatic grey colorway of Kanye West’s progressively designed hybrid slip-on sandal and sneaker that was released in June 2022. ",
+      "price": 220,
+      "picture": "https://img.stadiumgoods.com/18/54/99/39/18549939_40031911_2048.jpg",
+      "type": "clothes",
+      "id": 77
+    },
+    {
+      "name": "YEEZY BOOST 700",
+      "description": "The adidas Yeezy Boost 700 “Hi-Res Red is a fiery, attention-seeking colorway of Kanye West’s popular “dad shoe” that was released in Summer 2022.",
+      "price": 375,
+      "picture": "https://img.stadiumgoods.com/18/59/46/59/18594659_40331677_2048.jpg",
+      "type": "clothes",
+      "id": 78
+    },
+    {
+      "name": "Sunset Ribbed T-shirt",
+      "description": "The price depends on your design and how many you order. Start customizing the product below for a better estimate.",
+      "price": 34,
+      "picture": "https://alofmzptzp.cloudimg.io/v7/https://cdn.shopify.com/s/files/1/1544/1909/products/FP28_black_f.jpg?v=1656591873/func=resize&h=640",
+      "type": "clothes",
+      "id": 79
+    },
+    {
+      "name": "Terry Shirt",
+      "description": "The price depends on your design and how many you order. Start customizing the product below for a better estimate.",
+      "price": 55,
+      "picture": "https://alofmzptzp.cloudimg.io/v7/https://cdn.shopify.com/s/files/1/1544/1909/products/FP28_black_f.jpg?v=1656591873/func=resize&h=640",
+      "type": "clothes",
+      "id": 80
+    },
+    {
+      "name": "Vest",
+      "description": "POSITIVELY CONSCIOUS: We've partnered with Good On You — an ethical agency that rates how sustainably brands perform across various people, planet and animal welfare criteria.  Cotton 57%, Recycled Polyester 43%",
+      "price": 92,
+      "picture": "https://cdn-images.farfetch-contents.com/17/88/06/10/17880610_37903879_1000.jpg",
+      "type": "clothes",
+      "id": 81
+    },
+    {
+      "name": "Pants",
+      "description": "jet black cotton embroidered logo to the rear elasticated drawstring waistband two side inset pockets rear welt pocket When buying this unisex item, keep in mind that it is graded in standard men's sizing.",
+      "price": 84,
+      "picture": "https://cdn-images.farfetch-contents.com/18/37/36/16/18373616_39403307_1000.jpg",
+      "type": "clothes",
+      "id": 82
+    },
+    {
+      "name": "Dad's jacket",
+      "description": "Long sleeves Conscious: This item is made from at least 50% recycled or upcycled materials.",
+      "price": 313,
+      "picture": "https://cdn-images.farfetch-contents.com/18/76/43/34/18764334_40651658_1000.jpg",
+      "type": "clothes",
+      "id": 83
+    },
+    {
+      "name": "Shorts",
+      "description": "POSITIVELY CONSCIOUS: adidas Group scores 4 out 5 with independent ethical brand rating agency Good On You. ",
+      "price": 165,
+      "picture": "https://cdn-images.farfetch-contents.com/15/76/37/34/15763734_28796796_1000.jpg",
+      "type": "clothes",
+      "id": 84
+    },
+    {
+      "name": "Shorts",
+      "description": "navy blue/white cotton jersey fleece logo print to the front tonal stitching straight leg",
+      "price": 60,
+      "picture": "https://cdn-images.farfetch-contents.com/18/70/41/10/18704110_40598527_1000.jpg",
+      "type": "clothes",
+      "id": 85
+    },
+    {
+      "name": "Pants",
+      "description": "belted waist belt loops front button and zip fastening piped-trim detailing two side slit pockets rear welt pocket",
+      "price": 234,
+      "picture": "https://cdn-images.farfetch-contents.com/18/53/71/97/18537197_40142408_1000.jpg",
+      "type": "clothes",
+      "id": 86
+    },
+    {
+      "name": "Polo shirt",
+      "description": "POSITIVELY CONSCIOUS: We've partnered with Good On You — an ethical agency that rates how sustainably brands perform across various people, planet and animal welfare criteria.",
+      "price": 125,
+      "picture": "https://cdn-images.farfetch-contents.com/17/99/90/85/125.jpg",
+      "type": "clothes",
+      "id": 87
+    },
+    {
+      "name": "HU NMD",
+      "description": "The BBC Ice Cream x Pharrell x adidas NMD Hu “Running Dog” is a December 2021 collaboration between the popular music artist’s streetwear brand and adidas on his signature shoe.",
+      "price": 100,
+      "picture": "https://img.stadiumgoods.com/17/88/04/49/17880449_37639405_2048.jpg",
+      "type": "clothes",
+      "id": 88
+    },
+    {
+      "name": "Dion Lee",
+      "description": "Body: Viscose 92%, Elastane 8%. Dry Clean Only. jet black smocking details square neck sleeveless rear zip fastening cropped",
+      "price": 597,
+      "picture": "https://cdn-images.farfetch-contents.com/18/37/89/46/18378946_40809718_1000.jpg",
+      "type": "clothes",
+      "id": 89
+    },
+    {
+      "name": "CREW SOCK",
+      "description": "The Stadium Goods Crew Socks 'Army Green' are a pair of green-colored crew-length socks designed to complement any sneaker in your rotation.",
+      "price": 15,
+      "picture": "https://img.stadiumgoods.com/18/61/28/83/18612883_40572167_2048.jpg",
+      "type": "clothes",
+      "id": 90
+    },
+    {
+      "name": "6-SOCK BOX",
+      "description": "The Stadium Goods 6-Sock Box “Neutrals” is a collection of our everyday Crew Socks in versatile colors that can be worn with your favorite footwear.",
+      "price": 69,
+      "picture": "https://img.stadiumgoods.com/17/89/17/11/17891711_38631428_2048.jpg",
+      "type": "clothes",
+      "id": 91
+    },
+    {
+      "name": "LOLLIPOP HOODIE",
+      "description": "Immerse yourself in New York’s skateboarding culture and youthful carefree spirit with these latest offerings from the iconic streetwear brand Supreme.",
+      "price": 155,
+      "picture": "https://img.stadiumgoods.com/18/64/82/86/18648286_40255963_2048.jpg",
+      "type": "clothes",
+      "id": 92
+    },
+    {
+      "name": "SS T-Shirt",
+      "description": "Immerse yourself in New York’s skateboarding culture and youthful carefree spirit with these latest offerings from the iconic streetwear brand Supreme.",
+      "price": 70,
+      "picture": "https://img.stadiumgoods.com/18/64/82/79/18648279_40256052_2048.jpg",
+      "type": "clothes",
+      "id": 93
+    },
+    {
+      "name": "Шляпа",
+      "description": "Шляпа женская, цвет бежевый, размер 56-58",
+      "price": 10,
+      "picture": "https://cdn3.static1-sima-land.com/items/6713685/0/700-nw.jpg",
+      "type": "clothes",
+      "id": 94
+    },
+    {
+      "name": "Tennis",
+      "description": "Camewin Adult Professional Full Carbon Beach Tennis Racket Soft EVA Face Raqueta With Bag Unisex Equipment Padel Racket",
+      "price": 34,
+      "picture": "https://www.tradeinn.com/f/13776/137762367/babolat-pure-drive-lite-unstrung-tennis-racket.jpg",
+      "type": "sport",
+      "id": 95
+    },
+    {
+      "name": "Bike",
+      "description": " New TSUNAMI SNM100 FIXED GEAR BIKE Aluminum Frame Single Speed Fixie Full Bike Track Bicycle 40MM Aluminium Wheel V Brakes",
+      "price": 448,
+      "picture": "https://cdn.shopify.com/s/files/1/0047/3494/3278/products/SNM1002020BLK_bike.jpg?v=1633208596a",
+      "type": "sport",
+      "id": 96
+    },
+    {
+      "name": "Bike Pedals",
+      "description": "RACEWORK Bike Pedals MTB Bicycle Flat Platform Compatible with SPD Single Side Clip Pedal Bike Parts",
+      "price": 27,
+      "picture": "https://m.media-amazon.com/images/I/61zivhYOyMS._AC_SL1500_.jpg",
+      "type": "sport",
+      "id": 97
+    },
+    {
+      "name": "Очки",
+      "description": "Stylish Large Frame Swimming Goggles for Adults HD Antifog Swim Glasses Manufacturer Direct Wholesale Price",
+      "price": 4,
+      "picture": "https://img.joomcdn.net/babcd1580719b91a05c31497d1137ed61777fa90_original.jpeg",
+      "type": "sport",
+      "id": 98
+    },
+    {
+      "name": "IScooter ",
+      "description": "Бренд: iScooter. Номер модели: I9. Дальность действия на мощность: 10-30 км. Материал рамы: алюминиевый сплав. Размер колеса: 10 дюймов. Мощность: 251 - 350 Вт. Максимальная скорость: <30 км / ч. Напряжение: 36 В. Источник питания: литиевая батарея. Сертификация: CE. Складной: да. Стиль: Стандартный. Номинальная пассажировместимость: одно место. Мотор: Другой",
+      "price": 373,
+      "picture": "https://img.joomcdn.net/d866eea249299fb70289b8c0ac881e0be3cf3376_original.jpeg",
+      "type": "sport",
+      "id": 99
+    },
+    {
+      "name": "Очки ",
+      "description": "Тип элемента: Очки. Вид спорта: Лыжи. Цвет рамки: Черный. Ширина линзы: 20. Материал линз: Поликарбонат. Цвет линз: Multi. Высота объектива: 10. Материал рамы: Ацетат. Оптический атрибут линз: UV400. Пол: Мужчин.ыВес нетто: 220 г",
+      "price": 8,
+      "picture": "https://img.joomcdn.net/0dcc1b9071a595da847f1584bb59afe7869640f2_original.jpeg",
+      "type": "sport",
+      "id": 100
+    },
+    {
+      "name": "Лонгборд ",
+      "description": "Оригинальный подшипник крышки из легированной хромированной стали ABEC-9 характеризуется высокой нагрузкой, высокой скоростью, высокой бесшумностью, износостойкостью, взрывозащищенностью и длительным временем автономной работы.",
+      "price": 184,
+      "picture": "https://img.joomcdn.net/c0a92ba6440326070f06bf6ffd54b5bb5dfa21b0_1024_1024.jpeg",
+      "type": "sport",
+      "id": 101
+    },
+    {
+      "name": "Двухколесный скейтборд",
+      "description": "Безопасная и прочная двухколесная конструкция с 5-кратной защитой безопасности.  Гибкий вращающийся на 360 градусов подшипник.  Мода мигает безопасность большое колесо прохладно и модно. Противоскользящая панель безопасности удваивает высококачественные противоскользящие частицы, увеличивает трение и позволяет детям безопасно играть.",
+      "price": 74,
+      "picture": "https://img.joomcdn.net/a2efb4fe6e695f8705da342767d7fb0e06b33650_original.jpeg",
+      "type": "sport",
+      "id": 102
+    },
+    {
+      "name": "Коврик для йоги",
+      "description": "Безопасная и прочная двухколесная конструкция с 5-кратной защитой безопасности.  Гибкий вращающийся на 360 градусов подшипник.  Мода мигает безопасность большое колесо прохладно и модно. Противоскользящая панель безопасности удваивает высококачественные противоскользящие частицы, увеличивает трение и позволяет детям безопасно играть.",
+      "price": 6,
+      "picture": "data:image/jpeg;base64,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",
+      "type": "sport",
+      "id": 103
+    },
+    {
+      "name": "Карабин",
+      "description": "Тип: крюк . Цвет: черны. Количество: 10 шт. Материал: Алюминиевый спла. Подходит для: Активного отдыха, кемпинга, рыбалки, походов, путешествий и т. Д.. Особенности: Портативный, Удобный, Полезный инструмен. Размер: 3,8 мм х 46 мм / 1,50 'х 18,18' (приблизительно)",
+      "price": 3,
+      "picture": "https://img.joomcdn.net/cca2e6312a8235d7a1fc4f6356b6b5862707e8ed_original.jpeg",
+      "type": "sport",
+      "id": 104
+    },
+    {
+      "name": "Мяч ",
+      "description": "Мяч баскетбольный №7 MOLTEN BA-1841. Баскетбольный мяч. Размер 7. Резина, бутил.",
+      "price": 29,
+      "picture": "https://img.joomcdn.net/07744c47039d5aa49f31ecbf94369577a06391a8_original.jpeg",
+      "type": "sport",
+      "id": 105
+    },
+    {
+      "name": "Мяч",
+      "description": " Принимает дизайн внутреннего и внешнего разделения, который имеет характеристики низкого воздействия и мягкого ощущения руки; мягкий может эффективно уменьшить боль в руке, вызванную тренировкой, сохраняя при этом стабильность волейбольного полета, что очень подходит для тренировок.",
+      "price": 34,
+      "picture": "https://img.joomcdn.net/fead8b68ada9ea1ec364344ee09b4d3dad6a6a69_1024_1024.jpeg",
+      "type": "sport",
+      "id": 106
+    },
+    {
+      "name": "Мяч",
+      "description": "Мяч волейбольный VB-6722 Украина. Мяч волейбольный, материал-  PU синтетическая кожа  . Сшит вручную. №5, 3 слоя.",
+      "price": 19,
+      "picture": "https://img.joomcdn.net/5ea255716b4b98916a5be6d0dad9bc36c7ef33e9_original.jpeg",
+      "type": "sport",
+      "id": 107
+    },
+    {
+      "name": "Мяч",
+      "description": "100% новый, высокое качество. Тип: Размер 5 футбольный мяч . Цвет: Многоцветный. Материал: ПУ. Периметр изделия: 68-70см",
+      "price": 33,
+      "picture": "https://img.joomcdn.net/645812803825cf2635ce1a21e3603e5cf04261d6_original.jpeg",
+      "type": "sport",
+      "id": 108
+    },
+    {
+      "name": "Мяч",
+      "description": "Мяч футбольный CHAMPIONS LEAGUE 2018 FB-8266. Футбольный мяч для игр и тренеровок любительских команд с символикой Лига Чемпионов Champions League UEFA.",
+      "price": 29,
+      "picture": "https://img.joomcdn.net/192a274af9753f4767db500988b8a38baee7dec9_1024_1024.jpeg",
+      "type": "sport",
+      "id": 109
+    },
+    {
+      "name": "Доска/скутер",
+      "description": "Имя элемента: Доска для велосипедных саней Особенности: Холодостойкий, прочный, легко устанавливаемый Цвета: Красный, Синий, Белый, Зеленый, Черный, Оранжевый Материал : PP. 35 см x 10 см x 15 см / 13,78 'x 3,94' x 5,91' (Примерно.)",
+      "price": 34,
+      "picture": "https://img.joomcdn.net/2be97a1c8f0eabbda5b672d1f398f8eaf61994f8_original.jpeg",
+      "type": "sport",
+      "id": 110
+    },
+    {
+      "name": "Снежный скутер",
+      "description": "Крепление для лыж и колеса легко взаимозаменяемы с помощью пары винтов. Его можно использовать как часть лыж и скутеров. Изготовлен из прочного полиэтилена, он прочный и практичный. Хороший подарок для детей или друзей. Складки закрыты для компактного хранения, когда они не используются Спецификация: Длина: около 38 х 11 х 9 см / 14,96 * 4,33 * 3,54 дюйма",
+      "price": 18,
+      "picture": "https://img.joomcdn.net/5eaafb1884690d8150ff70a273bea2650816e9da_original.jpeg",
+      "type": "sport",
+      "id": 111
+    },
+    {
+      "name": "Боксерский мешок",
+      "description": "Этот продукт является фитнес хит мешок с песком, изготовленный из экологически чистых материалов ПВХ, безопасные и нетоксичные. Утолщенный основание, диаметр 65 см, более стабильный, лучше использовать опыт  Легко надувается и сдувается, может быть сложен в небольшой размер для хранения, удобен в использовании.",
+      "price": 60,
+      "picture": "https://img.joomcdn.net/6f11e026e83527389d68924bc7fdfacd6286d17c_original.jpeg",
+      "type": "sport",
+      "id": 112
+    },
+    {
+      "name": "Боксерский мешок",
+      "description": "100% новый.Цвет: Черный Материал: Искусственная кожа Размер : 29см x 20см (Д х Диаметр.) Синтетическая кожа",
+      "price": 11,
+      "picture": "https://img.joomcdn.net/30645ece07c9b6a5a320a460a52437f683b90c6e_original.jpeg",
+      "type": "sport",
+      "id": 113
+    },
+    {
+      "name": "Стена Боксерские мешки",
+      "description": "Новые и высокое качество. Особенности: Повесить (наклеить) на стену, (можно использовать два бетонных гвоздя на стене) упражнение-дюйм свежий, прямой удар с простым, удобным и доступным.",
+      "price": 16,
+      "picture": "https://img.joomcdn.net/523c4b636082a7fb26573da7641b28a68d099fc5_original.jpeg",
+      "type": "sport",
+      "id": 114
+    },
+    {
+      "name": "Боксерский мешок",
+      "description": "Особенность:1. Изготовлен из искусственной кожи, прочный и долговечный для длительного использования. 2. Верхняя и нижняя эластичная веревка могут быть растянуты. 3. Изысканное мастерство, противоизнос, нелегко сломать, длительный срок службы. 4. Хорошая синтетическая кожа и разумная структура добавляют долговечность и соленость.",
+      "price": 35,
+      "picture": "https://img.joomcdn.net/8bff72f45c3c5cf03da5bdcb2a19950f927304b0_1024_1024.jpeg",
+      "type": "sport",
+      "id": 115
+    },
+    {
+      "name": "Бадминтон",
+      "description": "Новые и высокое качество.Поворот по часовой стрелке Светодиодная лампа шарик 90 градусов, определенное вращение на месте!",
+      "price": 6,
+      "picture": "https://img.joomcdn.net/5182b7e2d26e66c4779ec93d2ebed75a671c7268_original.jpeg",
+      "type": "sport",
+      "id": 116
+    },
+    {
+      "name": "Бадминтонная ракетка",
+      "description": "Бадминтонная ракетка Delta из 2 предметов и 1 комплект для игры в мяч для бадминтона наименование товара : Набор для бадминтона Delta DS 857 (2 ракетки и мячи) этот набор;",
+      "price": 14,
+      "picture": "data:image/png;base64,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",
+      "type": "sport",
+      "id": 117
+    },
+    {
+      "name": "Гантели",
+      "description": "100% новый Материал: EVA пены Цвет: синий Общая длина: 270 мм / 10,63 ' Диаметр пены: 145 мм / 5,71 '",
+      "price": 15,
+      "picture": "https://img.joomcdn.net/8ad792b92c7141bfb0f22321c271062fde2541ba_original.jpeg",
+      "type": "sport",
+      "id": 118
+    },
+    {
+      "name": "Тренажер",
+      "description": "Используйте пружинную стальную трубу, ручку из нескользящей пены высокой плотности. Правильная ширина дверного проема: 24-32 дюйма; neutral использует рычаг для удержания на дверном проеме, поэтому нет винтов; отсутствие повреждений двери; установка за считанные секунды. ",
+      "price": 117,
+      "picture": "https://img.joomcdn.net/c2b4ff144aabc594e331cb8c9b91ef9390812227_original.jpeg",
+      "type": "sport",
+      "id": 119
+    },
+    {
+      "name": "Tурник",
+      "description": " Расширение и удлинение сверхтолстого 8-образного основания более устойчиво и безопасно без повреждения стенки дверной коробки.",
+      "price": 130,
+      "picture": "https://img.joomcdn.net/d408f5d6755f738cdf0dbdc7a76399dc6ec7d915_1024_1024.jpeg",
+      "type": "sport",
+      "id": 120
+    },
+    {
+      "name": "Боулинг",
+      "description": "Эта пластиковая игра в боулинг - подарок, который оценит ребенок.. Развлекаясь, он выучит цвета и разовьет способность координировать свои движения.. Он состоит из 6 кеглей и 2 мячей.",
+      "price": 130,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjUP_gPj27cFVjErrfJKA68xhFWeiGKynrqg&usqp=CAU",
+      "type": "sport",
+      "id": 121
+    },
+    {
+      "name": "Клюшка, шайба, мяч",
+      "description": "Клюшка, шайба, мяч для игры на льду и на траве. Стекловолокно.",
+      "price": 23,
+      "picture": "https://img.joomcdn.net/db9fc36ea3d0a5b230979baabed4f5a86f2d8b51_1024_1024.jpeg",
+      "type": "sport",
+      "id": 122
+    },
+    {
+      "name": "Дартс",
+      "description": "Материал: стали вольфрамаю Общая длина дартса: около 15,5 см (включая полет)ю Размер полета Dart: около 4,5 * 3,5 см (L * W)ю Длина наконечника: около 2,6 смю ",
+      "price": 6,
+      "picture": "https://img.joomcdn.net/cb074f62a20045d627aeb7d7d5b54c50df65e36d_1024_1024.jpeg",
+      "type": "sport",
+      "id": 123
+    },
+    {
+      "name": "Дартс",
+      "description": "Двустороннее флокирование, фитнес в помещении, физические упражнения, удовлетворение различных потребностей. Количество дротиков понятно и понятно с первого взгляда. Идеально подходит для детей, подростков, взрослых и взрослых.",
+      "price": 25,
+      "picture": "https://img.joomcdn.net/8fd1aa77629155585dca91396b018f80e4b19c76_original.jpeg",
+      "type": "sport",
+      "id": 124
+    },
+    {
+      "name": "Боксерские перчатки",
+      "description": "Подкладка из пеноматериала Ultimate-Tuff высокой плотности. Амортизация защищает руки и костяшки пальцев. Круглая застежка позволяет регулировать посадку. ",
+      "price": 42,
+      "picture": "https://img.joomcdn.net/52c7a265ab5bba6ebdc02ce4a7dec606b0f33a37_original.jpeg",
+      "type": "sport",
+      "id": 125
+    },
+    {
+      "name": "Боксерские перчатки",
+      "description": "Материал: ПУ. Размер: 4oz, 6oz, 8oz, 10oz, 12oz,14oz. Цвет: белый, красный, черный, синий, розовый. Функция: Бокс, Санда, Свободные бои, Муай Тай",
+      "price": 24,
+      "picture": "https://img.joomcdn.net/0fc2f1c81765b33f944b13849788d5f543c6977a_original.jpeg",
+      "type": "sport",
+      "id": 126
+    },
+    {
+      "name": "AIR JORDAN 1 LOW",
+      "description": "The Air Jordan 1 Low “Shadow Toe” is a modern low-top Jordan 1 that nods to an original 1985 colorway. Designed in a “Light Smoke Grey,” white and black color scheme, this colorway’s nickname references the original “Shadow” Air Jordan 1 High from 1985 in black and grey. ",
+      "price": 155,
+      "picture": "https://img.stadiumgoods.com/18/50/82/43/18508243_40517714_2048.jpg",
+      "type": "clothes",
+      "id": 68
+    },
+    {
+      "name": "AIR JORDAN 9 RETRO",
+      "description": "The Air Jordan 9 “Particle Grey” is a June 2022 release of Michael Jordan’s ninth signature shoe in a colorway with neutral black and grey accents. ",
+      "price": 289,
+      "picture": "https://img.stadiumgoods.com/17/80/93/95/17809395_40252968_2048.jpg",
+      "type": "clothes",
+      "id": 69
+    },
+    {
+      "name": "Коврик для йоги",
+      "description": "Коврик для пилатеса и йоги Cosfer 6,5 мм Характеристики:Толщина : 6,5 ммАспект : 50см х 150смMateriel : полиэтиленМодель : Гофрированный узор линии",
+      "price": 20,
+      "picture": "https://img.joomcdn.net/a113e2222b5f4aa56b0ee57e404d3dd2253de7cb_original.jpeg",
+      "type": "sport",
+      "id": 127
+    },
+    {
+      "name": "Гиря",
+      "description": "1. Используется для повышения силы сцепления, выносливости и общей адаптивности, с высокой производительностью. 2. Эффективно улучшают функциональную прочность, увеличивают долговечность, снижают шум, защищают полы и улучшают внешний вид.",
+      "price": 140,
+      "picture": "https://img.joomcdn.net/2c6510343aeed624525c6002c4a1a9c89c2717b2_original.jpeg",
+      "type": "sport",
+      "id": 128
+    },
+    {
+      "name": "Гиря",
+      "description": "1. Это может повысить силу захвата, силу, выносливость и общую адаптивность. 2. Эффективно улучшают функциональную прочность, увеличивают долговечность, снижают шум, защищают полы и улучшают внешний вид.",
+      "price": 204,
+      "picture": "https://img.joomcdn.net/3d2a8623c9551d3b99a33066f527bb68ef7992a6_1024_1024.jpeg",
+      "type": "sport",
+      "id": 129
+    },
+    {
+      "name": "Тренажер",
+      "description": "Легко устанавливается и переносится. Подходит для дома, работы и путешествий. Система движущихся колес Это простой в использовании. Он позволяет комфортно двигаться не только вперед, но и в стороны. ",
+      "price": 19,
+      "picture": "https://img.joomcdn.net/47d742f3fc0be406a4d7bdedeac5c796e3aed927_original.jpeg",
+      "type": "sport",
+      "id": 130
+    },
+    {
+      "name": "Экспандер 40кг",
+      "description": "1. Принимает прочные материалы, стабильные и надежные. 2. Простота в эксплуатации с компактной конструкцией. 3. Легкий и портативный, удобный для переноски. 4. С противоскользящей конструкцией поверхности, вы можете легко использовать его. ",
+      "price": 11,
+      "picture": "https://img.joomcdn.net/e226d5075c99f0601387e915c4da27c0783ee55d_original.jpeg",
+      "type": "sport",
+      "id": 131
+    },
+    {
+      "name": "Экспандер",
+      "description": "Состоит из высококачественного стального материала, антикоррозийный, прочный, долговечный для длительного использования. Регулируемая конструкция и чрезвычайно легкий вес, делают его легким для переноски без ограничений по времени или месту.",
+      "price": 35,
+      "picture": "https://img.joomcdn.net/60ff800fad784ef530b9aacf41a9af4741f0d1f4_original.jpeg",
+      "type": "sport",
+      "id": 132
+    },
+    {
+      "name": "Тренажер",
+      "description": "Этот абдоминальный тренажер может помочь вам тренировать мышцы живота и ноги, формировать ваше тело и легко выполнять различные действия. Простота установки и разборки, удобна в использовании. Подходит как для мужчин, так и для женщин.",
+      "price": 50,
+      "picture": "https://img.joomcdn.net/bd221cecd879c39193d161dc93b7911336758fee_original.jpeg",
+      "type": "sport",
+      "id": 133
+    },
+    {
+      "name": "Тренажер",
+      "description": "Особенность:1. Оснащен двойным утолщенным губчатым чехлом, мягким и удобным в использовании. 2. Эргономичные конструкции, удобные в обращении, не легко упасть, легко держать. 3. ABS двигательпластиковая ручка, экологически чистая, безвкусная и невядающая. 4. Материал Spsteel, тренировка силы запястья, профессиональный фитнес-инструмент. 5. Может использоваться в любое время и в любом месте, где вы хотите, подходит для внутреннего или наружного использования.",
+      "price": 39,
+      "picture": "https://img.joomcdn.net/acec261eba87c433244dc779f0b78b730571d7fa_original.jpeg",
+      "type": "sport",
+      "id": 134
+    },
+    {
+      "name": "Спортивная лента",
+      "description": "Функция:1. Помогает уменьшить боль в пальцах, вызванную связками вокруг костяшек пальцев, и облегчить боль в руке. 2. Тонкая ширина, специально разработанная для обертывания пальцев и рук, без раздражения, сильная адгезия.",
+      "price": 17,
+      "picture": "https://img.joomcdn.net/2ab296635375305044bce15a40175dc7a6754772_1024_1024.jpeg",
+      "type": "sport",
+      "id": 135
+    },
+    {
+      "name": "Каппы",
+      "description": "Особенность:1. Защита зубов с использованием пищевого класса EVA, нетоксичная, безвкусная и долговечная, надежная в использовании. 2. Эргономичный дизайн прикуса с прокладкой внутри, более подходящий для зубов пользователя, удобный в использовании.",
+      "price": 19,
+      "picture": "https://img.joomcdn.net/601b4bd4d5b029fca3c8aa9bbc1a71fa5ae278e5_1024_1024.jpeg",
+      "type": "sport",
+      "id": 136
+    },
+    {
+      "name": "Шлем",
+      "description": "Добро пожаловать в мой магазин, Я надеюсь, что у вас есть отличный опыт покупок здесь. Мы будем продолжать обновлять много новых продуктов, и для вас определенно есть один. Имя элемента: Лицо охранника Особенности: Воздушные отверстия, Набивка для рта, Двойная защита ",
+      "price": 16,
+      "picture": "https://img.joomcdn.net/fa9fdc402c1a5c08303f08623e14489f148baec8_original.jpeg",
+      "type": "sport",
+      "id": 137
+    },
+    {
+      "name": "Мяч",
+      "description": "Материал: композитная кожа. Камера: латекс. Количество панелей: 4. Тип соединения панелей: сшитое вручную. Коричневый цвет. Назначение: американский футбол. Возрастная группа: 10-12 лет.",
+      "price": 39,
+      "picture": "https://img.joomcdn.net/bff68ebca079cb73b982b5baea32b1c1ade53353_1023_1024.jpeg",
+      "type": "sport",
+      "id": 138
+    },
+    {
+      "name": "Мяч",
+      "description": "Материал: поливинилхлорид (ПВХ). Камера: латекс. Количество панелей: 4. Тип соединения панелей: сшитое вручную. Коричневый цвет. Размер: 9. Назначение: американский футбол.      ",
+      "price": 28,
+      "picture": "https://img.joomcdn.net/655d237b3f802ce5aa103d049b6aae70c9b250d2_original.jpeg",
+      "type": "sport",
+      "id": 139
+    },
+    {
+      "name": "Мяч для тенниса",
+      "description": "12 шт Прочные резиновые высокоэластичные теннисные мячи. Функция:1. Отлично подходит для пляжного тенниса и игр с домашними животными. 2. Улучшенная скорость и отскок для лучшего контроля.",
+      "price": 59,
+      "picture": "https://img.joomcdn.net/47e0723305c9583cf3920aeef2d00ddf3361c669_original.jpeg",
+      "type": "sport",
+      "id": 140
+    },
+    {
+      "name": "Настольный теннис Мяч",
+      "description": "60 шт/ набор новый материал Настольный теннис Мяч Диаметр Пластиковые пинг-понг шары для тренировки настольного тенниса",
+      "price": 21,
+      "picture": "https://img.joomcdn.net/006b1a1f8a975afd16d8a9e43abf1d2ac55541ea_original.jpeg",
+      "type": "sport",
+      "id": 141
+    },
+    {
+      "name": "Мячи для гольфа",
+      "description": "100% новое комфортное ощущение! Легкая конструкция. Ограниченное расстояние сокращает время извлечения. Прочный легкий пластик. Цвет:Как показано на рисунке.",
+      "price": 4,
+      "picture": "https://img.joomcdn.net/6c8a5702b19167b19d7b1eb2df68d262a31aebda_original.jpeg",
+      "type": "sport",
+      "id": 142
+    },
+    {
+      "name": "Гантели",
+      "description": "Функция:1. Внутреннее ядро представляет собой цемент с цементом и утолщенную внешнюю защитную оболочку из ПВХ, которая может эффективно защищать землю и гантели. 2. Может помочь женщинам развить идеальные линии, стройные, тонкие руки и создать горячую и сексуальную форму тела.",
+      "price": 204,
+      "picture": "https://img.joomcdn.net/9d2232a935fa7b3ad70c873390872c5349b3f10f_1024_1024.jpeg",
+      "type": "sport",
+      "id": 143
+    },
+    {
+      "name": "Зажим ",
+      "description": "Предотвращает скольжение весов пластин с стержней. Они подойдут для всех стандартных штанг для тяжелой атлетики или штанг для гантелей с отверстием 1 дюйма (2,5 см). Резиновые ручки рукоятки позволяют удобно и легко снимать. ",
+      "price": 6,
+      "picture": "https://img.joomcdn.net/f1dd8aa5cd6e312cccf9f388107751dcbf28cc6d_1024_1024.jpeg",
+      "type": "sport",
+      "id": 144
+    },
+    {
+      "name": "Гантели ",
+      "description": "Особенность:1. С утолщенным наружным защитным рукавом из ПВХ, может эффективно защитить землю. 2. Многофункциональные гантели идеально подходят для силовых, групповых видов спорта, бодибилдинга, наращивания мышечной массы и других общих упражнений.",
+      "price": 111,
+      "picture": "https://img.joomcdn.net/2675adbab7477696b214c78377a1ba5c9ecd3387_1024_1024.jpeg",
+      "type": "sport",
+      "id": 145
+    },
+    {
+      "name": "Водная гантель",
+      "description": "оррозионной стойкостью, высокой жесткостью, прочной и долговечной, и может использоваться в течение длительного времени. 2. [Маленький и легкий] Гантели легкие по весу, компактные по структуре и имеют большую плавучесть в воде, подходят для силовых тренировок.",
+      "price": 48,
+      "picture": "https://img.joomcdn.net/258778e7e2de5e2a3b0ee0e245a3899ad8a29f94_1024_1024.jpeg",
+      "type": "sport",
+      "id": 146
+    },
+    {
+      "name": "Коньки",
+      "description": "1. Из-за света есть небольшая разница между фактическим цветом и цветом изображения, пожалуйста, возьмите полученный объект в качестве стандарта. 2. Из-за различных методов измерения существует зазор в 1-2 см между измерением и фактическим размером.",
+      "price": 21,
+      "picture": "data:image/jpeg;base64,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",
+      "type": "sport",
+      "id": 147
+    },
+    {
+      "name": "Боксерский шлем",
+      "description": "Особенность:1. Часть защиты ушей подходит к уху и имеет лучшую защиту. 2. Верхняя часть головок спроектирована с эластичным поясом высокой плотности, который подходит к головам и его нелегко перемещать.",
+      "price": 60,
+      "picture": "https://img.joomcdn.net/3719ca93e8b5ea7087b3bc00a637219c8f89fb40_1024_1024.jpeg",
+      "type": "sport",
+      "id": 148
+    },
+    {
+      "name": "Боксерский шлем",
+      "description": "Функция:1. Дышащий вкладыш обеспечивает максимальную защиту, безопасность и эффективность. 2. Наш боксерский шлем может закрывать все лицо, чтобы дать голове всестороннюю защиту. 3. Регулируемый нейлоновый головной ремень можно отрегулировать к голове, чтобы чувствовать себя комфортно.",
+      "price": 43,
+      "picture": "https://img.joomcdn.net/c31971c87cd4458de3097f2a04098fec70b35646_1024_1024.jpeg",
+      "type": "sport",
+      "id": 149
+    },
+    {
+      "name": "Обруч/Сетка",
+      "description": "1. Изготовлен из высококачественного металлического материала с особенностями прочности, износостойкости и долговечности в течение длительного времени использования. 2. Баскетбольная сеть толстая тяжелая сеть, официально размером для стандарта, и являются лучшим выбором для крытых и открытых баскетбольных кортов.3. Это идеальная и лучшая замена баскетбольной сети.",
+      "price": 3,
+      "picture": "https://img.joomcdn.net/ed82c36bdc9dfd0fa71170ae050bb3d695de25a8_original.jpeg",
+      "type": "sport",
+      "id": 150
+    },
+    {
+      "name": "Перчатки вратарские",
+      "description": "Перчатки вратарские детские. Материал внешней стороны перчатки: поливинилхлорид (PVC), текстиль. Размер : 4 (возраст 3-5),  5 (возраст 5-8), 6 ( возраст 8-10 лет) , 7 ( возраст 10-12 лет), 8 (возраст 12-14).",
+      "price": 10,
+      "picture": "https://img.joomcdn.net/e21eaed0fee85a310548475fe9ea7bff8630aa07_1024_1024.jpeg",
+      "type": "sport",
+      "id": 151
+    },
+    {
+      "name": "Перчатка Бейсбольная ",
+      "description": "Пакет включает в себя:1Шт Бейсбольная перчатка (БЕЗ МЯЧА). Размер 9.5 :9,45 * 6,30 дюйма (24 * 16 см),подходит для малышей 2-4 лет. Размер 10.5 :10,24 * 7,09 дюйма(26 * 18 см),подходит для детей 4-10 лет. Размер 11.5 :11,02 * 7,87 дюйма(28 * 20 см),подходит для молодежи 10-16 лет. Размер 12.5 :11,81 * 8,66 дюйма(30 * 22 см),подходит для взрослых старше 16 лет. Состояние:100% новый.",
+      "price": 17,
+      "picture": "https://img.joomcdn.net/2775e0da3bc8b75a2cb5f4c4df509f5a30108812_original.jpeg",
+      "type": "sport",
+      "id": 152
+    },
+    {
+      "name": "Бейсбольная бита",
+      "description": "1. Материал: алюминиевого сплава .2. Диаметр стержня: около 5,4 см .3. Диаметр ручки: около 2,9 см .4. 20 дюймов в длину: около 51 см .5. Длина 25 дюймов: около 63 см .6. Длина 28 дюймов: около 71 см .7. Длина 30 дюймов: около 76 см .8. 32 дюйма в длину: около 81 см .9. Длина 34 дюйма: около 86 см",
+      "price": 66,
+      "picture": "https://img.joomcdn.net/cf67d54a24fd03830c5a7a3c0a1083c0bf311042_original.jpeg",
+      "type": "sport",
+      "id": 153
+    },
+    {
+      "name": "Безопасный шлем",
+      "description": "Он изготовлен из высококачественного АБС-пластика и вспененного полипропилена. Используя высокопрочные материалы, этот шлем обладает хорошей коррозионной стойкостью и износостойкостью. Его вентиляционные отверстия могут эффективно рассеивать тепло, и он дышит и хорошо вентилируется.",
+      "price": 58,
+      "picture": "https://img.joomcdn.net/c979e9aa0cd5da5f59212c55b8f985bea56db79f_original.jpeg",
+      "type": "sport",
+      "id": 154
+    },
+    {
+      "name": "Перчатки MMA",
+      "description": "1. материал: ПУ 2. Перчатки с половиной рукавиц, пустая ладонь, с хорошей гибкостью и предотвращением потоотделения при тренировке 3. Задняя часть перчатки и hook & Loop Tapes утолщают пену, хорошо защищая запястье  4. Конструкции для ММА или любой тренировки по боксу  5. Взрослый тип, один размер подходит большинству, регулируемый 6. Размер: около 21 х 13 х 2,5 см (Д х Ш х Г)",
+      "price": 18,
+      "picture": "https://img.joomcdn.net/57e74816e8ff8aa0435bb342e13cde42619d63a3_original.jpeg",
+      "type": "sport",
+      "id": 155
+    },
+    {
+      "name": "Боксерский халат",
+      "description": "Мягкий материал позволяет удобно носить его. Приходя с поясом, вы можете свободно завязать его в соответствии с вашей талией. Боксерский халат с капюшоном – идеальный выбор для соревнований, тренировок и т.д.. Тип: Бокс Роб Размер тип: регулярные Пол: унисекс ",
+      "price": 16,
+      "picture": "https://img.joomcdn.net/bfc4883c092fb8d89f26052c6f30cf1e1d1078d8_1024_1024.jpeg",
+      "type": "sport",
+      "id": 156
+    },
+    {
+      "name": "Паховой протектор",
+      "description": "Добро пожаловать в мой магазин, Я надеюсь, что у вас есть отличный опыт покупок здесь. Мы будем продолжать обновлять много новых продуктов, и для вас определенно есть один. ",
+      "price": 13,
+      "picture": "https://img.joomcdn.net/236516941e756a216f6ce475b0994233e86d6c44_original.jpeg",
+      "type": "sport",
+      "id": 157
+    },
+    {
+      "name": "Легкая боксерная мишень",
+      "description": "Состояние: 100% новый. Материал: + Пена. Цвет: Показано, как фотографии. Размер: около 20 х 20 х 10 см / 7,87 х 7,87 х 3,94 дюйма. Вес: Приблизительный 170g",
+      "price": 23,
+      "picture": "https://img.joomcdn.net/9ac8c7babfc8c54ad67f991ab53c07a62773536f_original.jpeg",
+      "type": "sport",
+      "id": 158
+    },
+    {
+      "name": "Каратэ Мишень",
+      "description": "Тип:Таеквондо ногу целевой . Цвет: Черный, Красный, Синий. Размер:40 x 20 x 10 см . Содержимое пакета:1 x Рука Щит Мишень. Материал: PU+ высокоэластичная компрессионная губка",
+      "price": 15,
+      "picture": "https://img.joomcdn.net/981ecea827adbe207e83b5ed56bdd7b7a687be3f_original.jpeg",
+      "type": "sport",
+      "id": 159
+    },
+    {
+      "name": "Перчатки MMA",
+      "description": "Половинчатые рукавицы и полая конструкция ладони, хорошая воздухопроницаемость, предотвращает потоотделение. Расширенный браслет с крепежной лентой для максимальной защиты. Изготовлен из высококачественной искусственной кожи с утолщенную пену, гибкий и носимый. Идеально подходит для тренировок по ММА, муай-тай и боксу.",
+      "price": 2100,
+      "picture": "https://img.joomcdn.net/682b1eee0ddf1f207ab0ae1e7ee4522bdc7a8b2f_original.jpeg",
+      "type": "sport",
+      "id": 160
+    }
+  ]
+}

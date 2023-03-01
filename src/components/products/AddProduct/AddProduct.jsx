@@ -16,7 +16,7 @@ const AddProduct = () => {
     category: '',
     volume: '',
     alcohol_percentage: ''
-  })
+  });
 
   const handleInp = (e) => {
     if(e.target.name === 'price') {
@@ -45,11 +45,9 @@ const AddProduct = () => {
       };
       setProduct(obj)
     }
+  };
 
-  }
-  return 
-    (
-    <div>
+  return <div>
       <h1>AddProduct</h1>
       <input type="text" placeholder="name" name="name" onChange={handleInp}/>
       <input type="text" placeholder="category" name="category" onChange={handleInp}/>
@@ -63,7 +61,6 @@ const AddProduct = () => {
         navigate('/products')
       }}>Add Product</button>
     </div>
-    )
 };
 
 export default AddProduct;

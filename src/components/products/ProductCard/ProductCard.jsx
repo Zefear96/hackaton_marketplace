@@ -49,7 +49,7 @@ const ProductCard = ({ item }) => {
         <CardHeader
           className="card-title"
           title={item.name}
-          subheader={`category: ${item.type}`}
+          subheader={`category: ${item.category}`}
           style={{ fontWeight: "bold !important" }}
         />
 

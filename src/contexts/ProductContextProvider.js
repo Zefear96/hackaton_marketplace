@@ -36,6 +36,13 @@ const ProductContextProvider = ({ children }) => {
     });
   };
 
+  //function addProduct
+
+  const addProduct = async (newProduct) => {
+    await axios.post(JSON_API_PRODUCTS, newProduct);
+    getProducts();
+  };
+
   // function GET_PRODUCTS_DETAILS
   const getProductDetails = async (id) => {
     dispatch({
@@ -57,14 +64,22 @@ const ProductContextProvider = ({ children }) => {
     getProducts();
   };
 
+  //function saveEditedProduct 
+  const saveEditedProduct = async(editedProduct) => {
+    await axios.patch(`${JSON_API_PRODUCTS}/${editedProduct.id}`, editedProduct);
+    getProducts()
+  }
+
   // const VALUES
   const values = {
     products: state.products,
     productDetails: state.productDetails,
 
     getProducts,
+    addProduct,
     getProductDetails,
     deleteProduct,
+    saveEditedProduct
   };
 
   return (

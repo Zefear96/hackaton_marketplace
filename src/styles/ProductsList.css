@@ -2,6 +2,13 @@
        width: 80%;
        display: flex;
        flex-wrap: wrap;
-       justify-content: space-between;
+       justify-content: center;
+       margin: auto;
+}
+
+#pagination {
+       display: flex;
+       justify-content: center;
+       width: 50%;
        margin: auto;
 }

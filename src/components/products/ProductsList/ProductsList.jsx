@@ -5,7 +5,7 @@ import "../../../styles/ProductsList.css";
 
 import { Pagination } from "@mui/material";
 
-const ProductsList = ({ page, setPage }) => {
+const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
   const { products, getProducts } = useProducts();
 
   console.log(products);
@@ -30,6 +30,7 @@ const ProductsList = ({ page, setPage }) => {
   return (
     <>
       <div className="container-prods">
+          <button onClick={changeSideBarStatus}>Filter&Search Menu</button>
         {products ? (
           currentData().map((item) => <ProductCard key={item.id} item={item} />)
         ) : (

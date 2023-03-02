@@ -25,6 +25,7 @@ const reducer = (state = INIT_STATE, action) => {
 const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
   const navigate = useNavigate();
+  const location = useLocation()
 
   // function GET_PRODUCTS
   const getProducts = async () => {
@@ -68,7 +69,21 @@ const ProductContextProvider = ({ children }) => {
   const saveEditedProduct = async(editedProduct) => {
     await axios.patch(`${JSON_API_PRODUCTS}/${editedProduct.id}`, editedProduct);
     getProducts()
-  }
+  };
+
+  //function for Filter Fetch By Params
+  const fetchByParams = (query, value) => {
+    const search = new URLSearchParams(location.search) //грамотно меняет между собой несколько параметров поиска
+
+    if(value === 'all') {
+      search.delete(query) //ключ - значение
+    } else {
+      search.set(query, value)
+    };
+
+    const url = `${location.pathname}?${search.toString()}`;
+    navigate(url)
+  };
 
   // const VALUES
   const values = {
@@ -79,7 +94,8 @@ const ProductContextProvider = ({ children }) => {
     addProduct,
     getProductDetails,
     deleteProduct,
-    saveEditedProduct
+    saveEditedProduct,
+    fetchByParams
   };
 
   return (

@@ -10,3 +10,13 @@
        object-fit: contain !important;
        margin: auto;
 }
+
+.card-title {
+       display: flex;
+       align-items: start;
+       height: 100px;
+}
+
+.card-text {
+       height: 150px;
+}

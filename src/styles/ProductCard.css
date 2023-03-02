@@ -1,0 +1,11 @@
+.card-prod {
+       width: 25% !important;
+       margin: 1%;
+
+}
+
+.card-image {
+       width: 200px;
+       height: 200px;
+       object-fit: contain !important;
+}

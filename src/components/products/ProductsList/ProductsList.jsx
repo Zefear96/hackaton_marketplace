@@ -28,23 +28,23 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
   }
 
   return (
-    <>
+    <div>
+      <button onClick={changeSideBarStatus}>Filter&Search Menu</button>
       <div className="container-prods">
-          <button onClick={changeSideBarStatus}>Filter&Search Menu</button>
         {products ? (
           currentData().map((item) => <ProductCard key={item.id} item={item} />)
         ) : (
           <h3>Loading...</h3>
         )}
+        <Pagination
+          count={count}
+          page={page}
+          onChange={handlePage}
+          id="pagination"
+          color="warning"
+        />
       </div>
-      <Pagination
-        count={count}
-        page={page}
-        onChange={handlePage}
-        id="pagination"
-        color="warning"
-      />
-    </>
+    </div>
   );
 };
 

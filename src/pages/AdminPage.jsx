@@ -7,6 +7,7 @@ const AdminPage = () => {
       <AddProduct />
     </div>
   );
+
 };
 
 export default AdminPage;

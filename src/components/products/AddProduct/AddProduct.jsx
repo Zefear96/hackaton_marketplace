@@ -15,6 +15,7 @@ const AddProduct = () => {
     category: "",
     volume: "",
     alcohol_percentage: "",
+
   });
 
   const handleInp = (e) => {
@@ -46,6 +47,7 @@ const AddProduct = () => {
   };
   return (
     <div>
+
       <h1>AddProduct</h1>
       <input type="text" placeholder="name" name="name" onChange={handleInp} />
       <input
@@ -94,6 +96,7 @@ const AddProduct = () => {
       </button>
     </div>
   );
+
 };
 
 export default AddProduct;

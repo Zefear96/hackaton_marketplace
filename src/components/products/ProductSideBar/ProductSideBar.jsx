@@ -6,27 +6,23 @@ import { useSearchParams } from "react-router-dom";
 const ProductSideBar = ({isSideBar, page}) => {
 
   const { products, getProducts } = useProducts();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get('q') || '');
 
+  useEffect(() => {
+    setSearchParams({
+      q: search
+    })
+  }, [search, ]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  useEffect(() => {
+    getProducts();
+    setPage(1) //обновление страницы на первую setPage(1)
+  }, [searchParams, ])
 
   return isSideBar ? (
   <div className="sideBar">
-    <input type="text" placeholder="Search"/>
+    <input type="text" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)}/>
     <FilterProduct />
   </div>
   ) : null;

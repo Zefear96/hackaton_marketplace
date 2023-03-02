@@ -92,12 +92,12 @@
   },
   {
   "id": 10,
-  "name": "Scotch Whisky Lagavulin 16 Year Old",
-  "category": "Whisky",
+  "name": "Scotch Whiskey Lagavulin 16 Year Old",
+  "category": "Whiskey",
   "price": 4500,
   "volume": 0.7,
   "alcohol_percentage": 43,
-  "description": "A peaty and smoky Islay single malt whisky with a complex and rich flavor, aged for 16 years in oak barrels.",
+  "description": "A peaty and smoky Islay single malt Whiskey with a complex and rich flavor, aged for 16 years in oak barrels.",
   "image": "https://www.nicepng.com/png/detail/820-8201166_lagavulin-16-year-scotch-lagavulin-16.png"
   },
   {
@@ -132,12 +132,12 @@
   },
   {
   "id": 14,
-  "name": "Japanese Whisky Yamazaki 12 Year Old",
+  "name": "Japanese Whiskey Yamazaki 12 Year Old",
   "category": "Whiskey",
   "price": 8000,
   "volume": 0.7,
   "alcohol_percentage": 43,
-  "description": "A rare and sought-after Japanese single malt whisky with a smooth and fruity taste, aged for 12 years in oak barrels.",
+  "description": "A rare and sought-after Japanese single malt Whiskey with a smooth and fruity taste, aged for 12 years in oak barrels.",
   "image": "https://std01.cdnbkk.com/i/c99e3d/media/catalog/product/cache/5836d291b7d5a67e34f92ee32ee5d955/l/w/lwh0083ad_1.png"
   },
   {

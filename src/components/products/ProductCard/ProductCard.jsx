@@ -16,12 +16,15 @@ import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutl
 
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
+import { useCart } from "../../../contexts/CartContextProvider";
 import "../../../styles/ProductCard.css";
 
 const ProductCard = ({ item }) => {
   const navigate = useNavigate();
 
   const { deleteProduct } = useProducts();
+
+  const { addProductToCart, checkProductInCart } = useCart();
 
   return (
     <Card className="card-prod">
@@ -91,11 +94,11 @@ const ProductCard = ({ item }) => {
             Delete <DeleteIcon fontSize="small" />
           </Button>
 
-          {/* <IconButton size="small" onClick={() => addProductToCart(item)}>
+          <IconButton size="small" onClick={() => addProductToCart(item)}>
             <AddShoppingCartOutlinedIcon
               color={checkProductInCart(item.id) ? "success" : ""}
             />
-          </IconButton> */}
+          </IconButton>
         </CardActions>
       </div>
     </Card>

@@ -16,6 +16,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../../contexts/CartContextProvider";
 
 const pages = [
   {
@@ -60,6 +61,7 @@ function ResponsiveAppBar() {
 
   // custom
   const navigate = useNavigate();
+  const { cartLength } = useCart();
 
   return (
     <AppBar position="static">
@@ -164,7 +166,7 @@ function ResponsiveAppBar() {
               color="inherit"
               // onClick={() => navigate("/cart")}
             >
-              <Badge color="error">
+              <Badge color="error" badgeContent={cartLength}>
                 <FavoriteBorderIcon />
               </Badge>
             </IconButton>
@@ -174,7 +176,7 @@ function ResponsiveAppBar() {
               color="inherit"
               onClick={() => navigate("/cart")}
             >
-              <Badge color="error">
+              <Badge badgeContent={cartLength} color="error">
                 <ShoppingCartOutlinedIcon />
               </Badge>
             </IconButton>

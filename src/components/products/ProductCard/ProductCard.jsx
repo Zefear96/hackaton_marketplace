@@ -16,6 +16,7 @@ import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutl
 
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
+import "../../../styles/ProductCard.css";
 
 const ProductCard = ({ item }) => {
   const navigate = useNavigate();
@@ -56,8 +57,11 @@ const ProductCard = ({ item }) => {
         <CardContent>
           <Typography variant="body2" color="text.secondary">
             <span style={{ fontSize: "1.2rem" }}>${item.price}</span>
-            <hr />
-            <b>Description:</b> {item.description.slice(0, 50) + "..."}
+            <p>Vol. {item.volume}</p>
+            <p>Alc.{item.alcohol_percentage}%</p>
+            <p>
+              <b>Description:</b> {item.description.slice(0, 50) + "..."}
+            </p>
           </Typography>
         </CardContent>
         <CardActions className="btns-block-prod">

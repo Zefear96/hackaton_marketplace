@@ -25,6 +25,7 @@ const reducer = (state = INIT_STATE, action) => {
 const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
   const navigate = useNavigate();
+  const location = useLocation()
 
   // function GET_PRODUCTS
   const getProducts = async () => {

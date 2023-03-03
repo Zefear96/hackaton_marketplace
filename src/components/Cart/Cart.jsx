@@ -76,7 +76,7 @@ export default function Cart() {
         <Button
           variant="outlined"
           onClick={() => {
-            cartCleaner();
+            // cartCleaner();
             navigate("/payment");
           }}
         >

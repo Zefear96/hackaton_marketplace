@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
 
 const RegistrationPage = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [password2, setPassword2] = useState("");
 
   const { register, error } = useAuth(); //вытаскивает контекст
 
@@ -18,8 +18,8 @@ const RegistrationPage = () => {
 
       <input
         type="text"
-        placeholder="username"
-        onChange={(e) => setUsername(e.target.value)}
+        placeholder="email"
+        onChange={(e) => setEmail(e.target.value)}
       />
       <input
         type="text"
@@ -28,10 +28,10 @@ const RegistrationPage = () => {
       />
       <input
         type="text"
-        placeholder="email"
-        onChange={(e) => setEmail(e.target.value)}
+        placeholder="confirm password"
+        onChange={(e) => setPassword2(e.target.value)}
       />
-      <button onClick={() => register(username, password, email)}>
+      <button onClick={() => register(email, password, password2)}>
         Register
       </button>
     </div>

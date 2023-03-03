@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext); //custom hook
 
-const API = "https://abdulkosim1.pythonanywhere.com";
+const API = "https://register6.p.rapidapi.com/www.hacker.com";
 
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");
@@ -24,7 +24,12 @@ const AuthContextProvider = ({ children }) => {
     formData.append("email", email);
 
     try {
-      const res = await axios.post(`${API}/api/account/register/`, formData, config);
+      const res = await axios.post(
+        `${API}/api/account/register/`,
+        formData,
+        config
+      );
+
       //formData-что отправить, config-сопроводительные доки
       console.log(res);
 
@@ -48,8 +53,8 @@ const AuthContextProvider = ({ children }) => {
 
       navigate("/");
       localStorage.setItem("token", JSON.stringify(res.data));
-      localStorage.setItem("username", {username, password});
-      
+      localStorage.setItem("username", { username, password });
+
       setUser(username);
       setError("");
     } catch (error) {
@@ -70,13 +75,11 @@ const AuthContextProvider = ({ children }) => {
     let token = JSON.parse(localStorage.getItem("token"));
 
     try {
-    //   const Authorization = `Bearer ${token.access}`;
+      //   const Authorization = `Bearer ${token.access}`;
 
       let res = await axios.post(
         `${API}api/token/refresh/`,
-        { refresh: token.refresh,
-            username: username,
-            password: password }
+        { refresh: token.refresh, username: username, password: password }
         // { headers: { Authorization } }
       );
 

@@ -8,6 +8,8 @@ import EditProductPage from "./pages/EditProductPage";
 import AdminPage from "./pages/AdminPage";
 import CartPage from "./pages/CartPage";
 import PaymentPage from "./pages/PaymentPage";
+import RegistrationPage from "./pages/RegistrationPage";
+import LoginPage from "./pages/LoginPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -50,6 +52,16 @@ const MainRoutes = () => {
       link: "/payment",
       element: <PaymentPage />,
       id: 8,
+    },
+    {
+      link: "/register",
+      element: <RegistrationPage />,
+      id: 9,
+    },
+    {
+      link: "/login",
+      element: <LoginPage />,
+      id: 10,
     },
   ];
   return (

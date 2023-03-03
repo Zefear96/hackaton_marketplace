@@ -21,9 +21,14 @@ const AuthContextProvider = ({ children }) => {
     let formData = new FormData(); //create obj ot classa
     formData.append("username", username); //"username"- key, username-value
     formData.append("password", password);
+    formData.append("email", email);
 
     try {
-      const res = await axios.post(`${API}/register/`, formData, config);
+      const res = await axios.post(
+        `${API}/api/account/register/`,
+        formData,
+        config
+      );
       //formData-что отправить, config-сопроводительные доки
       console.log(res);
 
@@ -64,7 +69,7 @@ const AuthContextProvider = ({ children }) => {
   };
 
   const checkAuth = async () => {
-    console.log("WORKED");
+    //     console.log("WORKED");
     let token = JSON.parse(localStorage.getItem("token"));
 
     try {

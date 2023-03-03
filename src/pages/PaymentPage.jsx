@@ -10,6 +10,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { FormControl } from "@mui/material";
 
 const PaymentPage = () => {
   const { getCart, cart } = useCart();
@@ -50,9 +51,9 @@ const PaymentPage = () => {
           </h6>
           <hr />
         </div>
-
         <div className="Address">
           <h5>ADDRESS</h5>
+          
           <div className="user-data">
             <TextField
               id="filled-basic"
@@ -107,14 +108,9 @@ const PaymentPage = () => {
               />
             </Card>
           </div>
-
-          <div className="main_block">
-            <span>Your Details</span>
-            Residential Business First Name Last Name Address, City, State, ZIP
-            Your Email I agree to receive order updates. View Terms&Policy Your
-            Birth Date Month Year Date Send As Gift? (Free) Save
-          </div>
+          
         </div>
+      
         <Button variant="contained" onClick={() => addOrder(order)}>
           SAVE
         </Button>

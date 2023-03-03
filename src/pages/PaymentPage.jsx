@@ -84,7 +84,7 @@ const PaymentPage = () => {
               placeholder="Your email"
               variant="filled"
               onChange={handleInp}
-              name="firstName"
+              name="email"
             />
             <TextField
               id="filled-basic"

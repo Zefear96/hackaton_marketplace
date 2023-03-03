@@ -17,6 +17,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../contexts/CartContextProvider";
+import { useAuth } from '../../contexts/AuthContextProvider';
 
 const pages = [
   {
@@ -62,6 +63,14 @@ function ResponsiveAppBar() {
   // custom
   const navigate = useNavigate();
   const { cartLength } = useCart();
+  // const {checkAuth } = useAuth();
+
+  // React.useEffect( () => {
+  //   if (localStorage.getItem('token')) {
+  //     let user = localStorage.getItem('username')
+  //     checkAuth(user.username, user.password);
+  //   }
+  // }, []);
 
   return (
     <AppBar position="static">
@@ -182,7 +191,7 @@ function ResponsiveAppBar() {
             </IconButton>
             <Tooltip title="Account">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar src="..." />
+                <Avatar src="..."/>
               </IconButton>
             </Tooltip>
 

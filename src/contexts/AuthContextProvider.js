@@ -17,13 +17,14 @@ const AuthContextProvider = ({ children }) => {
     headers: { "Content-Type": "multipart/form-data" },
   };
 
-  const register = async (username, password) => {
+  const register = async (username, password, email) => {
     let formData = new FormData(); //create obj ot classa
     formData.append("username", username); //"username"- key, username-value
     formData.append("password", password);
+    formData.append("email", email);
 
     try {
-      const res = await axios.post(`${API}/register/`, formData, config);
+      const res = await axios.post(`${API}/api/account/register/`, formData, config);
       //formData-что отправить, config-сопроводительные доки
       console.log(res);
 
@@ -35,9 +36,9 @@ const AuthContextProvider = ({ children }) => {
     }
   };
 
-  const login = async (username, password) => {
+  const login = async (email, password, username) => {
     let formData = new FormData(); //create obj ot classa
-    formData.append("username", username); //"username"- key, username-value
+    formData.append("email", email);
     formData.append("password", password);
 
     try {
@@ -47,12 +48,13 @@ const AuthContextProvider = ({ children }) => {
 
       navigate("/");
       localStorage.setItem("token", JSON.stringify(res.data));
-      localStorage.setItem("username", username);
+      localStorage.setItem("username", {username, password});
+      
       setUser(username);
       setError("");
     } catch (error) {
       console.log(error);
-      setError("Wrong username or password!");
+      setError("Wrong email or password!");
     }
   };
 
@@ -63,17 +65,19 @@ const AuthContextProvider = ({ children }) => {
     navigate("/");
   };
 
-  const checkAuth = async () => {
+  const checkAuth = async (username, password) => {
     console.log("WORKED");
     let token = JSON.parse(localStorage.getItem("token"));
 
     try {
-      const Authorization = `Bearer ${token.access}`;
+    //   const Authorization = `Bearer ${token.access}`;
 
       let res = await axios.post(
         `${API}api/token/refresh/`,
-        { refresh: token.refresh },
-        { headers: { Authorization } }
+        { refresh: token.refresh,
+            username: username,
+            password: password }
+        // { headers: { Authorization } }
       );
 
       console.log(res); // получаем новый аксес токен

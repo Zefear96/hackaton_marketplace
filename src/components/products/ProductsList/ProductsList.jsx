@@ -28,7 +28,7 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
   }
 
   return (
-    <div>
+    <div className="products-list">
       <button onClick={changeSideBarStatus}>Filter&Search Menu</button>
       <div className="container-prods">
         {products ? (

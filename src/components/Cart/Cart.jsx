@@ -9,6 +9,7 @@ import Paper from "@mui/material/Paper";
 import { Button, TextField, Typography } from "@mui/material";
 
 import { useCart } from "../../contexts/CartContextProvider";
+import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
   const { getCart, cart, changeProductCount, deleteProductFromCart } =
@@ -22,6 +23,8 @@ export default function Cart() {
     localStorage.removeItem("cart");
     getCart();
   }
+
+  const navigate = useNavigate();
 
   return (
     <TableContainer component={Paper}>
@@ -70,7 +73,13 @@ export default function Cart() {
       </Table>
       <Typography variant="h6" component="div">
         Total Price: {cart?.totalPrice}
-        <Button variant="outlined" onClick={cartCleaner}>
+        <Button
+          variant="outlined"
+          onClick={() => {
+            cartCleaner();
+            navigate("/payment");
+          }}
+        >
           Buy Now
         </Button>
       </Typography>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext); //custom hook
 
-const API = "https://register6.p.rapidapi.com/www.hacker.com";
+const API = "https://abdulkosim1.pythonanywhere.com";
 
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");
@@ -17,17 +17,21 @@ const AuthContextProvider = ({ children }) => {
     headers: { "Content-Type": "multipart/form-data" },
   };
 
-  const register = async (username, password, email) => {
-    let formData = new FormData(); //create obj ot classa
-    formData.append("username", username); //"username"- key, username-value
-    formData.append("password", password);
-    formData.append("email", email);
-
+  const register = async (email, password, password2) => {
+    // let formData = new FormData(); //create obj ot classa
+    // formData.append("email", email);
+    // formData.append("password", password);
+    // formData.append("password2", password2);
+    let obj = {
+      email,
+      password,
+      password2
+    }
+    
     try {
       const res = await axios.post(
         `${API}/api/account/register/`,
-        formData,
-        config
+        obj
       );
 
       //formData-что отправить, config-сопроводительные доки

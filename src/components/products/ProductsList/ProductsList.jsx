@@ -28,7 +28,7 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
   }
 
   return (
-    <div>
+    <div className="products-list">
       <button onClick={changeSideBarStatus}>Filter&Search Menu</button>
       <div className="container-prods">
         {products ? (
@@ -36,14 +36,14 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
         ) : (
           <h3>Loading...</h3>
         )}
-        <Pagination
-          count={count}
-          page={page}
-          onChange={handlePage}
-          id="pagination"
-          color="warning"
-        />
       </div>
+      <Pagination
+        count={count}
+        page={page}
+        onChange={handlePage}
+        id="pagination"
+        color="warning"
+      />
     </div>
   );
 };

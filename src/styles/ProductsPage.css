@@ -1,3 +1,5 @@
 .productsPage {
-       display: flex;
+       /* display: flex;
+       flex-direction: column;
+       justify-content: start; */
 }

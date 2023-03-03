@@ -7,12 +7,13 @@ export const useOrder = () => useContext(orderContext);
 const JSON_API_ORDERLIST = "http://localhost:8000/orderlist";
 
 const OrderContextProvider = ({ children }) => {
+  
   const addOrder = async (newOrder) => {
     await axios.post(JSON_API_ORDERLIST, newOrder);
   };
 
   return (
-    <orderContext.Provider value={addOrder}>{children}</orderContext.Provider>
+    <orderContext.Provider value={{addOrder}}>{children}</orderContext.Provider>
   );
 };
 

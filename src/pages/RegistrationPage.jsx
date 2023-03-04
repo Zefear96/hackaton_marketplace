@@ -11,6 +11,7 @@ const RegistrationPage = () => {
     passConf: "",
   };
 
+
   const [user, setUser] = useState(USER_STATE);
 
   const handleInp = (e) => {
@@ -41,6 +42,7 @@ const RegistrationPage = () => {
         placeholder="email"
         onChange={handleInp}
         name="email"
+
       />
       <input
         type="text"
@@ -55,6 +57,7 @@ const RegistrationPage = () => {
         name="passConf"
       />
       <button onClick={() => register(userObj)}>Register</button>
+
     </div>
   );
 };

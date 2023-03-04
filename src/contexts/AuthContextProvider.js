@@ -5,112 +5,69 @@ import { useNavigate } from "react-router-dom";
 export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext); //custom hook
 
-const API = "https://abdulkosim1.pythonanywhere.com";
+const API = "http://localhost:8000/users";
 
 const AuthContextProvider = ({ children }) => {
+
   const [user, setUser] = useState("");
-  const [error, setError] = useState("");
+  const [users, setUsers] = useState([]);
 
   const navigate = useNavigate();
 
-  const config = {
-    headers: { "Content-Type": "multipart/form-data" },
+  const getUsers = async() => {
+    const {data} = await axios(API);
+    console.log(data);
+    setUsers(data)
   };
 
-  const register = async (username, password, email) => {
-    let formData = new FormData(); //create obj ot classa
-    formData.append("username", username); //"username"- key, username-value
-    formData.append("password", password);
-    formData.append("email", email);
-
-    try {
-      const res = await axios.post(
-        `${API}/api/account/register/`,
-        formData,
-        config
-      );
-
-      //formData-что отправить, config-сопроводительные доки
-      console.log(res);
-
-      setError("");
-      navigate("/login");
-    } catch (error) {
-      console.log(error);
-      setError("Error occured!");
-    }
+  const checkUniqueUser = (username) => {
+    return users.some((item) => item.username === username);
   };
 
-  const login = async (email, password, username) => {
-    let formData = new FormData(); //create obj ot classa
-    formData.append("email", email);
-    formData.append("password", password);
+  const register = async (userObj) => {
 
-    try {
-      const res = await axios.post(`${API}api/token/`, formData, config);
-      //formData-что отправить, config-сопроводительные доки
-      console.log(res.data);
+    const res = await axios.post(API, userObj);
+    console.log(res);
+    navigate("/login");
+
+  };
+
+  const login = (username) => {
 
       navigate("/");
-      localStorage.setItem("token", JSON.stringify(res.data));
-      localStorage.setItem("username", { username, password });
+      localStorage.setItem("username", username);
 
       setUser(username);
-      setError("");
-    } catch (error) {
-      console.log(error);
-      setError("Wrong email or password!");
-    }
   };
+
+  const checkUserInUsers = (username) => {
+      return users.some(item => item.username === username)
+  };
+
+  const checkUserPassword = (user, password) => {
+    return user.password === password
+  }
 
   const logout = () => {
-    localStorage.removeItem("token");
     localStorage.removeItem("username");
+
     setUser("");
     navigate("/");
-  };
-
-  const checkAuth = async (username, password) => {
-    console.log("WORKED");
-    let token = JSON.parse(localStorage.getItem("token"));
-
-    try {
-      //   const Authorization = `Bearer ${token.access}`;
-
-      let res = await axios.post(
-        `${API}api/token/refresh/`,
-        { refresh: token.refresh, username: username, password: password }
-        // { headers: { Authorization } }
-      );
-
-      console.log(res); // получаем новый аксес токен
-
-      localStorage.setItem(
-        "token",
-        JSON.stringify({
-          refresh: token.refresh,
-          access: res.data.access,
-        })
-      ); // обновляем рефреш токен по аксес токену
-
-      let username = localStorage.getItem("username");
-      setUser(username); // чтобы при обновлении страницы не сбрасывалось состояние на ''
-    } catch (e) {
-      console.log(e);
-      logout();
-    }
   };
 
   return (
     <authContext.Provider
       value={{
         user,
-        error,
+        users,
 
+        getUsers, 
         register,
+        checkUniqueUser,
         login,
         logout,
-        checkAuth,
+        checkUserInUsers,
+        checkUserPassword
       }}
     >
       {children}

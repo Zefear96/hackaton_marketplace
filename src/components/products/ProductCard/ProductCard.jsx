@@ -13,10 +13,12 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useCart } from "../../../contexts/CartContextProvider";
+// import { useFavorites } from '../../../contexts/FavoritesContextProvider';
 import "../../../styles/ProductCard.css";
 
 const ProductCard = ({ item }) => {
@@ -25,6 +27,7 @@ const ProductCard = ({ item }) => {
   const { deleteProduct } = useProducts();
 
   const { addProductToCart, checkProductInCart } = useCart();
+  // const { addProductToFav, checkProductInFav } = useFavorites();
 
   return (
     <Card className="card-prod">
@@ -97,6 +100,13 @@ const ProductCard = ({ item }) => {
               color={checkProductInCart(item.id) ? "success" : ""}
             />
           </IconButton>
+          {/* <IconButton size="small" onClick={() => addProductToFav(item)}>
+            <FavoriteBorderIcon
+              color={checkProductInFav(item.id) ? "success" : ""}
+            />
+          </IconButton> */}
+
+
         </CardActions>
       </div>
     </Card>

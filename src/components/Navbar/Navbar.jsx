@@ -173,7 +173,7 @@ function ResponsiveAppBar() {
             <IconButton
               size="medium"
               color="inherit"
-              // onClick={() => navigate("/cart")}
+              onClick={() => navigate("/favorites")}
             >
               <Badge color="error" badgeContent={cartLength}>
                 <FavoriteBorderIcon />

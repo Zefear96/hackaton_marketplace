@@ -8,6 +8,15 @@
       "favorites": [],
       "saved": [],
       "id": 1
+    },
+    {
+      "username": "jika",
+      "email": "jika",
+      "password": "jika",
+      "passConf": "jika",
+      "favorites": [],
+      "saved": [],
+      "id": 2
     }
   ],
   "orderlist": [],

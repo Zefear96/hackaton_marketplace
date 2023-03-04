@@ -103,7 +103,7 @@ const ProductCard = ({ item }) => {
 
           <IconButton size="small" onClick={() => addProductToFav(item)}>
             <FavoriteBorderIcon
-              color={checkProductInFav(item.id) ? "success" : ""}
+              // color={checkProductInFav(item.id) ? "success" : ""}
             />
           </IconButton>
 

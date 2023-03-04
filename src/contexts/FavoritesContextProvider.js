@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, {createContext, useContext, useState} from 'react';
+import React, {createContext, useContext, useEffect, useState} from 'react';
 import { useAuth } from './AuthContextProvider';
 
 export const favoritesContext = createContext();
@@ -9,27 +9,34 @@ const API = 'http://localhost:8000/users';
 
 const FavoritesContextProvider = ({children}) => {
 
-    const {checkUserInUsers} = useAuth();
+    const {checkUserInUsers, getUsers} = useAuth();
     const [favorites, setFavorites] = useState(null); //??
-    const [user, setUser] = useState('')
+    const [user, setUser] = useState({})
 
     //useEffect при загрузке страницы нужен будет
 
+    useEffect(() => {
+        getUsers()
+    }, [])
+
     const getFavorites = () => {
+  
         let username = JSON.parse(localStorage.getItem('username'));
-        let userObj = checkUserInUsers(username) //вернет объект юзера
-        setUser(userObj)
-
-        setFavorites(user.favorites);
-
-        // if(favorites === '') { //?
-
-        // } //не нужно кажется
+        let userObj = checkUserInUsers(username); //вернет объект юзера
+        console.log(userObj);
+        setUser(userObj);
+    
+        setFavorites(userObj.favorites);
+        console.log(userObj.favorites);
+    
+        return userObj.favorites
 
     };
 
     const addProductToFav = async(product) => {
+       
         let favorites = getFavorites();
+        console.log(user);
 
         let favProdToFind = favorites.find(item => item.id === product.id)
 
@@ -39,7 +46,7 @@ const FavoritesContextProvider = ({children}) => {
             favorites.push(product)
         };
 
-        await axios.patch(`${API}/${user.id}`, favorites);
+        await axios.post(`${API}/${user.id}`, favorites);
 
         getFavorites();
 
@@ -48,7 +55,7 @@ const FavoritesContextProvider = ({children}) => {
     const deleteProdFromFav = async (id) => {
         let favorites = getFavorites();
         favorites = favorites.filter(item => item.id !== id);
-        await axios.patch(`${API}/${id}`, favorites)
+        await axios.post(`${API}/${id}`, favorites)
     };
 
     const checkProductInFav = async(id) => {
@@ -65,7 +72,7 @@ const FavoritesContextProvider = ({children}) => {
 
     const favCleaner = async (id) => {
         setFavorites('');
-        await axios.patch(`${API}/${id}`, favorites)
+        await axios.post(`${API}/${id}`, favorites)
     };
 
     const values={

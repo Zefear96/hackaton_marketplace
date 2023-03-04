@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { useCart } from "../contexts/CartContextProvider";
 import { useOrder } from "../contexts/OrderContextProvider";
+import { useNavigate } from "react-router-dom";
+import "../styles/PaymentPage.css";
 
-import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import Collapse from "@mui/material/Collapse";
 
 const PaymentPage = () => {
   const { getCart, cart } = useCart();
   const { addOrder } = useOrder();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getCart();
@@ -36,6 +36,10 @@ const PaymentPage = () => {
     };
     setOrder(obj);
   };
+
+  const [open, setOpen] = useState(false);
+
+  <></>;
 
   return (
     <>
@@ -109,11 +113,43 @@ const PaymentPage = () => {
           </div>
           
         </div>
-      
-        <Button variant="contained" onClick={() => addOrder(order)}>
+        <Button
+          variant="contained"
+          disabled={open}
+          onClick={() => {
+            addOrder(order);
+            setOpen(true);
+            setTimeout(() => navigate("/"), 4000);
+          }}
+        >
           SAVE
         </Button>
       </div>
+
+      <Collapse in={open}>
+        <div
+          className="card"
+          style={{
+            borderRadius: "200px",
+            background: "#F8FAF5",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            width: "50%",
+            height: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          <div>
+            <i className="checkmark">✓</i>
+          </div>
+          <h1>Success</h1>
+          <p>
+            We received your purchase request;
+            <br /> we'll be in touch shortly!
+          </p>
+        </div>
+      </Collapse>
     </>
   );
 };

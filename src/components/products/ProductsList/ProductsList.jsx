@@ -29,7 +29,7 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
 
   return (
     <div className="products-list">
-      <button onClick={changeSideBarStatus}>Filter&Search Menu</button>
+      {/* <button onClick={changeSideBarStatus}>Filter&Search Menu</button> */}
       <div className="container-prods">
         {products ? (
           currentData().map((item) => <ProductCard key={item.id} item={item} />)

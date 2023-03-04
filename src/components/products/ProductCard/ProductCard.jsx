@@ -97,6 +97,15 @@ const ProductCard = ({ item }) => {
               color={checkProductInCart(item.id) ? "success" : ""}
             />
           </IconButton>
+
+          <Button
+            variant="outlined"
+            className="btns-prod"
+            id="btn-prod-comm"
+            // onClick={() => deleteProduct(item.id)}
+          >
+            Show Comments
+          </Button>
         </CardActions>
       </div>
     </Card>

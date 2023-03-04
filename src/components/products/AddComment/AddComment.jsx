@@ -16,7 +16,8 @@ const AddComment = () => {
   const { addComments, productDetails } = useProducts();
 
   const [product, setProduct] = useState(productDetails);
-  const [user, setUser] = useState();
+  const [user, setUser] = useState('');
+  const [comment, setComment] = useState('');
 
   const username = localStorage.getItem("username");
   // console.log(username);
@@ -27,28 +28,14 @@ const AddComment = () => {
 
   const { id } = useParams();
 
-  const handleInp = (e) => {
-    // let objComment = {
-    //   ...productDetails,
-    //   comments: [
-    //     {
-    //       author: user,
-    //       descr: e.target.value,
-    //     },
-    //   ],
-    // };
+  function saveComment () {
+    if(comment.descr === undefined || comment.descr === '') {
+      alert('Your input is empty');
+      return
+    };
 
-    // let objComment = {
-    //   ...productDetails,
-    // };
-    productDetails.comments.push({
-      author: user,
-      descr: e.target.value,
-    });
-
-    // console.log(objComment);
-
-    setProduct(productDetails);
+    addComments(comment, id, product);
+    setComment({descr: ''});
   };
 
   // MUI
@@ -76,17 +63,18 @@ const AddComment = () => {
             label="Comments..."
             variant="filled"
             name="comments"
-            onChange={handleInp}
+            onChange={(e) => setComment({author: user, descr: e.target.value})}
+            value={comment.descr}
           />
 
-          <Button onClick={() => addComments(product, id)} variant="contained">
+          <Button onClick={saveComment} variant="contained">
             Save
           </Button>
 
           <Typography>
             {productDetails.comments
               ? productDetails.comments.map((item) => (
-                  <div style={{ borderBottom: "1px solid" }}>
+                  <div style={{ borderBottom: "1px solid" }} key={item.id}>
                     <h3>{item.author}</h3>
                     <p>{item.descr}</p>
                   </div>

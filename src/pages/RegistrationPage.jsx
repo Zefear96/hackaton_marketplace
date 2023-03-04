@@ -11,6 +11,8 @@ const RegistrationPage = () => {
     email: "",
     password: "",
     passConf: "",
+    favorites: [],
+    saved: []
   };
 
   useEffect(() => {

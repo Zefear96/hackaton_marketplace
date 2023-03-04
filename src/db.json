@@ -5,14 +5,9 @@
       "email": "aaa",
       "password": "aaa",
       "passConf": "aaa",
+      "favorites": [],
+      "saved": [],
       "id": 1
-    },
-    {
-      "username": "qqq",
-      "email": "aaa",
-      "password": "aa",
-      "passConf": "aa",
-      "id": 2
     }
   ],
   "orderlist": [],

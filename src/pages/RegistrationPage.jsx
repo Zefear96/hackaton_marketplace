@@ -20,22 +20,26 @@ const RegistrationPage = () => {
   const [user, setUser] = useState(USER_STATE);
 
   const handleInp = (e) => {
+    let userObj = {
+      ...user,
+      [e.target.name]: e.target.value,
+    };
+    setUser(userObj);
+  };
+
+  function checkData(user) {
     if (checkUniqueUser(user.username)) {
       alert("User already exists!");
       return;
     }
 
-    if (e.target.password !== e.target.passConf) {
+    if (user.password !== user.passConf) {
       alert("Passwords don't match!");
       return;
-    } else {
-      let userObj = {
-        ...user,
-        [e.target.name]: e.target.value,
-      };
-      setUser(userObj);
     }
-  };
+
+    register(user);
+  }
 
   const navigate = useNavigate();
 
@@ -65,7 +69,7 @@ const RegistrationPage = () => {
         onChange={handleInp}
         name="passConf"
       />
-      <button onClick={() => register(user)}>Register</button>
+      <button onClick={() => checkData(user)}>Register</button>
     </div>
   );
 };

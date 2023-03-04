@@ -18,7 +18,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useCart } from "../../../contexts/CartContextProvider";
-// import { useFavorites } from '../../../contexts/FavoritesContextProvider';
+import { useFavorites } from '../../../contexts/FavoritesContextProvider';
 import "../../../styles/ProductCard.css";
 
 const ProductCard = ({ item }) => {
@@ -27,7 +27,7 @@ const ProductCard = ({ item }) => {
   const { deleteProduct } = useProducts();
 
   const { addProductToCart, checkProductInCart } = useCart();
-  // const { addProductToFav, checkProductInFav } = useFavorites();
+  const { addProductToFav, checkProductInFav } = useFavorites();
 
   return (
     <Card className="card-prod">
@@ -101,11 +101,11 @@ const ProductCard = ({ item }) => {
             />
           </IconButton>
 
-          {/* <IconButton size="small" onClick={() => addProductToFav(item)}>
+          <IconButton size="small" onClick={() => addProductToFav(item)}>
             <FavoriteBorderIcon
               color={checkProductInFav(item.id) ? "success" : ""}
             />
-          </IconButton> */}
+          </IconButton>
 
           <Button
             variant="outlined"

@@ -1,17 +1,35 @@
-import React from "react";
-import axios from "axios";
+import axios from 'axios';
+import React, {createContext, useContext, useEffect, useState} from 'react';
+import { useAuth } from '../contexts/AuthContextProvider';
 
 const HomePage = () => {
-  const API = 'https://abdulkosim1.pythonanywhere.com/api/music/songs/';
 
-  async function getData () {
-    let res = await axios(API);
-    console.log(res);
-    console.log(res.data.results);
+  const {checkUserInUsers, getUsers} = useAuth();
+  const [favorites, setFavorites] = useState(null); //??
+  const [user, setUser] = useState('')
+
+  //useEffect при загрузке страницы нужен будет
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  const getFavorites = () => {
+
+    let username = JSON.parse(localStorage.getItem('username'));
+    let userObj = checkUserInUsers(username); //вернет объект юзера
+    console.log(userObj);
+    setUser(userObj);
+
+    setFavorites(userObj.favorites);
+    console.log(userObj.favorites);
+
+    return userObj.favorites
+
   };
 
   return <div>HomePage
-    <button onClick={getData}>test get request</button>
+    <button onClick={getFavorites}>test </button>
   </div>;
 };
 

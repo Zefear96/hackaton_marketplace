@@ -10,16 +10,19 @@ import FavoritesContextProvider from "./contexts/FavoritesContextProvider";
 const App = () => {
   return (
     <AuthContextProvider>
+                <ProductContextProvider>
+
     <FavoritesContextProvider>
     <OrderContextProvider>
         <CartContextProvider>
-          <ProductContextProvider>
             <Navbar />
             <MainRoutes />
-          </ProductContextProvider>
+          
         </CartContextProvider>
     </OrderContextProvider>
+
     </FavoritesContextProvider>
+    </ProductContextProvider>
     </AuthContextProvider>
   );
 };

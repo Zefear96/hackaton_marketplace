@@ -32,7 +32,7 @@ const AuthContextProvider = ({ children }) => {
 
   const login = (username) => {
     navigate("/");
-    localStorage.setItem("username", username);
+    localStorage.setItem("username", JSON.stringify(username));
 
     setUser(username);
   };

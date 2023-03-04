@@ -1,5 +1,13 @@
 {
-  "users": [],
+  "users": [
+    {
+      "username": "aaa",
+      "email": "aaa",
+      "password": "aaa",
+      "passConf": "aaa",
+      "id": 1
+    }
+  ],
   "orderlist": [],
   "products": [
     {

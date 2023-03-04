@@ -1,35 +1,69 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import { useAuth } from '../contexts/AuthContextProvider'; //свой путь
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
 
 const LoginPage = () => {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const { checkUserInUsers, checkUserPassword, login, users, getUsers } =
+    useAuth();
 
-  const { login, error } = useAuth(); //вытаскивает контекст
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  const [user, setUser] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+
+  const handleInp = (e) => {
+    let obj = {
+      ...user,
+      [e.target.name]: e.target.value,
+    };
+    setUser(obj);
+  };
+
+  function authorization(user) {
+    let userObj = checkUserInUsers(user.username);
+    console.log(userObj);
+    console.log(user);
+
+    if (!userObj) {
+      alert("User Not Found!");
+      return;
+    }
+
+    if (!checkUserPassword(userObj, user.password)) {
+      alert("Passwords don't match");
+      return;
+    }
+
+    login(userObj.username);
+  }
 
   return (
     <div>
-      {error ? <h3>{error}</h3> : ""}
-
       <input
         type="text"
         placeholder="username"
-        onChange={(e) => setUsername(e.target.value)}
+        onChange={handleInp}
+        name="username"
       />
       <input
         type="text"
         placeholder="email"
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={handleInp}
+        name="email"
       />
       <input
         type="text"
         placeholder="password"
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={handleInp}
+        name="password"
       />
-      <button onClick={() => login(email, password, username)}>Login</button>
+      <button onClick={() => authorization(user)}>Login</button>
     </div>
   );
 };

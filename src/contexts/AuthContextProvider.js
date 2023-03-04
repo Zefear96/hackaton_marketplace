@@ -8,16 +8,16 @@ export const useAuth = () => useContext(authContext); //custom hook
 const API = "http://localhost:8000/users";
 
 const AuthContextProvider = ({ children }) => {
-
   const [user, setUser] = useState("");
   const [users, setUsers] = useState([]);
 
   const navigate = useNavigate();
 
-  const getUsers = async() => {
-    const {data} = await axios(API);
-    console.log(data);
-    setUsers(data)
+  const getUsers = async () => {
+    const res = await axios(API);
+    console.log(res);
+    setUsers(res.data);
+    console.log(res.data);
   };
 
   const checkUniqueUser = (username) => {
@@ -25,28 +25,26 @@ const AuthContextProvider = ({ children }) => {
   };
 
   const register = async (userObj) => {
-
     const res = await axios.post(API, userObj);
     console.log(res);
     navigate("/login");
-
   };
 
   const login = (username) => {
+    navigate("/");
+    localStorage.setItem("username", username);
 
-      navigate("/");
-      localStorage.setItem("username", username);
-
-      setUser(username);
+    setUser(username);
   };
 
   const checkUserInUsers = (username) => {
-      return users.some(item => item.username === username)
+    let userObj = users.find((item) => item.username === username);
+    return userObj;
   };
 
   const checkUserPassword = (user, password) => {
-    return user.password === password
-  }
+    return user.password === password;
+  };
 
   const logout = () => {
     localStorage.removeItem("username");
@@ -61,13 +59,13 @@ const AuthContextProvider = ({ children }) => {
         user,
         users,
 
-        getUsers, 
+        getUsers,
         register,
         checkUniqueUser,
         login,
         logout,
         checkUserInUsers,
-        checkUserPassword
+        checkUserPassword,
       }}
     >
       {children}

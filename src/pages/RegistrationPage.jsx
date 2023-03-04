@@ -1,39 +1,71 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import { useAuth } from '../contexts/AuthContextProvider'; //свой путь
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
 
 const RegistrationPage = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [password2, setPassword2] = useState("");
+  const { users, checkUniqueUser, getUsers, register } = useAuth();
 
-  const { register, error } = useAuth(); //вытаскивает контекст
+  const USER_STATE = {
+    username: "",
+    email: "",
+    password: "",
+    passConf: "",
+  };
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  const [user, setUser] = useState(USER_STATE);
+
+  const handleInp = (e) => {
+    if (checkUniqueUser(user.username)) {
+      alert("User already exists!");
+      return;
+    }
+
+    if (e.target.password !== e.target.passConf) {
+      alert("Passwords don't match!");
+      return;
+    } else {
+      let userObj = {
+        ...user,
+        [e.target.name]: e.target.value,
+      };
+      setUser(userObj);
+    }
+  };
 
   const navigate = useNavigate();
 
   return (
     <div>
-      {error ? <h3>{error}</h3> : ""}
-
+      <input
+        type="text"
+        placeholder="username"
+        onChange={handleInp}
+        name="username"
+      />
       <input
         type="text"
         placeholder="email"
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={handleInp}
+        name="email"
       />
       <input
         type="text"
         placeholder="password"
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={handleInp}
+        name="password"
       />
       <input
         type="text"
         placeholder="confirm password"
-        onChange={(e) => setPassword2(e.target.value)}
+        onChange={handleInp}
+        name="passConf"
       />
-      <button onClick={() => register(email, password, password2)}>
-        Register
-      </button>
+      <button onClick={() => register(user)}>Register</button>
     </div>
   );
 };

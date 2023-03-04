@@ -1,18 +1,18 @@
 import React, {useEffect} from 'react';
-// import { useFavorites } from '../../contexts/FavoritesContextProvider';
+import { useFavorites } from '../../contexts/FavoritesContextProvider';
 
 const Favorites = () => {
-    // const {getFavorites, deleteProdFromFav, favCleaner} = useFavorites();
+    const {getFavorites, deleteProdFromFav, favCleaner} = useFavorites();
 
-    // useEffect(() => {
-    //     getFavorites()
-    // }, []);
+    useEffect(() => {
+        getFavorites()
+    }, []);
 
-    // const [favorites, setFavorites] = getFavorites()
+    const [favorites, setFavorites] = getFavorites()
 
   return (
     <div>Favorites
-        {/* {favorites !== ''?.map(item => (
+        {favorites !== ''?.map(item => (
             <div key={item.id}>
             <p>{item.name}</p>
             <p>{item.price}</p>
@@ -20,7 +20,7 @@ const Favorites = () => {
             <button onClick={() => deleteProdFromFav(item.id)}></button>
             </div>
             ))}
-            <button onClick={favCleaner}></button> */}
+            <button onClick={favCleaner}></button>
     </div>
   )
 }

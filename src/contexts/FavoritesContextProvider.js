@@ -5,7 +5,7 @@ import { useAuth } from './AuthContextProvider';
 export const favoritesContext = createContext();
 export const useFavorites = () => useContext(favoritesContext);
 
-const USERS_API = 'http://localhost:8000/users';
+const API = 'http://localhost:8000/users';
 
 const FavoritesContextProvider = ({children}) => {
 
@@ -39,7 +39,7 @@ const FavoritesContextProvider = ({children}) => {
             favorites.push(product)
         };
 
-        // await axios.post(`${API}/${user.id}`, favorites);
+        await axios.patch(`${API}/${user.id}`, favorites);
 
         getFavorites();
 
@@ -48,7 +48,7 @@ const FavoritesContextProvider = ({children}) => {
     const deleteProdFromFav = async (id) => {
         let favorites = getFavorites();
         favorites = favorites.filter(item => item.id !== id);
-        // await axios.post(`${API}/${id}`, favorites)
+        await axios.patch(`${API}/${id}`, favorites)
     };
 
     const checkProductInFav = async(id) => {
@@ -56,12 +56,16 @@ const FavoritesContextProvider = ({children}) => {
 
         let favObj = favorites.find(item => item.id === id);
 
-        // favObj ?  return true : return false
+        if(favObj) {
+            return true
+        } else {
+            return false
+        }
     };
 
     const favCleaner = async (id) => {
         setFavorites('');
-        // await axios.post(`${API}/${id}`, favorites)
+        await axios.patch(`${API}/${id}`, favorites)
     };
 
     const values={

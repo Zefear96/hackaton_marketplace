@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext); //custom hook
 
+const API = "http://localhost:8000/users";
+
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");
   const [users, setUsers] = useState([]);
@@ -12,9 +14,10 @@ const AuthContextProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const getUsers = async () => {
-    const { data } = await axios(API);
-    console.log(data);
-    setUsers(data);
+    const res = await axios(API);
+    console.log(res);
+    setUsers(res.data);
+    console.log(res.data);
   };
 
   const checkUniqueUser = (username) => {
@@ -35,7 +38,8 @@ const AuthContextProvider = ({ children }) => {
   };
 
   const checkUserInUsers = (username) => {
-    return users.some((item) => item.username === username);
+    let userObj = users.find((item) => item.username === username);
+    return userObj;
   };
 
   const checkUserPassword = (user, password) => {

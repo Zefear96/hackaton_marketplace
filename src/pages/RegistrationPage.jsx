@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import { useAuth } from '../contexts/AuthContextProvider'; //свой путь
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
 
 const RegistrationPage = () => {
+  const { users, checkUniqueUser, getUsers, register } = useAuth();
+
   const USER_STATE = {
     username: "",
     email: "",
@@ -11,9 +13,18 @@ const RegistrationPage = () => {
     passConf: "",
   };
 
+  useEffect(() => {
+    getUsers();
+  }, []);
+
   const [user, setUser] = useState(USER_STATE);
 
   const handleInp = (e) => {
+    if (checkUniqueUser(user.username)) {
+      alert("User already exists!");
+      return;
+    }
+
     if (e.target.password !== e.target.passConf) {
       alert("Passwords don't match!");
       return;
@@ -54,7 +65,7 @@ const RegistrationPage = () => {
         onChange={handleInp}
         name="passConf"
       />
-      <button onClick={() => register(userObj)}>Register</button>
+      <button onClick={() => register(user)}>Register</button>
     </div>
   );
 };

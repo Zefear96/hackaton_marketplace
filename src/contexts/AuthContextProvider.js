@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext); //custom hook
 
-const API = "https://register6.p.rapidapi.com/www.hacker.com";
+const API = "https://abdulkosim1.pythonanywhere.com";
 
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");

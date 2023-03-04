@@ -8,12 +8,8 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { login, error } = useAuth(); //вытаскивает контекст
-
   return (
     <div>
-      {error ? <h3>{error}</h3> : ""}
-
       <input
         type="text"
         placeholder="username"

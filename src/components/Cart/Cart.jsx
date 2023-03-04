@@ -33,7 +33,7 @@ export default function Cart() {
           <TableRow>
             <TableCell>Picture</TableCell>
             <TableCell align="center">Name</TableCell>
-            <TableCell align="center">Type</TableCell>
+            <TableCell align="center">Category</TableCell>
             <TableCell align="center">Price</TableCell>
             <TableCell align="center">Count</TableCell>
             <TableCell align="center">SubPrice</TableCell>
@@ -50,7 +50,7 @@ export default function Cart() {
                 <img src={row.item.image} alt="error:(" width="50" />
               </TableCell>
               <TableCell align="center">{row.item.name}</TableCell>
-              <TableCell align="center">{row.item.type}</TableCell>
+              <TableCell align="center">{row.item.category}</TableCell>
               <TableCell align="center">{row.item.price}</TableCell>
               <TableCell align="center">
                 <TextField

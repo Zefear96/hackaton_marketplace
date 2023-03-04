@@ -4,36 +4,57 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
 
 const RegistrationPage = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
+  const USER_STATE = {
+    username: "",
+    email: "",
+    password: "",
+    passConf: "",
+  };
 
-  const { register, error } = useAuth(); //вытаскивает контекст
+  const [user, setUser] = useState(USER_STATE);
+
+  const handleInp = (e) => {
+    if (e.target.password !== e.target.passConf) {
+      alert("Passwords don't match!");
+      return;
+    } else {
+      let userObj = {
+        ...user,
+        [e.target.name]: e.target.value,
+      };
+      setUser(userObj);
+    }
+  };
 
   const navigate = useNavigate();
 
   return (
     <div>
-      {error ? <h3>{error}</h3> : ""}
-
       <input
         type="text"
         placeholder="username"
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="password"
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={handleInp}
+        name="username"
       />
       <input
         type="text"
         placeholder="email"
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={handleInp}
+        name="email"
       />
-      <button onClick={() => register(username, password, email)}>
-        Register
-      </button>
+      <input
+        type="text"
+        placeholder="password"
+        onChange={handleInp}
+        name="password"
+      />
+      <input
+        type="text"
+        placeholder="confirm password"
+        onChange={handleInp}
+        name="passConf"
+      />
+      <button onClick={() => register(userObj)}>Register</button>
     </div>
   );
 };

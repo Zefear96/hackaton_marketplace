@@ -33,7 +33,7 @@ const ProductContextProvider = ({ children }) => {
       `${JSON_API_PRODUCTS}/${window.location.search}`
     );
 
-    console.log(data);
+    // console.log(data);
     dispatch({
       type: ACTIONS.GET_PRODUCTS,
       payload: data,
@@ -91,6 +91,13 @@ const ProductContextProvider = ({ children }) => {
     navigate(url);
   };
 
+  // FUNCTION ADD COMMENTS
+  const addComments = async (newComment, id) => {
+    await axios.patch(`${JSON_API_PRODUCTS}/${id}`, newComment);
+    console.log(newComment);
+    getProducts();
+  };
+
   // const VALUES
   const values = {
     products: state.products,
@@ -102,6 +109,7 @@ const ProductContextProvider = ({ children }) => {
     deleteProduct,
     saveEditedProduct,
     fetchByParams,
+    addComments,
   };
 
   return (

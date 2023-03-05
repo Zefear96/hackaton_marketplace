@@ -28,7 +28,7 @@ const FavoritesContextProvider = ({children}) => {
         let username = JSON.parse(localStorage.getItem('username'));
         let userObj = data.find((item) => item.username === username);
 
-        setFavorites(userObj.favorites)
+        setFavorites(userObj.favorites);
 
     };
 

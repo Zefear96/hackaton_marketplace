@@ -7,6 +7,22 @@
       "passConf": "aaa",
       "favorites": [
         {
+          "id": 1,
+          "name": "Whiskey Jack Daniel's Old No. 7",
+          "category": "Whiskey",
+          "price": 2200,
+          "volume": 0.7,
+          "alcohol_percentage": 40,
+          "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
+          "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
+          "comments": [
+            {
+              "author": "aaa",
+              "descr": "ss"
+            }
+          ]
+        },
+        {
           "id": 2,
           "name": "Vodka Beluga Noble Russian",
           "category": "Vodka",

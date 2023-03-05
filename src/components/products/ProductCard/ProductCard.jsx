@@ -28,7 +28,7 @@ const ProductCard = ({ item }) => {
   const { deleteProduct } = useProducts();
 
   const { addProductToCart, checkProductInCart } = useCart();
-  const { addProductToFav, checkProductInFav, getFavUser, favUser } = useFavorites();
+  const { addProductToFav, checkProductInFav, getFavUser, favUser, getFavorites } = useFavorites();
   
   // const [userObj, setUserObj] = useState(favUser);
 
@@ -36,9 +36,9 @@ const ProductCard = ({ item }) => {
     getFavUser()
   }, []);
 
-  // useEffect(() => {
-  //   setUserObj(favUser)
-  // }, []);
+  useEffect(() => {
+    getFavorites()
+  }, []);
 
   return (
     <Card className="card-prod">

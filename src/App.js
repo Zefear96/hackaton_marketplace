@@ -1,6 +1,7 @@
 import React from "react";
 import MainRoutes from "./MainRoutes";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from './components/Footer/Footer';
 import ProductContextProvider from "./contexts/ProductContextProvider";
 import CartContextProvider from "./contexts/CartContextProvider";
 import AuthContextProvider from "./contexts/AuthContextProvider";
@@ -10,19 +11,17 @@ import FavoritesContextProvider from "./contexts/FavoritesContextProvider";
 const App = () => {
   return (
     <AuthContextProvider>
-                <ProductContextProvider>
-
-    <FavoritesContextProvider>
-    <OrderContextProvider>
-        <CartContextProvider>
-            <Navbar />
-            <MainRoutes />
-          
-        </CartContextProvider>
-    </OrderContextProvider>
-
-    </FavoritesContextProvider>
-    </ProductContextProvider>
+      <ProductContextProvider>
+        <FavoritesContextProvider>
+          <OrderContextProvider>
+            <CartContextProvider>
+              <Navbar />
+              <MainRoutes />
+              <Footer/>
+            </CartContextProvider>
+          </OrderContextProvider>
+        </FavoritesContextProvider>
+      </ProductContextProvider>
     </AuthContextProvider>
   );
 };

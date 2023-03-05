@@ -19,7 +19,6 @@ import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useCart } from "../../../contexts/CartContextProvider";
 import { useFavorites } from '../../../contexts/FavoritesContextProvider';
-import { useAuth } from "../../../contexts/AuthContextProvider";
 import "../../../styles/ProductCard.css";
 
 const ProductCard = ({ item }) => {
@@ -28,21 +27,18 @@ const ProductCard = ({ item }) => {
   const { deleteProduct } = useProducts();
 
   const { addProductToCart, checkProductInCart } = useCart();
-  const { addProductToFav, checkProductInFav } = useFavorites();
-  const {checkUserInUsers, getUsers, users} = useAuth();
+  const { addProductToFav, checkProductInFav, getFavUser, favUser } = useFavorites();
+  
+  const [userObj, setUserObj] = useState(favUser);
 
   useEffect(() => {
-    getUsers();
+    getFavUser()
   }, []);
 
-  let username = JSON.parse(localStorage.getItem('username'));
-  console.log(username);
-  const [userObj, setUserObj] = useState('');
+  useEffect(() => {
+    setUserObj(favUser)
+  }, []);
 
-  useEffect(()=>{
-		setUserObj(checkUserInUsers(username));
-	}, [])
-  
   return (
     <Card className="card-prod">
       <div

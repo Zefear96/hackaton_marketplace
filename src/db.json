@@ -5,18 +5,20 @@
       "email": "aaa",
       "password": "aaa",
       "passConf": "aaa",
-      "favorites": [],
+      "favorites": [
+        {
+          "id": 2,
+          "name": "Vodka Beluga Noble Russian",
+          "category": "Vodka",
+          "price": 3500,
+          "volume": 1,
+          "alcohol_percentage": 40,
+          "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
+          "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2"
+        }
+      ],
       "saved": [],
       "id": 1
-    },
-    {
-      "username": "jika",
-      "email": "jika",
-      "password": "jika",
-      "passConf": "jika",
-      "favorites": [],
-      "saved": [],
-      "id": 2
     }
   ],
   "orderlist": [],

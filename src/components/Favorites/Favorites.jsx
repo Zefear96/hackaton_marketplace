@@ -4,17 +4,16 @@ import { useAuth } from '../../contexts/AuthContextProvider';
 
 const Favorites = () => {
     const {getFavorites, deleteProdFromFav, favCleaner} = useFavorites();
-    const {getUsers} = useAuth();
+    const {getUsers, user, checkUserInUsers} = useAuth();
 
     useEffect(() => {
       getUsers();
     }, []);
 
-    useEffect(() => {
-        getFavorites()
-    }, []);
+    let username = JSON.parse(localStorage.getItem('username'));
 
-    const [favorites, setFavorites] = useState([]);
+    const [favorites, setFavorites] = useState(getFavorites());
+    const [userObj, setUserObj] = useState(checkUserInUsers(username))
 
   return (
     <div>Favorites
@@ -23,10 +22,10 @@ const Favorites = () => {
             <p>{item.name}</p>
             <p>{item.price}</p>
             <p>{item.category}</p>
-            <button onClick={() => deleteProdFromFav(item.id)}></button>
+            <button onClick={() => deleteProdFromFav(item.id, userObj.id)}> Delete from my favList</button>
             </div>
             ))}
-            <button onClick={favCleaner}></button>
+            <button onClick={favCleaner(userObj.id)}>Clean my FavList</button>
     </div>
   )
 }

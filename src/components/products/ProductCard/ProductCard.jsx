@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -19,6 +19,7 @@ import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useCart } from "../../../contexts/CartContextProvider";
 import { useFavorites } from '../../../contexts/FavoritesContextProvider';
+import { useAuth } from "../../../contexts/AuthContextProvider";
 import "../../../styles/ProductCard.css";
 
 const ProductCard = ({ item }) => {
@@ -28,7 +29,20 @@ const ProductCard = ({ item }) => {
 
   const { addProductToCart, checkProductInCart } = useCart();
   const { addProductToFav, checkProductInFav } = useFavorites();
+  const {checkUserInUsers, getUsers, users} = useAuth();
 
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  let username = JSON.parse(localStorage.getItem('username'));
+  console.log(username);
+  const [userObj, setUserObj] = useState('');
+
+  useEffect(()=>{
+		setUserObj(checkUserInUsers(username));
+	}, [])
+  
   return (
     <Card className="card-prod">
       <div
@@ -101,7 +115,7 @@ const ProductCard = ({ item }) => {
             />
           </IconButton>
 
-          <IconButton size="small" onClick={() => addProductToFav(item)}>
+          <IconButton size="small" onClick={() => addProductToFav(item, userObj.id)}>
             <FavoriteBorderIcon
               // color={checkProductInFav(item.id) ? "success" : ""}
             />

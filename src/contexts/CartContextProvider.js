@@ -70,7 +70,7 @@ const CartContextProvider = ({ children }) => {
     );
 
     if (productToFind) {
-      cart.products.filter((elem) => elem.item.id !== product.id);
+      cart.products = cart.products.filter((elem) => elem.item.id !== product.id);
     } else {
       cart.products.push(newProduct);
     }
@@ -118,7 +118,12 @@ const CartContextProvider = ({ children }) => {
 
     if (cart) {
       let obj = cart.products.find((elem) => elem.item.id === id);
-      return obj ? true : false;
+
+      if(obj) {
+        return true
+      } else {
+        return false
+      }
     }
   };
 

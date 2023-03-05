@@ -14,6 +14,7 @@ import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
@@ -112,9 +113,9 @@ const ProductCard = ({ item }) => {
           </IconButton>
 
           <IconButton size="small" onClick={() => addProductToFav(item, favUser.id)}>
-            <FavoriteBorderIcon
-              // color={checkProductInFav(item.id) ? "success" : ""}
-            />
+            
+          {checkProductInFav(item.id) ? <FavoriteIcon color="error"/> : <FavoriteBorderIcon color="error"
+            />}
           </IconButton>
 
           <Button

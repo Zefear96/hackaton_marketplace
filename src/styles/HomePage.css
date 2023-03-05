@@ -1,0 +1,33 @@
+.home {
+       height: 500px;
+}
+
+#background-video {
+       position: fixed;
+       right: 0;
+       bottom: 0;
+       min-width: 100%;
+       min-height: 100%;
+       z-index: -1;
+}
+
+.promo {
+       width: 100%;
+       margin-top: 50%;
+       display: flex;
+       background-color: antiquewhite;
+
+}
+
+.promo>video {
+       width: 50%;
+}
+
+.promo-text {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+       width: 50%;
+}

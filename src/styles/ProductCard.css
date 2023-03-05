@@ -1,7 +1,7 @@
 .card-prod {
        width: 350px !important;
        margin: 1%;
-
+       text-align: center;
 }
 
 .card-image {
@@ -19,5 +19,5 @@
 }
 
 .card-text {
-       height: 150px;
+       height: 100px;
 }

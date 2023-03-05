@@ -1,98 +1,101 @@
-import axios from 'axios';
-import React, {createContext, useContext, useEffect, useState} from 'react';
-import { useAuth } from './AuthContextProvider';
+import axios from "axios";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { useAuth } from "./AuthContextProvider";
 
 export const favoritesContext = createContext();
 export const useFavorites = () => useContext(favoritesContext);
 
-const API = 'http://localhost:8000/users';
+const API = "http://localhost:8000/users";
 
-const FavoritesContextProvider = ({children}) => {
-
+const FavoritesContextProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
   const [favUser, setFavUser] = useState({});
-  
-    const getFavUser = async() => {
-        let {data} = await axios(API);
-        console.log(data);
-        
-        let username = JSON.parse(localStorage.getItem('username'));
-        let userObj = data.find((item) => item.username === username);
-        setFavUser(userObj);
+  const [favLength, setFavLength] = useState(0);
+
+  const getFavUser = async () => {
+    let { data } = await axios(API);
+    console.log(data);
+
+    let username = JSON.parse(localStorage.getItem("username"));
+    let userObj = data.find((item) => item.username === username);
+    setFavUser(userObj);
+  };
+
+  //useEffect при загрузке страницы нужен будет
+  const getCountFavorites = () => {
+    return favorites ? favorites.length : 0;
+  };
+
+  const getFavorites = async () => {
+    let { data } = await axios(API);
+    let username = JSON.parse(localStorage.getItem("username"));
+    let userObj = data.find((item) => item.username === username);
+
+    setFavLength(userObj.favorites.length);
+    setFavorites(userObj.favorites);
+  };
+
+  const addProductToFav = async (product, userId) => {
+    let favList = favorites;
+
+    let favProdToFind = favList.find((item) => item.id === product.id);
+
+    if (favProdToFind) {
+      favList = favList.filter((item) => item.id !== product.id);
+    } else {
+      favList.push(product);
     }
 
-    //useEffect при загрузке страницы нужен будет
+    await axios.patch(`${API}/${userId}`, { favorites: favList });
 
-    const getFavorites = async () => {
-        let {data} = await axios(API);
-        let username = JSON.parse(localStorage.getItem('username'));
-        let userObj = data.find((item) => item.username === username);
+    // setFavorites(favList);
+    getFavorites();
+  };
 
-        setFavorites(userObj.favorites);
+  const deleteProdFromFav = async (productId, userId) => {
+    let favList = favorites;
+    favList = favList.filter((item) => item.id !== productId);
+    await axios.patch(`${API}/${userId}`, { favorites: favList });
 
-    };
+    // setFavorites(favList);
+    getFavorites();
+  };
 
-    const addProductToFav = async(product, userId) => {
-        let favList = favorites;
+  const checkProductInFav = (productId) => {
+    let favObj = favorites.find((item) => item.id === productId);
 
-        let favProdToFind = favList.find(item => item.id === product.id)
-
-        if(favProdToFind) {
-            favList = favList.filter(item => item.id !== product.id)
-        } else {
-            favList.push(product);
-        };
-
-        await axios.patch(`${API}/${userId}`, {favorites: favList});
-
-        // setFavorites(favList);
-        getFavorites();
-
-    };
-
-    const deleteProdFromFav = async (productId, userId) => {
-        let favList = favorites;
-        favList = favList.filter(item => item.id !== productId);
-        await axios.patch(`${API}/${userId}`, {favorites: favList});
-
-        // setFavorites(favList);
-        getFavorites();
-    };
-
-    const checkProductInFav = (productId) => {
-
-        let favObj = favorites.find(item => item.id === productId);
-
-        if(favObj) {
-            return true
-        } else {
-            return false
-        }
-    };
-
-    const favCleaner = async (userId) => {
-        await axios.patch(`${API}/${userId}`, {favorites: []});
-        // setFavorites([])
-        getFavorites();
-    };
-
-    const values={
-        favorites, 
-        favUser,
-
-        getFavorites,
-        getFavUser,
-        addProductToFav,
-        deleteProdFromFav,
-        checkProductInFav,
-        favCleaner
+    if (favObj) {
+      return true;
+    } else {
+      return false;
     }
+  };
+
+  const favCleaner = async (userId) => {
+    await axios.patch(`${API}/${userId}`, { favorites: [] });
+    // setFavorites([])
+    getFavorites();
+  };
+
+  const values = {
+    favorites,
+    favUser,
+    favLength,
+
+    getFavorites,
+    getFavUser,
+    addProductToFav,
+    deleteProdFromFav,
+    checkProductInFav,
+    favCleaner,
+    getCountFavorites,
+  };
 
   return (
-    <favoritesContext.Provider value ={ values} >
-        {children}
+    <favoritesContext.Provider value={values}>
+      {children}
     </favoritesContext.Provider>
-  )
-}
+  );
+};
 
-export default FavoritesContextProvider
+export default FavoritesContextProvider;

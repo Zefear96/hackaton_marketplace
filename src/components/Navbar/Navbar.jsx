@@ -12,12 +12,15 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Badge from "@mui/material/Badge";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
 
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../contexts/CartContextProvider";
-import { useAuth } from '../../contexts/AuthContextProvider';
+import { useAuth } from "../../contexts/AuthContextProvider";
+import { useFavorites } from "../../contexts/FavoritesContextProvider";
+import { useState } from "react";
+import "../../styles/Navbar.css";
 
 const pages = [
   {
@@ -63,7 +66,8 @@ function ResponsiveAppBar() {
   // custom
   const navigate = useNavigate();
   const { cartLength } = useCart();
-  // const {checkAuth } = useAuth();
+  const { logout } = useAuth();
+  const { favLength } = useFavorites();
 
   // React.useEffect( () => {
   //   if (localStorage.getItem('token')) {
@@ -73,7 +77,7 @@ function ResponsiveAppBar() {
   // }, []);
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className="navbar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -174,8 +178,13 @@ function ResponsiveAppBar() {
               size="medium"
               color="inherit"
               onClick={() => navigate("/favorites")}
+              className="icon-btns-nav"
             >
-              <Badge color="error" badgeContent={cartLength}>
+              <Badge
+                color="error"
+                badgeContent={favLength}
+                className="nav-badge"
+              >
                 <FavoriteBorderIcon />
               </Badge>
             </IconButton>
@@ -185,13 +194,17 @@ function ResponsiveAppBar() {
               color="inherit"
               onClick={() => navigate("/cart")}
             >
-              <Badge badgeContent={cartLength} color="error">
-                <ShoppingCartOutlinedIcon />
+              <Badge
+                badgeContent={cartLength}
+                color="error"
+                className="nav-badge"
+              >
+                <LocalMallIcon />
               </Badge>
             </IconButton>
             <Tooltip title="Account">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar src="..."/>
+                <Avatar src="..." />
               </IconButton>
             </Tooltip>
 
@@ -222,7 +235,9 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
               <MenuItem onClick={handleCloseUserMenu}>
-                <Typography textAlign="center">Logout</Typography>
+                <Typography textAlign="center" onClick={logout}>
+                  Logout
+                </Typography>
               </MenuItem>
             </Menu>
           </Box>

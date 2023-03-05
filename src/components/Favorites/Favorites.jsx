@@ -3,29 +3,27 @@ import { useFavorites } from '../../contexts/FavoritesContextProvider';
 import { useAuth } from '../../contexts/AuthContextProvider';
 
 const Favorites = () => {
-    const {getFavorites, deleteProdFromFav, favCleaner} = useFavorites();
-    const {getUsers, user, checkUserInUsers} = useAuth();
+    const {getFavorites, deleteProdFromFav, favCleaner, favorites, favUser, getFavUser} = useFavorites();
 
     useEffect(() => {
-      getUsers();
+      getFavUser();
     }, []);
 
-    let username = JSON.parse(localStorage.getItem('username'));
-
-    const [favorites, setFavorites] = useState(getFavorites());
-    const [userObj, setUserObj] = useState(checkUserInUsers(username))
+    // useEffect(() => {
+    //   console.log(favUser.favorites);
+    // }, [favUser, ])
 
   return (
     <div>Favorites
-        {favorites.map(item => (
+        {favUser.favorites?.map(item => (
             <div key={item.id}>
             <p>{item.name}</p>
             <p>{item.price}</p>
             <p>{item.category}</p>
-            <button onClick={() => deleteProdFromFav(item.id, userObj.id)}> Delete from my favList</button>
+            <button onClick={() => deleteProdFromFav(item.id, favUser.id)}> Delete from my favList</button>
             </div>
             ))}
-            <button onClick={favCleaner(userObj.id)}>Clean my FavList</button>
+            <button onClick={() => favCleaner(favUser.id)}>Clean my FavList</button>
     </div>
   )
 }

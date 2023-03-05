@@ -1,0 +1,21 @@
+#btn-sidebar {
+       margin-bottom: 20px ;
+       width: 150px;
+       height: 50px;
+       background: #bc9366;
+       color: aliceblue;
+       margin-right: 0;
+       border-radius:   0  0 0 25px ;
+}
+
+.sidebar-container {
+       display: flex;
+       justify-content: end;
+       background: transparent !important;
+       background: rgb(226 216 205) !important;
+
+}
+
+.MuiBox-root {
+       padding: 0 !important;
+     }

@@ -23,10 +23,12 @@ const FavoritesContextProvider = ({children}) => {
 
     //useEffect при загрузке страницы нужен будет
 
-    const getFavorites = () => {
+    const getFavorites = async () => {
+        let {data} = await axios(API);
+        let username = JSON.parse(localStorage.getItem('username'));
+        let userObj = data.find((item) => item.username === username);
 
-        setFavorites(favUser.favorites);
-        return favUser.favorites
+        setFavorites(userObj.favorites)
 
     };
 
@@ -43,6 +45,7 @@ const FavoritesContextProvider = ({children}) => {
 
         await axios.patch(`${API}/${userId}`, {favorites: favList});
 
+        // setFavorites(favList);
         getFavorites();
 
     };
@@ -52,8 +55,8 @@ const FavoritesContextProvider = ({children}) => {
         favList = favList.filter(item => item.id !== productId);
         await axios.patch(`${API}/${userId}`, {favorites: favList});
 
+        // setFavorites(favList);
         getFavorites();
-
     };
 
     const checkProductInFav = async(productId) => {
@@ -68,8 +71,8 @@ const FavoritesContextProvider = ({children}) => {
     };
 
     const favCleaner = async (userId) => {
-        setFavorites([])
-        await axios.patch(`${API}/${userId}`, {favorites: favorites});
+        await axios.patch(`${API}/${userId}`, {favorites: []});
+        // setFavorites([])
         getFavorites();
     };
 

@@ -3,19 +3,19 @@ import { useFavorites } from '../../contexts/FavoritesContextProvider';
 import { useAuth } from '../../contexts/AuthContextProvider';
 
 const Favorites = () => {
-    const {getFavorites, deleteProdFromFav, favCleaner, favorites, favUser, getFavUser} = useFavorites();
+    const {deleteProdFromFav, favCleaner, favorites, favUser, getFavUser, getFavorites} = useFavorites();
 
     useEffect(() => {
       getFavUser();
     }, []);
 
-    // useEffect(() => {
-    //   console.log(favUser.favorites);
-    // }, [favUser, ])
+    useEffect(() => {
+      getFavorites()
+    }, []);
 
   return (
     <div>Favorites
-        {favUser.favorites?.map(item => (
+        {favorites?.map(item => (
             <div key={item.id}>
             <p>{item.name}</p>
             <p>{item.price}</p>

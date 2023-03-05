@@ -29,15 +29,15 @@ const ProductCard = ({ item }) => {
   const { addProductToCart, checkProductInCart } = useCart();
   const { addProductToFav, checkProductInFav, getFavUser, favUser } = useFavorites();
   
-  const [userObj, setUserObj] = useState(favUser);
+  // const [userObj, setUserObj] = useState(favUser);
 
   useEffect(() => {
     getFavUser()
   }, []);
 
-  useEffect(() => {
-    setUserObj(favUser)
-  }, []);
+  // useEffect(() => {
+  //   setUserObj(favUser)
+  // }, []);
 
   return (
     <Card className="card-prod">
@@ -111,7 +111,7 @@ const ProductCard = ({ item }) => {
             />
           </IconButton>
 
-          <IconButton size="small" onClick={() => addProductToFav(item, userObj.id)}>
+          <IconButton size="small" onClick={() => addProductToFav(item, favUser.id)}>
             <FavoriteBorderIcon
               // color={checkProductInFav(item.id) ? "success" : ""}
             />

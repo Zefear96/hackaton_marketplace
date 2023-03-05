@@ -59,7 +59,7 @@ const FavoritesContextProvider = ({children}) => {
         getFavorites();
     };
 
-    const checkProductInFav = async(productId) => {
+    const checkProductInFav = (productId) => {
 
         let favObj = favorites.find(item => item.id === productId);
 

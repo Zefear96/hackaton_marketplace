@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -13,13 +13,14 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useCart } from "../../../contexts/CartContextProvider";
-import { useFavorites } from '../../../contexts/FavoritesContextProvider';
+import { useFavorites } from "../../../contexts/FavoritesContextProvider";
 import "../../../styles/ProductCard.css";
 
 const ProductCard = ({ item }) => {
@@ -28,17 +29,23 @@ const ProductCard = ({ item }) => {
   const { deleteProduct } = useProducts();
 
   const { addProductToCart, checkProductInCart } = useCart();
-  const { addProductToFav, checkProductInFav, getFavUser, favUser } = useFavorites();
-  
+  const {
+    addProductToFav,
+    checkProductInFav,
+    getFavUser,
+    favUser,
+    getFavorites,
+  } = useFavorites();
+
   // const [userObj, setUserObj] = useState(favUser);
 
   useEffect(() => {
-    getFavUser()
+    getFavUser();
   }, []);
 
-  // useEffect(() => {
-  //   setUserObj(favUser)
-  // }, []);
+  useEffect(() => {
+    getFavorites();
+  }, []);
 
   return (
     <Card className="card-prod">
@@ -107,26 +114,23 @@ const ProductCard = ({ item }) => {
           </Button>
 
           <IconButton size="small" onClick={() => addProductToCart(item)}>
-            <AddShoppingCartOutlinedIcon
-              color={checkProductInCart(item.id) ? "success" : ""}
-            />
+            {checkProductInCart(item.id) ? (
+              <ShoppingCartIcon color="success" />
+            ) : (
+              <AddShoppingCartOutlinedIcon />
+            )}
           </IconButton>
 
-          <IconButton size="small" onClick={() => addProductToFav(item, favUser.id)}>
-            
-          {checkProductInFav(item.id) ? <FavoriteIcon color="error"/> : <FavoriteBorderIcon color="error"
-            />}
-          </IconButton>
-
-          <Button
-            variant="outlined"
-            className="btns-prod"
-            id="btn-prod-comm"
-            // onClick={() => deleteProduct(item.id)}
+          <IconButton
+            size="small"
+            onClick={() => addProductToFav(item, favUser.id)}
           >
-            Show Comments
-          </Button>
-
+            {checkProductInFav(item.id) ? (
+              <FavoriteIcon color="error" />
+            ) : (
+              <FavoriteBorderIcon color="error" />
+            )}
+          </IconButton>
         </CardActions>
       </div>
     </Card>

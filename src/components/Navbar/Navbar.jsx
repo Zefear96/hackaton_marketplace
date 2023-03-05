@@ -18,6 +18,8 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../contexts/CartContextProvider";
 import { useAuth } from "../../contexts/AuthContextProvider";
+import { useFavorites } from "../../contexts/FavoritesContextProvider";
+import { useState } from "react";
 
 const pages = [
   {
@@ -64,6 +66,7 @@ function ResponsiveAppBar() {
   const navigate = useNavigate();
   const { cartLength } = useCart();
   const { logout } = useAuth();
+  const { favLength } = useFavorites();
 
   // React.useEffect( () => {
   //   if (localStorage.getItem('token')) {
@@ -175,7 +178,7 @@ function ResponsiveAppBar() {
               color="inherit"
               onClick={() => navigate("/favorites")}
             >
-              <Badge color="error" badgeContent={cartLength}>
+              <Badge color="error" badgeContent={favLength}>
                 <FavoriteBorderIcon />
               </Badge>
             </IconButton>

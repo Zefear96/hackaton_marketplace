@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import FilterProduct from "../FilterProduct/FilterProduct";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useSearchParams } from "react-router-dom";
+import "../../../styles/SideBar.css";
 
 import { Global } from "@emotion/react";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -125,7 +126,7 @@ const ProductSideBar = ({ isSideBar, page, setPage }, props) => {
           </React.Fragment>
         ))}
       </Box> */}
-      <Root>
+      <Root className="sidebar-container">
         <CssBaseline />
         <Global
           styles={{
@@ -138,7 +139,9 @@ const ProductSideBar = ({ isSideBar, page, setPage }, props) => {
           }}
         />
         <Box sx={{ textAlign: "center", pt: 1 }}>
-          <Button onClick={toggleDrawer(true)}>SideBar</Button>
+          <Button onClick={toggleDrawer(true)} id="btn-sidebar">
+            SideBar
+          </Button>
         </Box>
         <SwipeableDrawer
           container={container}

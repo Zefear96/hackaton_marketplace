@@ -12,14 +12,15 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Badge from "@mui/material/Badge";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
 
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../contexts/CartContextProvider";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import { useFavorites } from "../../contexts/FavoritesContextProvider";
 import { useState } from "react";
+import "../../styles/Navbar.css";
 
 const pages = [
   {
@@ -76,7 +77,7 @@ function ResponsiveAppBar() {
   // }, []);
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className="navbar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -177,8 +178,13 @@ function ResponsiveAppBar() {
               size="medium"
               color="inherit"
               onClick={() => navigate("/favorites")}
+              className="icon-btns-nav"
             >
-              <Badge color="error" badgeContent={favLength}>
+              <Badge
+                color="error"
+                badgeContent={favLength}
+                className="nav-badge"
+              >
                 <FavoriteBorderIcon />
               </Badge>
             </IconButton>
@@ -188,8 +194,12 @@ function ResponsiveAppBar() {
               color="inherit"
               onClick={() => navigate("/cart")}
             >
-              <Badge badgeContent={cartLength} color="error">
-                <ShoppingCartOutlinedIcon />
+              <Badge
+                badgeContent={cartLength}
+                color="error"
+                className="nav-badge"
+              >
+                <LocalMallIcon />
               </Badge>
             </IconButton>
             <Tooltip title="Account">

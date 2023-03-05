@@ -13,6 +13,6 @@
        margin: auto;
 }
 
-/* .products-list {
-       align-self: flex;
-} */
+.products-list {
+       background: rgb(226 216 205);
+}

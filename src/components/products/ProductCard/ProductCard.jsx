@@ -80,10 +80,12 @@ const ProductCard = ({ item }) => {
 
         <CardContent className="card-text">
           <Typography variant="body2" color="text.secondary">
+            <span>
+              VOLUME : {item.volume}L | ABV : {item.alcohol_percentage}%
+            </span>
+            <br />
+            {/* <p>{item.description.slice(0, 50) + "..."}</p> */}
             <span style={{ fontSize: "1.2rem" }}>${item.price}</span>
-            <p>Vol. {item.volume}</p>
-            <p>Alc.{item.alcohol_percentage}%</p>
-            <p>{item.description.slice(0, 50) + "..."}</p>
           </Typography>
         </CardContent>
         <CardActions className="btns-block-prod">

@@ -34,7 +34,7 @@ export default function StickyFooter() {
             flexDirection: 'column',
             alignItems: 'center'}}>
               <div className='footer__logo'>
-                <img className='logo_img' src="https://static-prod.remymartin.com/app/themes/remy/static/img/logo/remy-martin-logo-1-white.svg" alt="Logo" />
+                <img className='logo_img' src="https://www.glenfiddich.com/themes/custom/gf_theme/images/logo_white.svg" alt="Logo" />
               </div>
               <div className='footer__family'>
                 <h3 textAlign='center' color='white' className='title__family'>OUR FAMILY</h3>

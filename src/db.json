@@ -27,7 +27,143 @@
       "id": 1
     }
   ],
-  "orderlist": [],
+  "orderlist": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "email": "",
+      "phone": "",
+      "products": [
+        {
+          "item": {
+            "id": 3,
+            "name": "Rum Bacardi Superior",
+            "category": "Rum",
+            "price": 1000,
+            "volume": 0.75,
+            "alcohol_percentage": 37.5,
+            "description": "A white rum with a crisp and clean taste, perfect for making cocktails.",
+            "image": "https://vmarketpr.com/wp-content/uploads/2022/12/Untitled-design-2022-12-07T161924.288.png"
+          },
+          "count": 1,
+          "subPrice": 1000
+        },
+        {
+          "item": {
+            "id": 1,
+            "name": "Whiskey Jack Daniel's Old No. 7",
+            "category": "Whiskey",
+            "price": 2200,
+            "volume": 0.7,
+            "alcohol_percentage": 40,
+            "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
+            "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
+            "comments": [
+              {
+                "author": "aaa",
+                "descr": "ss"
+              }
+            ]
+          },
+          "count": 1,
+          "subPrice": 2200
+        }
+      ],
+      "totalPrice": 3200,
+      "id": 1
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "email": "",
+      "phone": "",
+      "products": [
+        {
+          "item": {
+            "id": 3,
+            "name": "Rum Bacardi Superior",
+            "category": "Rum",
+            "price": 1000,
+            "volume": 0.75,
+            "alcohol_percentage": 37.5,
+            "description": "A white rum with a crisp and clean taste, perfect for making cocktails.",
+            "image": "https://vmarketpr.com/wp-content/uploads/2022/12/Untitled-design-2022-12-07T161924.288.png"
+          },
+          "count": 1,
+          "subPrice": 1000
+        },
+        {
+          "item": {
+            "id": 1,
+            "name": "Whiskey Jack Daniel's Old No. 7",
+            "category": "Whiskey",
+            "price": 2200,
+            "volume": 0.7,
+            "alcohol_percentage": 40,
+            "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
+            "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
+            "comments": [
+              {
+                "author": "aaa",
+                "descr": "ss"
+              }
+            ]
+          },
+          "count": 1,
+          "subPrice": 2200
+        }
+      ],
+      "totalPrice": 3200,
+      "id": 2
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "address": "",
+      "email": "",
+      "phone": "",
+      "products": [
+        {
+          "item": {
+            "id": 3,
+            "name": "Rum Bacardi Superior",
+            "category": "Rum",
+            "price": 1000,
+            "volume": 0.75,
+            "alcohol_percentage": 37.5,
+            "description": "A white rum with a crisp and clean taste, perfect for making cocktails.",
+            "image": "https://vmarketpr.com/wp-content/uploads/2022/12/Untitled-design-2022-12-07T161924.288.png"
+          },
+          "count": 1,
+          "subPrice": 1000
+        },
+        {
+          "item": {
+            "id": 1,
+            "name": "Whiskey Jack Daniel's Old No. 7",
+            "category": "Whiskey",
+            "price": 2200,
+            "volume": 0.7,
+            "alcohol_percentage": 40,
+            "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
+            "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
+            "comments": [
+              {
+                "author": "aaa",
+                "descr": "ss"
+              }
+            ]
+          },
+          "count": 1,
+          "subPrice": 2200
+        }
+      ],
+      "totalPrice": 3200,
+      "id": 3
+    }
+  ],
   "products": [
     {
       "id": 1,

@@ -34,7 +34,7 @@
 .header-block {
        display: flex;
        flex-wrap: wrap;
-       margin: 10% auto;
+       margin: 5% auto 10%;
        /* position: relative; */
 }
 
@@ -72,6 +72,11 @@
        color: aliceblue;
 }
 
+.card-descr h4 {
+       text-transform: capitalize ;
+       margin-bottom: 5%;
+}
+
 .about {
        position: relative;
        bottom: -20px;
@@ -81,7 +86,7 @@
 
 .about>video{
        width: 100% !important;
-       height: 500px;
+       height: 700px;
        object-fit: cover !important;
 }
      

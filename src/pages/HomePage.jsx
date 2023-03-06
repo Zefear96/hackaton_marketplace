@@ -26,22 +26,6 @@ const HomePage = () => {
     console.log(favUser);
   };
 
-  //useEffect при загрузке страницы нужен будет
-
-  // const getFavorites = () => {
-
-  //   let username = JSON.parse(localStorage.getItem('username'));
-  //   let userObj = checkUserInUsers(username); //вернет объект юзера
-  //   console.log(userObj);
-  //   setUser(userObj);
-
-  //   setFavorites(userObj.favorites);
-  //   console.log(userObj.favorites);
-
-  //   return userObj.favorites
-
-  // };
-
   return (
     <div className="home-page">
       <div className="header">
@@ -64,7 +48,7 @@ const HomePage = () => {
         <div className="promo-center">
           <img
             src="https://www.glenfiddich.com/sites/default/files/2022-04/15yo-single-malt-scotch-whisky.png"
-            alt=""
+            alt=":("
           />
         </div>
         <div className="promo-text">

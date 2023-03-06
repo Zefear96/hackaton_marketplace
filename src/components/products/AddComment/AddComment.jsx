@@ -16,27 +16,27 @@ const AddComment = () => {
   const { addComments, productDetails } = useProducts();
 
   const [product, setProduct] = useState(productDetails);
-  const [user, setUser] = useState('');
-  const [comment, setComment] = useState('');
+  const [user, setUser] = useState("");
+  const [comment, setComment] = useState("");
 
   const username = JSON.parse(localStorage.getItem("username"));
   // console.log(username);
+
+  const { id } = useParams();
 
   useEffect(() => {
     setUser(username);
   }, []);
 
-  const { id } = useParams();
-
-  function saveComment () {
-    if(comment.descr === undefined || comment.descr === '') {
-      alert('Your input is empty');
-      return
-    };
+  function saveComment() {
+    if (comment.descr === undefined || comment.descr === "") {
+      alert("Your input is empty");
+      return;
+    }
 
     addComments(comment, id, product);
-    setComment({descr: ''});
-  };
+    setComment({ descr: "" });
+  }
 
   // MUI
   const [open, setOpen] = React.useState(false);
@@ -63,7 +63,9 @@ const AddComment = () => {
             label="Comments..."
             variant="filled"
             name="comments"
-            onChange={(e) => setComment({author: user, descr: e.target.value})}
+            onChange={(e) =>
+              setComment({ author: user, descr: e.target.value })
+            }
             value={comment.descr}
           />
 

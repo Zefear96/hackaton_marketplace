@@ -1,9 +1,8 @@
-#root{
+/* #root{
   background-color: rgb(17, 17, 17);
   padding: 0;
   color: white;
-
-}
+} */
 h1 {
        color: white;
        font-weight: 900;
@@ -95,8 +94,29 @@ i {
   font-size: 13px;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 .card-img {
   width: 250px;
   height: 150px;
+}
+.payments-block {
+  width: 20%;
+}
+#save-btn {
+  width: 10%;
+  margin: auto;
+  color: white;
+  border: #bc9366 2px solid !important;
+}
+#save-btn:hover{
+  background-color: transparent !important;
+  border: #bc9366 2px solid !important;
+  color: #bc9366;
+}
+.payments-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

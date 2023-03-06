@@ -37,7 +37,7 @@ export default function StickyFooter() {
                 <img className='logo_img' src="https://www.glenfiddich.com/themes/custom/gf_theme/images/logo_white.svg" alt="Logo" />
               </div>
               <div className='footer__family'>
-                <h3 textAlign='center' color='white' className='title__family'>OUR FAMILY</h3>
+                <h3 textalign='center' color='white' className='title__family'>OUR FAMILY</h3>
                 <ul className='family__list'>
                   <li>
                     <a href="#">Alybek Co</a>
@@ -75,7 +75,7 @@ export default function StickyFooter() {
                 </ul>
               </div>
               <div className='footer__disclaimer'>
-                <Typography color='white' style={{fontSize: '11px'}} textAlign='center'className='title__disclaimer'>
+                <Typography color='white' style={{fontSize: '11px'}} textalign='center' className='title__disclaimer'>
                   ©2023 Monarch & CO
                     <br />
                    Please drink responsibly 

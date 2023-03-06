@@ -132,7 +132,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <MenuItem key={page.type} onClick={handleCloseNavMenu}>
                   <Typography
-                    textAlign="center"
+                    textalign="center"
                     onClick={() => navigate(page.path)}
                   >
                     {page.type}
@@ -227,7 +227,7 @@ function ResponsiveAppBar() {
               {settings.map((setting) => (
                 <MenuItem key={setting.type} onClick={handleCloseUserMenu}>
                   <Typography
-                    textAlign="center"
+                    textalign="center"
                     onClick={() => navigate(setting.path)}
                   >
                     {setting.type}
@@ -235,7 +235,7 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
               <MenuItem onClick={handleCloseUserMenu}>
-                <Typography textAlign="center" onClick={logout}>
+                <Typography textalign="center" onClick={logout}>
                   Logout
                 </Typography>
               </MenuItem>

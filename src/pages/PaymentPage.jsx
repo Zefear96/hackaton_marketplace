@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/PaymentPage.css";
 import mastercard from '../media/image/mastercard.png';
 
+//mui
 import TextField from '@mui/material/TextField';
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
@@ -13,6 +14,8 @@ import Collapse from "@mui/material/Collapse";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Checkbox from '@mui/material/Checkbox';
 
+//bootstrap
+import Carousel from 'react-bootstrap/Carousel';
 
 const PaymentPage = () => {
   const { getCart, cart } = useCart();
@@ -44,7 +47,7 @@ const PaymentPage = () => {
   const [open, setOpen] = useState(false);
 
   //styles
-  const theme = createTheme({
+  const theme2 = createTheme({
     palette: {
       mode: 'dark',
       primary: {
@@ -56,7 +59,7 @@ const PaymentPage = () => {
   const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme2}>
 
     <div className="page">
       <div className="container">
@@ -90,24 +93,32 @@ const PaymentPage = () => {
           <p id="man-inp">*Mandatory fields</p>  
 
           <div className="payments-block">
-              <CardMedia
-                sx={{ height: 150, width: 250 }}
-                image="https://cashback-karta.ru/wp-content/uploads/2019/09/debet_card_tinkoff_black.png"
-              />
-              <CardMedia
-                // sx={{ height: 175, width: 275 }}
-                className='card-img'
-                image="https://i.ibb.co/PjYLm1g/signature-800x450-removebg-preview-1.png"
-              />
-              <CardMedia
-                // sx={{ height: 175, width: 275 }}
-                className='card-img'
-                image={mastercard}
-              />
-          </div>
-          
-        </div>
-        <Button
+
+        <h6 style={{marginBottom: '20px'}}>Payment methods</h6>
+    <Carousel style={{width: '250px', height: '150px', marginBottom: '40px', alignSelf: 'center'}}>
+      <Carousel.Item>
+        <img
+          className="card-img"
+          src="https://cashback-karta.ru/wp-content/uploads/2019/09/debet_card_tinkoff_black.png"
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="card-img"
+          src="https://i.ibb.co/PjYLm1g/signature-800x450-removebg-preview-1.png"
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="card-img"
+          src={mastercard}
+          alt="Third slide"
+        />
+      </Carousel.Item>
+    </Carousel>
+    <Button id="save-btn"
           variant="contained"
           disabled={open}
           onClick={() => {
@@ -118,6 +129,8 @@ const PaymentPage = () => {
         >
           SAVE
         </Button>
+          </div>
+        </div>
       </div>
 
       <Collapse in={open}>

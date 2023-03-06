@@ -3,12 +3,16 @@ import { useCart } from "../contexts/CartContextProvider";
 import { useOrder } from "../contexts/OrderContextProvider";
 import { useNavigate } from "react-router-dom";
 import "../styles/PaymentPage.css";
+import mastercard from '../media/image/mastercard.png';
 
-import TextField from "@mui/material/TextField";
+import TextField from '@mui/material/TextField';
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Collapse from "@mui/material/Collapse";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Checkbox from '@mui/material/Checkbox';
+
 
 const PaymentPage = () => {
   const { getCart, cart } = useCart();
@@ -39,10 +43,22 @@ const PaymentPage = () => {
 
   const [open, setOpen] = useState(false);
 
-  <></>;
+  //styles
+  const theme = createTheme({
+    palette: {
+      mode: 'dark',
+      primary: {
+        main: '#bc9366',
+      },
+    },
+  });
+
+  const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
+
+    <div className="page">
       <div className="container">
         <h1>Checkout</h1>
         <div className="delivery">
@@ -50,66 +66,44 @@ const PaymentPage = () => {
           <img src="" alt="" />
           <h6>DELIVERY</h6>
           <h6>
-            <b>Shipping</b> Liquor Barn
+            <b>Shipping</b> 
           </h6>
           <hr />
         </div>
-        <div className="Address">
-          <h5>ADDRESS</h5>
+        <div className="info">
+          <h5>Enter details to receive your purchases</h5>
           
           <div className="user-data">
-            <TextField
-              id="filled-basic"
-              placeholder="First Name"
-              variant="filled"
-              onChange={handleInp}
-              name="firstName"
-            />
-            <TextField
-              id="filled-basic"
-              placeholder="Last Name"
-              variant="filled"
-              onChange={handleInp}
-              name="lastName"
-            />
+          <TextField label="YOUR FIRST NAME *" variant="standard" name="firstName" onChange={handleInp}         className="user-inp"/>
+          <TextField label="YOUR LAST NAME *" variant="standard" onChange={handleInp} className="user-inp" name="lastName"/>
+          <div className='address-inp'>
+          <TextField label="YOUR DELIVERY ADDRESS" variant="standard" onChange={handleInp} name="address" className='address-inp'/>
           </div>
+          <TextField label="YOUR EMAIL ADDRESS *" variant="standard" onChange={handleInp}  name="email" className="user-inp"/>
+          <TextField label="YOUR PHONE *" variant="standard" onChange={handleInp} className="user-inp" name="phone"/>
 
-          <TextField
-            id="filled-basic"
-            placeholder="Enter address"
-            variant="filled"
-            onChange={handleInp}
-            name="address"
-          />
-
-          <div className="user-contacts">
-            <TextField
-              id="filled-basic"
-              placeholder="Your email"
-              variant="filled"
-              onChange={handleInp}
-              name="email"
-            />
-            <TextField
-              id="filled-basic"
-              placeholder="Your phone"
-              variant="filled"
-              onChange={handleInp}
-              name="phone"
-            />
           </div>
+          
+          <p id="check-inp"><Checkbox {...label} defaultChecked color="default" />
+  By signing up, you agree to accept our terms and conditions and our privacy and cookie policies. *</p>
+  
+          <p id="man-inp">*Mandatory fields</p>  
 
           <div className="payments-block">
-            <Card sx={{ width: 250 }}>
               <CardMedia
-                sx={{ height: 150 }}
+                sx={{ height: 150, width: 250 }}
                 image="https://cashback-karta.ru/wp-content/uploads/2019/09/debet_card_tinkoff_black.png"
               />
               <CardMedia
-                sx={{ height: 150 }}
-                image="https://pngimg.com/d/credit_card_PNG23.png"
+                // sx={{ height: 175, width: 275 }}
+                className='card-img'
+                image="https://i.ibb.co/PjYLm1g/signature-800x450-removebg-preview-1.png"
               />
-            </Card>
+              <CardMedia
+                // sx={{ height: 175, width: 275 }}
+                className='card-img'
+                image={mastercard}
+              />
           </div>
           
         </div>
@@ -140,7 +134,7 @@ const PaymentPage = () => {
             transform: "translate(-50%, -50%)",
           }}
         >
-          <div>
+          <div >
             <i className="checkmark">✓</i>
           </div>
           <h1>Success</h1>
@@ -150,7 +144,9 @@ const PaymentPage = () => {
           </p>
         </div>
       </Collapse>
-    </>
+    </div>
+    </ThemeProvider>
+
   );
 };
 

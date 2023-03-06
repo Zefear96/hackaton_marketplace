@@ -1,16 +1,36 @@
+#root{
+  background-color: rgb(17, 17, 17);
+  padding: 0;
+  color: white;
+
+}
 h1 {
-       color: #88B04B;
+       color: white;
        font-weight: 900;
        font-size: 40px;
        margin-bottom: 10px;
+       text-align: center;
      }
+h6 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+h5 {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
 p {
-       color: #404F5E;
+       color: black;
        font-size:20px;
        margin: 0;
      }
 i {
-     color: #9ABC66;
+     color: black;
      font-size: 100px;
      line-height: 200px;
      margin-left:-15px;
@@ -25,3 +45,58 @@ i {
      margin: 0 auto;
      text-align: center;
    }
+
+.user-contacts {
+  color: white !important;
+}
+.page{
+  width: 90%;
+  margin: auto;
+}
+.user-data {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.user-inp {
+  width: 48%;
+  font-weight: 300 !important;
+}
+
+.address-inp {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* #address_fill {
+  width: 100%;
+} */
+/* <label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-standard MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-standard css-lk5k5j-MuiFormLabel-root-MuiInputLabel-root" data-shrink="false" for=":rf:" id=":rf:-label">YOUR FIRST NAME *</label> */
+.MuiFormLabel-root {
+  font-weight: 100 !important;
+}
+
+#check-inp {
+  font-weight: 300 !important;
+  color: white;
+  letter-spacing: 3px !important;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#man-inp {
+  font-weight: 300 !important;
+  color: white;
+  letter-spacing: 3px !important;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+}
+.card-img {
+  width: 250px;
+  height: 150px;
+}

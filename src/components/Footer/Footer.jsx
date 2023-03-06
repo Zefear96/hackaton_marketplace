@@ -4,6 +4,11 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import { Twitter } from '@mui/icons-material';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function StickyFooter() {
   return (
@@ -29,16 +34,16 @@ export default function StickyFooter() {
             flexDirection: 'column',
             alignItems: 'center'}}>
               <div className='footer__logo'>
-                <img className='logo_img' src="https://static-prod.remymartin.com/app/themes/remy/static/img/logo/remy-martin-logo-1-white.svg" alt="Logo" />
+                <img className='logo_img' src="https://www.glenfiddich.com/themes/custom/gf_theme/images/logo_white.svg" alt="Logo" />
               </div>
               <div className='footer__family'>
-                <Typography textAlign='center' color='white'><strong>OUR FAMILY</strong></Typography>
+                <h3 textAlign='center' color='white' className='title__family'>OUR FAMILY</h3>
                 <ul className='family__list'>
                   <li>
                     <a href="#">Alybek Co</a>
                   </li>
-                  <li>
-                    <a href="#">Rehab</a>
+                  <li >
+                    <a href="#" style={{paddingLeft: '40px'}}>Rehab</a>
                   </li>
                   <li>
                     <a href="#">Aigerim Watches</a>
@@ -49,32 +54,31 @@ export default function StickyFooter() {
                 <ul className='social__list'>
                   <li>
                     <a href="#">
-                      <img src="" alt="error" />
+                      <FacebookIcon/>                    
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="" alt="error" />
+                      <InstagramIcon />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="" alt="error" />
+                      <TwitterIcon />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="" alt="error" />
+                      <YouTubeIcon/>
                     </a>
                   </li>
                 </ul>
               </div>
               <div className='footer__disclaimer'>
-                <Typography color='white' textAlign='center' style={{fontSize: '11px'}}>
-                  <strong> ©2023 Monarch & CO
+                <Typography color='white' style={{fontSize: '11px'}} textAlign='center'className='title__disclaimer'>
+                  ©2023 Monarch & CO
                     <br />
-                    Please drink responsibly
-                  </strong>
+                   Please drink responsibly 
                 </Typography>
               </div>
               <div className='footer__nav'>

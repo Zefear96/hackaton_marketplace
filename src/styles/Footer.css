@@ -1,6 +1,12 @@
 .container {
-    padding: 15px 15px !important;
+    padding: 25px 25px !important;
     letter-spacing: 2px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 1;
 }
 
 .main {
@@ -89,6 +95,7 @@
 .title__disclaimer {
     letter-spacing: 2px !important;
     font-weight: 300 !important;
+    text-align: center !important;
 }
 
 .footer__nav{

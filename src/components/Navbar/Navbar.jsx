@@ -78,6 +78,13 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static" className="navbar">
+            <div className="navbar__logo">
+            <img
+              className="logo_img"
+              src="https://www.glenfiddich.com/themes/custom/gf_theme/images/logo_white.svg"
+              alt="Logo"
+            />
+      </div>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -173,7 +180,7 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 0 }} className='icon-box'>
             <IconButton
               size="medium"
               color="inherit"
@@ -203,7 +210,7 @@ function ResponsiveAppBar() {
               </Badge>
             </IconButton>
             <Tooltip title="Account">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: '12px' }}>
                 <Avatar src="..." />
               </IconButton>
             </Tooltip>

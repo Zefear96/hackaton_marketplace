@@ -54,8 +54,10 @@ i {
 }
 
 .page{
-  width: 90%;
+  width: 100%;
   margin: auto;
+  background-color: rgb(17, 17, 17);
+  color: white;
 }
 
 .user-data {

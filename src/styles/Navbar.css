@@ -5,3 +5,20 @@
 .MuiBadge-badge {
        background-color: #e65100 !important;
 }
+.navbar__logo {
+       /* margin-bottom: 40px; */
+       position: absolute;
+       width: 100vw !important;
+       display: flex;
+       justify-content: center;
+       margin: auto;
+}
+   
+.logo_img {
+       height: 70px !important;
+}
+.icon-box {
+       width: 10%;
+       display: flex;
+       justify-content: space-between;
+}

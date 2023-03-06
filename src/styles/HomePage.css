@@ -74,7 +74,8 @@
 
 .about {
        position: relative;
-       bottom: -20px;
+       /* bottom: -20px; */
+       bottom: 0;
        display: flex;
        justify-content: center;
 }

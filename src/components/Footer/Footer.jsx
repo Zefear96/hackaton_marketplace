@@ -13,12 +13,13 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 export default function StickyFooter() {
   return (
     <Box
+    position='static'
       className="footer"
       sx={{
         display: "flex",
         flexDirection: "column",
         width: "100%",
-        mt: "15px",
+        backgroundColor: "#000",
       }}
     >
       <Box
@@ -28,7 +29,6 @@ export default function StickyFooter() {
           py: 3,
           px: 2,
           mt: "0",
-          backgroundColor: "#000",
         }}
       >
         <Container
@@ -93,7 +93,6 @@ export default function StickyFooter() {
             <Typography
               color="white"
               style={{ fontSize: "11px" }}
-              textalign="center"
               className="title__disclaimer"
             >
               ©2023 Monarch & CO

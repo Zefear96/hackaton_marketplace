@@ -93,7 +93,7 @@ const ProductContextProvider = ({ children }) => {
 
   // FUNCTION ADD COMMENTS
   const addComments = async (newComment, id, product) => {
-    product.comments.push(newComment);
+    product.comments?.push(newComment);
     await axios.patch(`${JSON_API_PRODUCTS}/${id}`, product);
     console.log(newComment);
     getProducts();

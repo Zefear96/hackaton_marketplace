@@ -138,7 +138,7 @@ const ProductSideBar = ({ isSideBar, page, setPage }, props) => {
             },
           }}
         />
-        <Box sx={{ textAlign: "center", pt: 1 }}>
+        <Box sx={{ textalign: "center", pt: 1 }}>
           <Button onClick={toggleDrawer(true)} id="btn-sidebar">
             SideBar
           </Button>

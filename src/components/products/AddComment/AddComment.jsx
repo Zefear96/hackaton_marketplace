@@ -19,7 +19,7 @@ const AddComment = () => {
   const [user, setUser] = useState('');
   const [comment, setComment] = useState('');
 
-  const username = localStorage.getItem("username");
+  const username = JSON.parse(localStorage.getItem("username"));
   // console.log(username);
 
   useEffect(() => {
@@ -72,8 +72,7 @@ const AddComment = () => {
           </Button>
 
           <Typography>
-            {productDetails.comments
-              ? productDetails.comments.map((item) => (
+            {productDetails.comments? productDetails.comments.map((item) => (
                   <div style={{ borderBottom: "1px solid" }} key={item.id}>
                     <h3>{item.author}</h3>
                     <p>{item.descr}</p>

@@ -7,6 +7,8 @@ import CartContextProvider from "./contexts/CartContextProvider";
 import AuthContextProvider from "./contexts/AuthContextProvider";
 import OrderContextProvider from "./contexts/OrderContextProvider";
 import FavoritesContextProvider from "./contexts/FavoritesContextProvider";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   return (

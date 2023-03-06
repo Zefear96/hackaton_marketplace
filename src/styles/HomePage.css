@@ -9,66 +9,74 @@
        width: auto !important;
        height: auto !important;
        z-index: -1;
-       /* display: flex;
-       object-fit: cover !important; */
+       display: flex;
+       object-fit: cover !important;
 }
 
-.promo-block {
-       width: 100%;
-       margin-top: 200px;
+.title-text {
+       width: 35%;
+       color: aliceblue;
+       text-align: start;
+       margin: 10% auto;
+       margin-left: 20%;
+}
+
+.title-text>h1 {
+       text-align: start;
+       margin-bottom: 2%;
+       font-size: 3rem;
+}
+
+.title-text>p {
+       color: aliceblue;
+}
+
+.header-block {
        display: flex;
        flex-wrap: wrap;
+       margin: 10% auto;
+       /* position: relative; */
+}
+
+.card-header {
+       width: 300px !important;
        justify-content: center;
-       height: 400px !important;
-       object-fit: cover !important;
+       margin: auto;
+}
+
+.card-header>img {
+       width: 300px;
+}
+
+.card-header-text {
+       background: aliceblue;
+}
+
+#card-left {
        position: relative;
 }
 
-.promo-video {
-       width: 50%;
+#card-center {
+       position: relative;
 }
 
-.promo-video>video {
-       width: 100% !important;
-       object-fit: cover !important;
-       height: 100% !important;
+#card-right {
+       position: relative;
 }
 
-.promo-text {
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       text-align: center;
-       width: 50%;
-       background-color: rgb(222 220 218);
-}
-
-.promo-text>p {
-      width: 80%;
-      margin: auto;
-}
-
-.promo-text>h2 {
-       margin: auto auto 0;
-
- }
-
-.promo-text h2 {
-       font-size: 3rem;
-       color: #000;
-}
-
-.promo-center> img{
-       height: 70% !important;
+.card-descr {
        position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
+       bottom: -20%;
+       background: black;
+       width: 260px;
+       color: aliceblue;
 }
 
 .about {
        position: relative;
        bottom: -20px;
+       display: flex;
+       justify-content: center;
 }
 
 .about>video{
@@ -87,7 +95,7 @@
 }
 
 .about-text>h2 {
-       color: yellow;
+       color: rgb(243, 243, 74);
        font-size: 4rem;
        text-shadow: 0 1px 0 #302e2e,
                0 2px 0 #433f3f,

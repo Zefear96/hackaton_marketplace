@@ -29,7 +29,6 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
 
   return (
     <div className="products-list">
-      {/* <button onClick={changeSideBarStatus}>Filter&Search Menu</button> */}
       <div className="container-prods">
         {products ? (
           currentData().map((item) => <ProductCard key={item.id} item={item} />)
@@ -44,6 +43,32 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
         id="pagination"
         color="warning"
       />
+
+      <div className="promo-block">
+        <div className="promo-video">
+          <video loop autoPlay muted>
+            <source
+              src="https://www.glenfiddich.com/gf_s3_assets/gf_drupal_assets/videos/GLEN_Website_PDP-Video-15YO_Home.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div className="promo-center">
+          <img
+            src="https://www.glenfiddich.com/sites/default/files/2022-04/15yo-single-malt-scotch-whisky.png"
+            alt=":("
+          />
+        </div>
+        <div className="promo-text">
+          <div className="descr">
+            <h2>DRINK WELL. DO GOOD.</h2>
+            <h3>
+              Welcome to our online store for premium alcoholic beverages!
+            </h3>
+            <h3>15 YEAR OLD OUR SOLERA FIFTEEN</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

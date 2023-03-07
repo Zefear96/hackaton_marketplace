@@ -64,7 +64,7 @@ const EditProduct = () => {
       palette: {
         mode: 'dark',
         primary: {
-          main: '#111111',
+          main: '##bc9366',
         },
       },
     });
@@ -74,7 +74,7 @@ const EditProduct = () => {
     {product ? (<>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Box className='main-add'
+        <Box className='main-edit'
           sx={{
             marginTop: 0,
             padding: 10,
@@ -83,10 +83,10 @@ const EditProduct = () => {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 5, bgcolor: '#111111', width: '50px', height: '50px', mb: 0 }}>
+          <Avatar sx={{ m: 5, bgcolor: '#111111', width: '50px', height: '50px', mb: 1 }}>
           <img src={alcohol} alt="" width='50px' height='50px'/>
           </Avatar>
-          <Typography component="h1" variant="h5" color='#ffffff'>
+          <Typography component="h1" variant="h5" color='#ffffff' sx={{mb: 2}}>
             Edit Product
           </Typography>
           <Box component="form" noValidate sx={{ mt: 0 }}>
@@ -178,19 +178,4 @@ const EditProduct = () => {
 
 export default EditProduct;
 
-// {product ? (<>
-//   <h1>Edit Product</h1>
-//   <input type="text" placeholder="name" name="name" onChange={handleInp} value={product.name}/>
-//   <input type="text" placeholder="category" name="category" onChange={handleInp} value={product.category}/>
-//   <input type="text" placeholder="price" name="price" onChange={handleInp} value={product.price}/>
-//   <input type="text" placeholder="description" name="description" onChange={handleInp} value={product.description}/>
-//   <input type="text" placeholder="volume" name="volume" onChange={handleInp} value={product.volume}/>
-//   <input type="text" placeholder="alcohol percentage" name="alcohol_percentage" onChange={handleInp} value={product.alcohol_percentage}/>
-//   <input type="text" placeholder="image" name="image" onChange={handleInp} value={product.image}/>
-//   <button onClick={() => {
-//     saveEditedProduct(product)
-//     navigate('/products')
-//   }}>Save Changes</button>
-// </>) : (
-// <></>
-// )}
+

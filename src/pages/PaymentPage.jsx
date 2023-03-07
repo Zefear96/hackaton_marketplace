@@ -59,6 +59,7 @@ const PaymentPage = () => {
   const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
   return (
+
     <ThemeProvider theme={theme2}>
 
     <div className="page">
@@ -138,18 +139,18 @@ const PaymentPage = () => {
           className="card"
           style={{
             borderRadius: "200px",
-            background: "#F8FAF5",
+            background: "beige",
             position: "absolute",
             top: "50%",
             left: "50%",
-            width: "50%",
-            height: "50%",
+            width: "25%",
+            // height: "50%",
             transform: "translate(-50%, -50%)",
           }}
         >
-          <div >
+          {/* <div > */}
             <i className="checkmark">✓</i>
-          </div>
+          {/* </div> */}
           <h1>Success</h1>
           <p>
             We received your purchase request;

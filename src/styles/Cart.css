@@ -1,0 +1,106 @@
+/* @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    } */
+/* .h-custom {
+    width: 100% !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+} */
+.mybox {
+    width: 90% !important;
+    margin: auto !important;
+    padding: 0 !important;
+}
+
+.continue-title {
+    margin: 0 !important;
+    text-align: left;
+}
+.product-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain !important;
+}
+.card {
+    padding: 0 !important;
+}
+.info-block {
+    width: 200px;
+}
+.main-card {
+    width: 100%;
+    margin: auto;
+}
+.main-body {
+    width: 100%;
+    margin: auto;
+}
+.cards-list {
+    width: 60% !important;
+}
+.details__block {
+    width: 39% !important;
+    color: aliceblue !important;
+}
+.info-block {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+.img-title {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-block {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+.payment-cards {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px !important;
+    margin-bottom: 60px;
+}
+.prices-par {
+    color: aliceblue !important;
+}
+#checkout-btn {
+    width: 20%;
+    margin: auto;
+    color: white;
+    border: #bc9366 2px solid !important;
+    background-color: #bc9366 !important;
+  }
+  
+  #checkout-btn:hover{
+    background-color: transparent !important;
+    border: #bc9366 2px solid !important;
+    color: #bc9366;
+  }
+
+  #promo-btn {
+    margin-top: 25px !important;
+    width: 30%;
+    margin: auto;
+    color: white;
+    border: #bc9366 2px solid !important;
+    background-color: #bc9366 !important;
+  }
+  
+  #promo-btn:hover{
+    background-color: transparent !important;
+    border: #bc9366 2px solid !important;
+    color: #bc9366;
+  }

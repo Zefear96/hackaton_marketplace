@@ -3,7 +3,7 @@
   padding: 0;
   color: white;
 } */
-h1 {
+.container>h1 {
        color: white;
        font-weight: 900;
        font-size: 40px;
@@ -30,12 +30,13 @@ p {
        color: black;
        font-size:20px;
        margin: 0;
+       top: 30px;
 }
 
 i {
      color: black;
-     font-size: 100px;
-     line-height: 200px;
+     font-size: 60px;
+     /* line-height: 200px; */
      margin-left:-15px;
 }
    

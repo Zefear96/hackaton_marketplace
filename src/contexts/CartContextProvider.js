@@ -92,6 +92,7 @@ const CartContextProvider = ({ children }) => {
 
   // FUNCTION CHANGE_COUNT_PRODUCT
   const changeProductCount = (count, id) => {
+
     if (count < 1) {
       deleteProductFromCart(id);
     }

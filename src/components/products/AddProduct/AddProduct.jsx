@@ -46,9 +46,8 @@ const AddProduct = () => {
     }
   };
   return (
-    <div>
+    <div className="myapp">
 
-      <h1>AddProduct</h1>
       <input type="text" placeholder="name" name="name" onChange={handleInp} />
       <input
         type="text"

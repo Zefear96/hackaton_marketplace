@@ -33,7 +33,7 @@ const HomePage = () => {
 
   // state for scroll visible
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     // triggerOnce: true,
   });
 
@@ -49,7 +49,7 @@ const HomePage = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 1.4,
+        duration: 1.2,
         ease: "easeInOut",
       },
     },
@@ -111,7 +111,7 @@ const HomePage = () => {
         <motion.div
           variants={variants}
           initial="hidden"
-          animate="visible"
+          animate={inView ? "visible" : "hidden"}
           className="title-text"
         >
           <h4>Monarch</h4>
@@ -199,7 +199,7 @@ const HomePage = () => {
           className="about-text"
           variants={variantsCenter}
           initial="hidden"
-          animate={inView2 ? "visible" : "hidden"}
+          animate={inView ? "visible" : "hidden"}
         >
           <h2>WELCOME TO OUR HOME</h2>
         </motion.div>

@@ -11,6 +11,7 @@ import { useState, useEffect } from "react";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useParams } from "react-router-dom";
 import { useAuth } from "../../../contexts/AuthContextProvider";
+import "../../../styles/ProductDetails.css";
 
 const AddComment = () => {
   const { addComments, productDetails } = useProducts();
@@ -48,7 +49,7 @@ const AddComment = () => {
   };
 
   return (
-    <div>
+    <div className="comments-container">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -64,23 +65,42 @@ const AddComment = () => {
             variant="filled"
             name="comments"
             onChange={(e) =>
-              setComment({ author: user, descr: e.target.value })
+              setComment({
+                author: user,
+                descr: e.target.value,
+                date: new Date().toLocaleString("ru-US", {
+                  year: "numeric",
+                  month: "2-digit",
+                  day: "2-digit",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                }),
+              })
             }
             value={comment.descr}
           />
 
-          <Button onClick={saveComment} variant="contained">
+          <Button onClick={saveComment} variant="contained" id="btn-comments">
             Save
           </Button>
 
           <Typography>
-            {productDetails.comments? productDetails.comments.map((item) => (
-                  <div style={{ borderBottom: "1px solid" }} key={item.id}>
-                    <h3>{item.author}</h3>
-                    <p>{item.descr}</p>
+            {productDetails.comments ? (
+              productDetails.comments.map((item) => (
+                <div
+                  style={{ borderBottom: "1px solid gainsboro" }}
+                  key={item.id}
+                >
+                  <div className="header-comment">
+                    <h4 style={{ fontWeight: "bold" }}>{item.author}</h4>
+                    <h4 id="date">{item.date}</h4>
                   </div>
-                ))
-              : "Not yet comments, be the first! :)"}
+                  <p>{item.descr}</p>
+                </div>
+              ))
+            ) : (
+              <p>"Not yet comments, be the first!"</p>
+            )}
           </Typography>
         </AccordionDetails>
       </Accordion>

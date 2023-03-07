@@ -70,7 +70,7 @@ const RegistrationPage = () => {
   const style={
     backgroundImage: `url('https://www.donjulio.com/images/footer-bg.jpg')`,
     width: '100%',
-    height: '100vh'
+    height: '100%'
   }
 
   return (
@@ -148,7 +148,7 @@ const RegistrationPage = () => {
             >
               Register
             </Button>
-            <Grid container justifyContent="center" style={{marginBottom: '3%'}}>
+            <Grid container justifyContent="center" style={{marginBottom: '5%'}}>
               <Grid item>
                 <Link onClick={() => navigate('/login')} variant="body2" style={{color: 'white'}}>
                   Already have an account? Login

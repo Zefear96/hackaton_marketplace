@@ -86,7 +86,7 @@ const ProductDetails = () => {
               <img src={productDetails.image} alt="" />
             </div>
           </div>
-          <div className="info-block">
+          <div className="info-block-details">
             <div className="desc-prod">
               VOLUME : {productDetails.volume}L | ABV :
               {productDetails.alcohol_percentage}%<h1>{productDetails.name}</h1>

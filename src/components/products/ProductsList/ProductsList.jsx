@@ -72,6 +72,7 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
       y: 150,
     },
     visible: {
+      zIndex: 1,
       opacity: 1,
       y: 0,
       transition: {

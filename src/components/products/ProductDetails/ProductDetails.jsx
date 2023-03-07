@@ -71,6 +71,7 @@ const ProductDetails = () => {
               <img src={productDetails.image} alt="" />
             </motion.div>
           </div>
+
           <div className="info-block-details" ref={ref}>
             <motion.div
               variants={variantsBottom}

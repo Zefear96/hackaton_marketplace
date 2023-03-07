@@ -59,6 +59,7 @@ const PaymentPage = () => {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
   return (
+
     <ThemeProvider theme={theme2}>
       <div className="page">
         <div className="container">
@@ -170,32 +171,31 @@ const PaymentPage = () => {
             </div>
           </div>
         </div>
-
-        <Collapse in={open}>
-          <div
-            className="card"
-            style={{
-              borderRadius: "200px",
-              background: "#F8FAF5",
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              width: "50%",
-              height: "50%",
-              transform: "translate(-50%, -50%)",
-            }}
-          >
-            <div>
-              <i className="checkmark">✓</i>
-            </div>
-            <h1>Success</h1>
-            <p>
-              We received your purchase request;
-              <br /> we'll be in touch shortly!
-            </p>
-          </div>
-        </Collapse>
-      </div>
+      <Collapse in={open}>
+        <div
+          className="card"
+          style={{
+            borderRadius: "200px",
+            background: "beige",
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            width: "25%",
+            // height: "50%",
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          {/* <div > */}
+            <i className="checkmark">✓</i>
+          {/* </div> */}
+          <h1>Success</h1>
+          <p>
+            We received your purchase request;
+            <br /> we'll be in touch shortly!
+          </p>
+        </div>
+      </Collapse>
+    </div>
     </ThemeProvider>
   );
 };

@@ -30,7 +30,6 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
   }
 
   // MOTION
-
   // state for scroll visible
   const { ref, inView } = useInView({
     threshold: 0.1,

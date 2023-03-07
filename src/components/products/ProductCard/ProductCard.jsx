@@ -29,7 +29,7 @@ const ProductCard = ({ item }) => {
   const { deleteProduct } = useProducts();
 
   const { addProductToCart, checkProductInCart } = useCart();
-  
+
   const {
     addProductToFav,
     checkProductInFav,
@@ -45,9 +45,7 @@ const ProductCard = ({ item }) => {
   }, []);
 
   useEffect(() => {
-  
     getFavorites();
-
   }, []);
 
   return (

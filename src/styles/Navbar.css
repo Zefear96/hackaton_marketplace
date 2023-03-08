@@ -8,17 +8,17 @@
        width: 100% !important;
 }
 
-.MuiBox-root>button:hover  {
-       color: #bc9366;
+.MuiToolbar-root>button:hover  {
+       color: #bc9366 !important;
        transform: scale(1.1);
        transition: 0.4s;
 }
 
-.MuiToolbar-root>a:hover {
+/* .MuiToolbar-root>a:hover {
        color: #bc9366;
-       /* transform: scale(1.1); */
+       transform: scale(1.1);
        transition: 0.4s;
-}
+} */
 
 .MuiBadge-badge {
        background-color: #d45008 !important;
@@ -43,8 +43,29 @@
        justify-content: space-between;
 }
 
+
 @media all and (max-width: 320px) {
        .navbar__logo {
               display: none !important;
        }
 }
+
+/* .icon-box:hover {
+       color:#bc9366;
+} */
+
+.icon-btns-nav:hover {
+       color: #bc9366 !important;
+       transform: scale(1.15);
+       transition: 0.7s;
+}
+
+#label-name:hover {
+       color: #bc9366 !important;
+       transition: 0.6s;
+}
+
+/* .MuiBox-root>a {
+       color: #bc9366 !important;
+} */
+

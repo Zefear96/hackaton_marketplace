@@ -6,6 +6,11 @@
        color: aliceblue;
        margin-right: 0;
        border-radius:   0  0 0 25px ;
+       padding: 0 !important;
+}
+
+.box-btn-sidebar {
+       padding: 0 !important;
 }
 
 .sidebar-container {
@@ -16,6 +21,31 @@
 
 }
 
-.MuiBox-root {
-       padding: 0 !important;
+#inp-search {
+       margin: 40px auto 20px;
+       border: 2px solid #bc9366;
+       border-radius: 5px;
+}
+
+#inp-search:hover {
+       transition: 0.6s;
+       background: #bc9366;
+}
+
+#box-btn-sidebar {
+       padding-top: 0;
+}
+
+.label-filter {
+       margin: 10px;
+       color: whitesmoke;
+}
+
+.radio-btns {
+       color: whitesmoke;
+}
+
+#sidebar-container {
+       color: whitesmoke !important;
+       background: rgb(27, 26, 26);
 }

@@ -66,15 +66,15 @@ const AddProduct = () => {
     palette: {
       mode: 'dark',
       primary: {
-        main: '#111111',
+        main: '#bc9366',
       },
     },
   });
 
   return (
     
-    <div >
-    <div className="myapp" >
+    <div>
+
     <ThemeProvider theme={theme}>
         <CssBaseline />
         <Box className='main-add'
@@ -84,12 +84,13 @@ const AddProduct = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            bgcolor: '#111111'
           }}
         >
-          <Avatar sx={{ m: 5, bgcolor: '#111111', width: '50px', height: '50px', mb: 0 }}>
+          <Avatar sx={{ m: 5, bgcolor: '#111111', width: '50px', height: '50px', mb: 1 }}>
           <img src={alcohol} alt="" width='50px' height='50px'/>
           </Avatar>
-          <Typography component="h1" variant="h5" color='#ffffff'>
+          <Typography component="h1" variant="h5" color='#ffffff' sx={{mb: 2}}>
             Add Product
           </Typography>
           <Box component="form" noValidate sx={{ mt: 0 }}>
@@ -168,7 +169,7 @@ const AddProduct = () => {
             <Button
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 4 }}
               onClick={() => {
                 addProduct(product);
                 navigate("/products");
@@ -179,7 +180,6 @@ const AddProduct = () => {
           </Box>
         </Box>
         </ThemeProvider>
-      </div>
       
     </div>
    

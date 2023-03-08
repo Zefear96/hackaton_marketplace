@@ -35,15 +35,12 @@
        display: flex;
        justify-content: space-between;
 }
+
 @media all and (max-width: 320px) {
        .navbar__logo {
               display: none !important;
        }
 }
-
-/* .icon-box:hover {
-       color:#bc9366;
-} */
 
 .icon-btns-nav:hover {
        color: #bc9366 !important;
@@ -55,8 +52,4 @@
        color: #bc9366 !important;
        transition: 0.6s;
 }
-
-/* .MuiBox-root>a {
-       color: #bc9366 !important;
-} */
 

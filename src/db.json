@@ -187,7 +187,13 @@
       "alcohol_percentage": 40,
       "description": "A premium cognac with a rich and complex taste, aged for at least 10 years in oak barrels.",
       "image": "https://www.hennessy.com/sites/hennessy_us/files/styles/square_375x375/public/2020-01/VSOP.png?itok=o80Aw8DQ",
-      "comments": []
+      "comments": [
+        {
+          "author": null,
+          "descr": "ololo",
+          "date": "08.03.2023, 15:28"
+        }
+      ]
     },
     {
       "id": 14,

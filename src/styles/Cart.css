@@ -24,58 +24,80 @@
     height: 200px;
     object-fit: contain !important;
 }
+
 .card {
     padding: 0 !important;
 }
-.info-block {
-    width: 200px;
-}
+
 .main-card {
     width: 100%;
     margin: auto;
 }
+
 .main-body {
     width: 100%;
     margin: auto;
 }
+
 .cards-list {
     width: 60% !important;
 }
+
 .details__block {
-    width: 39% !important;
+    width: 35% !important;
     color: aliceblue !important;
+    margin: auto 15px;
 }
+
 .info-block {
     width: 100% !important;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .img-title {
     width: 47%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .price-block {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .info-text {
+    width: 33%;
     display: flex;
     flex-direction: column;
 }
+
 .payment-cards {
-    width: 40%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 40px !important;
     margin-bottom: 60px;
+    flex-wrap: wrap;
 }
+
+.payment-cards>a {
+    margin: 5px;
+}
+
 .prices-par {
     color: aliceblue !important;
 }
+
 #checkout-btn {
     width: 20%;
     margin: auto;
@@ -92,7 +114,7 @@
 
   #promo-btn {
     margin-top: 25px !important;
-    width: 30%;
+    width: 40% !important;
     margin: auto;
     color: white;
     border: #bc9366 2px solid !important;
@@ -104,3 +126,39 @@
     border: #bc9366 2px solid !important;
     color: #bc9366;
   }
+
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.card-prod-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-img {
+    width: 33%;
+}
+/* .cart-box-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+} */
+
+
+/* @media all and (max-width: 320px) {
+    .card-body {
+           width: 300px;
+    }
+} */
+/* .info-block {
+    display: flex;
+} */

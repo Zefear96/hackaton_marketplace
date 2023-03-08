@@ -94,11 +94,11 @@ export default function Cart() {
   return (
     <>
       <div style={{ backgroundColor: "#eee" }}>
-        <div className="mybox py-5 h-100">
+        <div className="mybox h-100">
           <div className=" main-body d-flex justify-content-center align-items-center h-100">
             <div className="col">
               <div className="main-card">
-                <div className="card-body p-4">
+                <div className="card-body main-cardbody">
                   <div className="row w-100">
                     <div>
                       <h5 className="mb-3 continue-title">
@@ -178,7 +178,7 @@ export default function Cart() {
                             className="card text-white rounded-3"
                             style={{ backgroundColor: "#111111" }}
                           >
-                            <div className="card-body">
+                            <div className="card-body-details">
                               <div className="d-flex justify-content-between align-items-center mb-4">
                                 <h5 className="mb-0">Card details</h5>
                                 <img
@@ -253,7 +253,7 @@ export default function Cart() {
                                         />
                                       </div>
                                     </div>
-                                    <div className="form-outline form-white mb-4 mt-4">
+                                    <div className="form-outline form-white mb-4 mt-4 box-promo">
                                       <TextField
                                         label="Promocode"
                                         variant="outlined"
@@ -292,17 +292,19 @@ export default function Cart() {
                                   </p>
                                 </div>
                               </div>
-                              <Button
-                                variant="contained"
-                                id="checkout-btn"
-                                onClick={() => {
-                                  // cartCleaner();
-                                  navigate("/payment");
-                                  handleChange();
-                                }}
-                              >
-                                Checkout
-                              </Button>
+                              <div className="box-checkout">
+                                <Button
+                                  variant="contained"
+                                  id="checkout-btn"
+                                  onClick={() => {
+                                    // cartCleaner();
+                                    navigate("/payment");
+                                    handleChange();
+                                  }}
+                                >
+                                  Checkout
+                                </Button>
+                              </div>
                             </div>
                           </div>
                         </div>

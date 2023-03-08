@@ -29,7 +29,7 @@ export default function Cart() {
     getCart();
   }, []);
 
-  React.useEffect(() => {}, [cart.products]);
+  React.useEffect(() => {}, [cart]);
 
   function cartCleaner() {
     localStorage.removeItem("cart");
@@ -102,7 +102,11 @@ export default function Cart() {
                   <div className="row w-100">
                     <div>
                       <h5 className="mb-3 continue-title">
-                        <a href="#!" className="text-body">
+                        <a
+                          onClick={() => navigate("/products")}
+                          className="text-body"
+                          style={{ cursor: "pointer" }}
+                        >
                           <i className="fas me-2" />
                           <ArrowBackIcon /> Continue shopping
                         </a>

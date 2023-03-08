@@ -15,7 +15,7 @@ const AuthContextProvider = ({ children }) => {
 
   const getUsers = async () => {
     const res = await axios(API);
-    console.log(res);
+    // console.log(res);
     setUsers(res.data);
     console.log(res.data);
   };
@@ -32,7 +32,13 @@ const AuthContextProvider = ({ children }) => {
 
   const login = (username) => {
     navigate("/");
+    let prodObj = {
+      products: [],
+      totalPrice: 0,
+    };
+
     localStorage.setItem("username", JSON.stringify(username));
+    localStorage.setItem("cart", JSON.stringify(prodObj));
 
     setUser(username);
   };
@@ -48,9 +54,10 @@ const AuthContextProvider = ({ children }) => {
 
   const logout = () => {
     localStorage.removeItem("username");
+    localStorage.removeItem("cart");
 
     setUser("");
-    navigate("/");
+    // navigate("/");
   };
 
   return (

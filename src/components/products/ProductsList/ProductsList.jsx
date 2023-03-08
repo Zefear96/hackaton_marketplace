@@ -10,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
   const { products, getProducts } = useProducts();
 
-  console.log(products);
+  // console.log(products);
 
   useEffect(() => {
     getProducts();

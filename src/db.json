@@ -7,6 +7,28 @@
       "passConf": "aaa",
       "favorites": [
         {
+          "id": 1,
+          "name": "Whiskey Jack Daniel's Old No. 7",
+          "category": "Whiskey",
+          "price": 5000,
+          "volume": 0.7,
+          "alcohol_percentage": 40,
+          "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
+          "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
+          "comments": []
+        },
+        {
+          "id": 2,
+          "name": "Vodka Beluga Noble Russian",
+          "category": "Vodka",
+          "price": 3500,
+          "volume": 1,
+          "alcohol_percentage": 40,
+          "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
+          "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
+          "comments": []
+        },
+        {
           "id": 3,
           "name": "Rum Bacardi Superior",
           "category": "Rum",
@@ -20,43 +42,6 @@
       ],
       "saved": [],
       "id": 1
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "passConf": "",
-      "favorites": [
-        {
-          "id": 2,
-          "name": "Vodka Beluga Noble Russian",
-          "category": "Vodka",
-          "price": 3500,
-          "volume": 1,
-          "alcohol_percentage": 40,
-          "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
-          "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
-          "comments": [
-            {
-              "author": "\"aaa\"",
-              "descr": "ololo"
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "name": "Tequila Don Julio Blanco",
-          "category": "Tequila",
-          "price": 2800,
-          "volume": 0.75,
-          "alcohol_percentage": 38,
-          "description": "A premium tequila with a clean and crisp taste, made from 100% blue agave.",
-          "image": "https://images.freshop.com/00674545000001/4852886d4174659643cd0c75eaac486f_large.png",
-          "comments": []
-        }
-      ],
-      "saved": [],
-      "id": 2
     }
   ],
   "orderlist": [],
@@ -70,13 +55,7 @@
       "alcohol_percentage": 40,
       "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
       "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
-      "comments": [
-        {
-          "author": null,
-          "descr": "wow",
-          "date": "07.03.2023, 23:43"
-        }
-      ]
+      "comments": []
     },
     {
       "id": 2,
@@ -87,13 +66,7 @@
       "alcohol_percentage": 40,
       "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
       "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
-      "comments": [
-        {
-          "author": "aaa",
-          "descr": "ololo",
-          "date": "07.03.2023, 22:44"
-        }
-      ]
+      "comments": []
     },
     {
       "id": 3,

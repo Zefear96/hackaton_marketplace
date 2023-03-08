@@ -64,7 +64,7 @@ const EditProduct = () => {
       palette: {
         mode: 'dark',
         primary: {
-          main: '##bc9366',
+          main: '#bc9366',
         },
       },
     });
@@ -81,6 +81,7 @@ const EditProduct = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            bgcolor: '#111111'
           }}
         >
           <Avatar sx={{ m: 5, bgcolor: '#111111', width: '50px', height: '50px', mb: 1 }}>
@@ -159,7 +160,7 @@ const EditProduct = () => {
             <Button
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 4 }}
               onClick={() => {
                 saveEditedProduct(product)
                 navigate('/products')

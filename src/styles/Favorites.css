@@ -1,11 +1,14 @@
 #cleanFav-btn {
-    width: 10%;
+    width: 35% !important;
     height: 50px;
     background: #bc9366;
     border-radius: 5px;
-    margin: 10px;
     border: none;
     color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5px !important;
 
   }
   

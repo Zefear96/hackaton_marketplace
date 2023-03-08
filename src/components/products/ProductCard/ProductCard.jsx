@@ -75,65 +75,65 @@ const ProductCard = ({ item }) => {
         <CardHeader
           className="card-title"
           title={item.name}
-          subheader={`category: ${item.category}`}
+          subheader={`VOLUME : ${item.volume}L | ABV : ${item.alcohol_percentage}%`}
           style={{ fontWeight: "bold !important" }}
         />
 
         <CardContent className="card-text">
           <Typography variant="body2" color="text.secondary">
-            <span>
-              VOLUME : {item.volume}L | ABV : {item.alcohol_percentage}%
-            </span>
             <br />
-            {/* <p>{item.description.slice(0, 50) + "..."}</p> */}
-            <span style={{ fontSize: "1.2rem" }}>${item.price}</span>
+            <span id="prodcard-price">${item.price}</span>
           </Typography>
         </CardContent>
         <CardActions className="btns-block-prod">
-          <Button
-            variant="outlined"
-            className="btns-prod"
-            id="btn-prod-details"
-            onClick={() => navigate(`/details/${item.id}`)}
-          >
-            Details
-            <ContactSupportIcon fontSize="small" />
-          </Button>
-          <Button
-            variant="outlined"
-            className="btns-prod"
-            id="btn-prod-edit"
-            onClick={() => navigate(`/edit/${item.id}`)}
-          >
-            Edit <SettingsSuggestIcon fontSize="small" />
-          </Button>
-          <Button
-            variant="outlined"
-            className="btns-prod"
-            id="btn-prod-delete"
-            onClick={() => deleteProduct(item.id)}
-          >
-            Delete <DeleteIcon fontSize="small" />
-          </Button>
+          <div className="btns-user">
+            <IconButton
+              size="small"
+              onClick={() => addProductToFav(item, favUser.id)}
+            >
+              {checkProductInFav(item.id) ? (
+                <FavoriteIcon style={{ color: "#DC143C" }} />
+              ) : (
+                <FavoriteBorderIcon style={{ color: "white" }} />
+              )}
+            </IconButton>
 
-          <IconButton size="small" onClick={() => addProductToCart(item)}>
-            {checkProductInCart(item.id) ? (
-              <ShoppingCartIcon color="success" />
-            ) : (
-              <AddShoppingCartOutlinedIcon />
-            )}
-          </IconButton>
+            <IconButton size="small" onClick={() => addProductToCart(item)}>
+              {checkProductInCart(item.id) ? (
+                <ShoppingCartIcon style={{ color: "white" }} />
+              ) : (
+                <AddShoppingCartOutlinedIcon style={{ color: "white" }} />
+              )}
+            </IconButton>
+          </div>
 
-          <IconButton
-            size="small"
-            onClick={() => addProductToFav(item, favUser.id)}
-          >
-            {checkProductInFav(item.id) ? (
-              <FavoriteIcon color="error" />
-            ) : (
-              <FavoriteBorderIcon color="error" />
-            )}
-          </IconButton>
+          <div className="btns-admin">
+            <Button
+              variant="outlined"
+              className="btns-prod"
+              id="btn-prod-details"
+              onClick={() => navigate(`/details/${item.id}`)}
+            >
+              More
+              <ContactSupportIcon fontSize="small" />
+            </Button>
+            <Button
+              variant="outlined"
+              className="btns-prod"
+              id="btn-prod-edit"
+              onClick={() => navigate(`/edit/${item.id}`)}
+            >
+              Edit <SettingsSuggestIcon fontSize="small" />
+            </Button>
+            <Button
+              variant="outlined"
+              className="btns-prod"
+              id="btn-prod-delete"
+              onClick={() => deleteProduct(item.id)}
+            >
+              Delete <DeleteIcon fontSize="small" />
+            </Button>
+          </div>
         </CardActions>
       </div>
     </Card>

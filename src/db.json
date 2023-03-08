@@ -5,7 +5,19 @@
       "email": "aaa",
       "password": "aaa",
       "passConf": "aaa",
-      "favorites": [],
+      "favorites": [
+        {
+          "id": 3,
+          "name": "Rum Bacardi Superior",
+          "category": "Rum",
+          "price": 1000,
+          "volume": 0.75,
+          "alcohol_percentage": 37.5,
+          "description": "A white rum with a crisp and clean taste, perfect for making cocktails.",
+          "image": "https://vmarketpr.com/wp-content/uploads/2022/12/Untitled-design-2022-12-07T161924.288.png",
+          "comments": []
+        }
+      ],
       "saved": [],
       "id": 1
     },
@@ -68,7 +80,7 @@
       "volume": 0.7,
       "alcohol_percentage": 44,
       "description": "A premium gin with a unique blend of botanicals, including Bulgarian rose and cucumber.",
-      "image": "https://w7.pngwing.com/pngs/95/700/png-transparent-hendrick-s-gin-distilled-beverage-gin-and-tonic-distillation-wine-thumbnail.png",
+      "image": "https://i.ibb.co/Y3LhHYR/nh-Xr-OW-Oou-Uyckga-Ow9n-transformed.png",
       "comments": []
     },
     {
@@ -321,7 +333,7 @@
       "volume": 0.7,
       "alcohol_percentage": 40,
       "description": "A premium French vodka with a smooth and velvety taste, made from French wheat and distilled 5 times.",
-      "image": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c23c.png",
+      "image": "https://i.ibb.co/ZTLsMZ9/u-zeek-I8x-Vs-O-j-IQKF5w4-transformed.png",
       "comments": []
     },
     {
@@ -332,7 +344,7 @@
       "volume": 0.75,
       "alcohol_percentage": 45,
       "description": "A premium Tennessee whiskey with a rich and robust taste, aged in a single barrel for a unique flavor.",
-      "image": "https://example.com/images/jack-daniels-whiskey.jpg",
+      "image": "https://i.ibb.co/LvZLbR8/5-Vfpy-Lzyijn7-Nh-XAPBwa-T-transformed.png",
       "comments": []
     },
     {
@@ -354,7 +366,7 @@
       "volume": 0.7,
       "alcohol_percentage": 40,
       "description": "A premium Greek brandy with a complex and smooth taste, aged for at least 12 years in oak barrels.",
-      "image": "https://e7.pngegg.com/pngimages/762/218/png-clipart-gin-and-tonic-distilled-beverage-wine-hendrick-s-gin-gin-and-tonic.png",
+      "image": "https://www.metaxa.com/wp-content/uploads/2019/11/METAXA_Twelve_Stars_ProductPack.png",
       "comments": []
     },
     {
@@ -475,7 +487,7 @@
       "volume": 0.7,
       "alcohol_percentage": 44,
       "description": "A premium Scottish gin with a unique and floral taste, made with 11 botanicals and infused with cucumber and rose petals.",
-      "image": "https://example.com/images/hendricks-gin.jpg",
+      "image": "https://i.ibb.co/Y3LhHYR/nh-Xr-OW-Oou-Uyckga-Ow9n-transformed.png",
       "comments": []
     },
     {

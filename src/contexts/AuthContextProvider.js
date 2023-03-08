@@ -17,7 +17,7 @@ const AuthContextProvider = ({ children }) => {
     const res = await axios(API);
     // console.log(res);
     setUsers(res.data);
-    console.log(res.data);
+    // console.log(res.data);
   };
 
   const checkUniqueUser = (username) => {

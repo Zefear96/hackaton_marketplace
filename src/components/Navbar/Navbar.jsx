@@ -75,7 +75,7 @@ function ResponsiveAppBar() {
 
   function checkUserInSystem() {
     let user = JSON.parse(localStorage.getItem("username"));
-
+    console.log(user);
     if (user) {
       return setAuth(true);
     } else return setAuth(false);
@@ -84,6 +84,8 @@ function ResponsiveAppBar() {
   useEffect(() => {
     checkUserInSystem();
   });
+
+  useEffect(() => {}, []);
 
   return (
     <AppBar position="static" className="navbar">

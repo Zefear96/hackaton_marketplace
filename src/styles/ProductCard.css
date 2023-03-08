@@ -27,6 +27,7 @@
 
 .card-text {
        height: 80px;
+       padding-top: 0 !important;
 }
 
 #prodcard-price {

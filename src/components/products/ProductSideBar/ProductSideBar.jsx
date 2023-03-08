@@ -112,33 +112,19 @@ const ProductSideBar = ({ isSideBar, page, setPage }, props) => {
 
   return (
     <>
-      {/* <Box>
-        {["sideBar"].map((anchor) => (
-          <React.Fragment key={anchor}>
-            <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-            <Drawer
-              anchor={anchor}
-              open={state[anchor]}
-              // onClose={toggleDrawer(anchor, false)}
-            >
-              {list(anchor)}
-            </Drawer>
-          </React.Fragment>
-        ))}
-      </Box> */}
       <Root className="sidebar-container">
         <CssBaseline />
         <Global
           styles={{
             ".MuiDrawer-root > .MuiPaper-root": {
-              height: "90%",
+              height: "100%",
               width: "200px",
               overflow: "visible",
               background: "transparent",
             },
           }}
         />
-        <Box sx={{ textalign: "center", pt: 1 }}>
+        <Box sx={{ textalign: "center", pt: 1 }} id="box-btn-sidebar">
           <Button onClick={toggleDrawer(true)} id="btn-sidebar">
             SideBar
           </Button>
@@ -165,11 +151,12 @@ const ProductSideBar = ({ isSideBar, page, setPage }, props) => {
               right: 0,
               left: 0,
             }}
+            // style={{ background: "black" }}
           >
             <Puller />
-            <Typography sx={{ p: 2, color: "text.secondary" }}>
+            {/* <Typography sx={{ p: 2, color: "text.secondary" }}>
               51 results
-            </Typography>
+            </Typography> */}
           </StyledBox>
           <StyledBox
             sx={{
@@ -178,10 +165,11 @@ const ProductSideBar = ({ isSideBar, page, setPage }, props) => {
               height: "100%",
               overflow: "auto",
             }}
+            id="sidebar-container"
           >
-            <Search>
+            <Search id="inp-search">
               <SearchIconWrapper>
-                <SearchIcon />
+                <SearchIcon id="search-icon" />
               </SearchIconWrapper>
               <StyledInputBase
                 placeholder="Search…"

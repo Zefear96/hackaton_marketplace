@@ -123,52 +123,50 @@ export default function Cart() {
                         <div className="cards-list">
                           {cart?.products.map((elem) => (
                             <div className="card mb-3" key={elem.item.id}>
-                              <div className="card-body">
-                                <div className="d-flex justify-content-between container-card">
-                                  <div className="d-flex flex-row align-items-center img-title">
-                                    <div className="box-img">
-                                      <img
-                                        src={elem.item.image}
-                                        className="product-img"
-                                        alt="Shopping item"
-                                      />
-                                    </div>
-                                    <div className="info-text">
-                                      <h5>{elem.item.name}</h5>
-                                      <p className="small mb-0">
-                                        {elem.item.category}
-                                      </p>
-                                    </div>
-                                  </div>
-                                  <div className="price-block">
-                                    <TextField
-                                      style={{ width: "60px", height: "40px" }}
-                                      type="number"
-                                      value={elem.count}
-                                      onChange={(e) =>
-                                        changeProductCount(
-                                          e.target.value,
-                                          elem.item.id
-                                        )
-                                      }
-                                    />
+                              <div className="card-body-prod">
+                                <div className="box-img">
+                                  <img
+                                    src={elem.item.image}
+                                    className="product-img"
+                                    alt="Shopping item"
+                                  />
+                                </div>
 
-                                    <h5 className="mb-0">{elem.item.price}</h5>
+                                <div className="info-text">
+                                  <h5>{elem.item.name}</h5>
+                                  <p className="small mb-0">
+                                    {elem.item.category}
+                                  </p>
+                                </div>
 
-                                    <h5 className="mb-0">
-                                      Sub Price: {elem.subPrice}
-                                    </h5>
+                                <div className="price-block">
+                                  <TextField
+                                    style={{ width: "60px", height: "40px" }}
+                                    type="number"
+                                    value={elem.count}
+                                    onChange={(e) =>
+                                      changeProductCount(
+                                        e.target.value,
+                                        elem.item.id
+                                      )
+                                    }
+                                  />
 
-                                    <a
-                                      href="#!"
-                                      style={{ color: "#bf4545" }}
-                                      onClick={() =>
-                                        deleteProductFromCart(elem.item.id)
-                                      }
-                                    >
-                                      <DeleteIcon />
-                                    </a>
-                                  </div>
+                                  <h5 className="mb-0">{elem.item.price}</h5>
+
+                                  <h5 className="mb-0">
+                                    Sub Price: {elem.subPrice}
+                                  </h5>
+
+                                  <a
+                                    href="#!"
+                                    style={{ color: "#bf4545" }}
+                                    onClick={() =>
+                                      deleteProductFromCart(elem.item.id)
+                                    }
+                                  >
+                                    <DeleteIcon />
+                                  </a>
                                 </div>
                               </div>
                             </div>

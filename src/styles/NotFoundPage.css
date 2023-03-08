@@ -1,0 +1,29 @@
+.not-found-page {
+       width: 100%;
+}
+
+.text-404 {
+       position: absolute;
+       color: black;
+       margin-top: 5%;
+       margin-left: 30%;
+}
+
+.text-404>h1 {
+       color: black;
+       font-size: 3rem;
+
+}
+
+.not-found-page>img {
+       position: relative;
+       object-fit: cover !important;
+       width: 100%;
+       z-index: -1;
+}
+
+@media all and (max-width: 350px) {
+       .logo_img {
+              display: none !important;
+       }
+}

@@ -56,7 +56,7 @@ export default function StickyFooter() {
                 <a href="#">Alybek Co</a>
               </li>
               <li>
-                <a href="#" style={{ paddingLeft: "40px" }}>
+                <a href="#" id="rehab" >
                   Rehab
                 </a>
               </li>

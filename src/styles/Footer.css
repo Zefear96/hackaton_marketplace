@@ -7,6 +7,7 @@
     bottom: 0;
     margin-top: 0;
     z-index: 1;
+    width: 100% !important;
 }
 
 .main {
@@ -49,6 +50,9 @@
     margin: auto;
     padding: 0;
     width: 100%;
+}
+#rehab {
+    padding-left: 40px
 }
 
 .family__list>li>a{
@@ -119,4 +123,25 @@
 
 .footer {
     width: 100%;
+}
+
+@media all and (max-width: 1024px) {
+
+}
+
+@media all and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 320px) {
+    .family__list>li>a{ 
+        font-size: 7px;
+    }
+    #rehab {
+        padding-left: 0;
+    }
+    .nav__list>li>a{
+        font-size: 7px;
+        text-align: center;
+    }
 }

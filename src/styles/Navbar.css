@@ -1,5 +1,11 @@
+#root {
+       width: 100% !important;
+       height: 100% !important;
+}
+
 .navbar {
        background: black !important;
+       width: 100% !important;
 }
 
 .MuiBox-root>button:hover  {
@@ -32,7 +38,13 @@
 }
 
 .icon-box {
-       width: 10%;
+       width: 135px;
        display: flex;
        justify-content: space-between;
+}
+
+@media all and (max-width: 320px) {
+       .navbar__logo {
+              display: none !important;
+       }
 }

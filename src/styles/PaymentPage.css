@@ -40,7 +40,7 @@ i {
      margin-left:-15px;
 }
    
-.card {
+.card-success {
      background: white;
      padding: 60px;
      border-radius: 4px;
@@ -134,4 +134,29 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media all and (max-width: 320px) {
+  .user-data {
+    width: 90%;
+  }
+  #check-inp {
+    font-size: 9px;
+  }
+  .card-success {
+    width: 90% !important;
+    top: 110% !important;
+    /* height: ; */
+
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .card-success {
+    width: 50% !important;
+    top: 110% !important;
+    /* height: 30% !important ; */
+
+  }
 }

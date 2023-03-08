@@ -44,7 +44,7 @@ const PaymentPage = () => {
     setOrder(obj);
   };
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   //styles
   const theme2 = createTheme({
@@ -172,7 +172,7 @@ const PaymentPage = () => {
         </div>
         <Collapse in={open}>
           <div
-            className="card"
+            className="card-success"
             style={{
               borderRadius: "200px",
               background: "beige",

@@ -38,13 +38,14 @@ const Favorites = () => {
     const navigate = useNavigate();
     const { deleteProduct } = useProducts();
     const { addProductToCart, checkProductInCart } = useCart();
-
+    // style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: '20px 0px'}}
+    // style={{display: 'flex', flexWrap: 'wrap', width: '70%', justifyContent: 'center', margin: 'auto' }}
   return (
-    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: '20px 0px'}}>
-    <div style={{display: 'flex', flexWrap: 'wrap', width: '70%', justifyContent: 'center', margin: 'auto' }}>
+    <div className='products-list'>
+      <div className="container-prods">
         {favorites.length !== 0 ? (favorites?.map(item => (
-          <div key={item.id}>
-              <Card className="card-prod" >
+      
+              <Card className="card-prod" key={item.id}> 
               <div
                 style={{
                   marginBottom: "0",
@@ -132,16 +133,16 @@ const Favorites = () => {
                 </CardActions>
               </div>
             </Card>
-            </div>
+          
             ))) : ( <div style={{height: '50vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <h1 style={{fontSize: '40px', color: 'black', marginBottom: '20px'}}>Your Favorites List is empty!</h1>
+            <h1 style={{fontSize: '30px', color: 'black', marginBottom: '20px'}}>Your Favorites List is empty!</h1>
             </div>)}
-            </div>
-              <Button id='cleanFav-btn'
-                variant="outlined" style={{width: '10%', margin: 'auto'}}
-                onClick={() => favCleaner(favUser.id)}>
-                                Clean my favList <DeleteIcon fontSize="medium" style={{color: '#bf4545', marginLeft: '2px'}}/>
-              </Button>
+      </div>
+      <Button id='cleanFav-btn'
+      variant="outlined" style={{width: '20%', margin: 'auto'}}
+      onClick={() => favCleaner(favUser.id)}>
+      Clean my favList <DeleteIcon fontSize="medium" style={{color: '#bf4545', marginLeft: '2px'}}/>
+      </Button>
     </div>
   )
 }

@@ -8,6 +8,7 @@ import AuthContextProvider from "./contexts/AuthContextProvider";
 import OrderContextProvider from "./contexts/OrderContextProvider";
 import FavoritesContextProvider from "./contexts/FavoritesContextProvider";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/styles/adaptiveStyles.css'
 
 
 const App = () => {

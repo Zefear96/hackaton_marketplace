@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
+import '../../src/styles/Login.css'
 
 //mui
 import Avatar from '@mui/material/Avatar';
@@ -68,7 +69,7 @@ const LoginPage = () => {
   const style={
     backgroundImage: `url('https://www.donjulio.com/images/footer-bg.jpg')`,
     width: '100%',
-    height: '100vh'
+    height: '100%'
   }
 
   return (
@@ -76,7 +77,7 @@ const LoginPage = () => {
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
-        <Box
+        <Box className='login-block'
           sx={{
             marginTop: 0,
             padding: 10,

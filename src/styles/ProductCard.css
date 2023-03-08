@@ -1,7 +1,14 @@
 .card-prod {
        width: 350px !important;
-       margin: 1%;
+       margin: 20px;
        text-align: center;
+       transition: 0.7s;
+}
+
+.card-prod:hover {
+      transform: scale(1.02);
+      box-shadow: 4px 4px 2px 2px rgba(148, 149, 114, 0.801);
+      transition: 0.8s;
 }
 
 .card-image {
@@ -19,5 +26,34 @@
 }
 
 .card-text {
-       height: 100px;
+       height: 80px;
+}
+
+#prodcard-price {
+       font-size: 1.5rem;
+       margin-top: 0;
+       padding: 0;
+}
+
+.btns-block-prod {
+       display: flex;
+       flex-direction: column;
+}
+
+.btns-user>button {
+       width: 140px;
+       /* background-color: rgb(255, 255, 255); */
+       /* background: rgba(0, 0, 0, 0.84); */
+       background: #bc9366;
+       border-radius: 5px;
+       margin: 10px;
+       /* border: 2px solid #bc9366; */
+       transition: 0.5s;
+}
+
+.btns-user>button:hover {
+       background: rgba(0, 0, 0, 0.84);
+       /* background-color: #bc9366; */
+       box-shadow: 4px 4px 8px 0px rgba(10, 16, 20, 0.801);
+
 }

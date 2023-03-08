@@ -97,6 +97,7 @@ const ProductsList = ({ changeSideBarStatus, page, setPage }) => {
         onChange={handlePage}
         id="pagination"
         color="warning"
+        style={{ marginTop: "30px" }}
       />
 
       <div className="promo-block" ref={ref}>

@@ -2,9 +2,22 @@
        background: black !important;
 }
 
-.MuiBadge-badge {
-       background-color: #e65100 !important;
+.MuiBox-root>button:hover  {
+       color: #bc9366;
+       transform: scale(1.1);
+       transition: 0.4s;
 }
+
+.MuiToolbar-root>a:hover {
+       color: #bc9366;
+       /* transform: scale(1.1); */
+       transition: 0.4s;
+}
+
+.MuiBadge-badge {
+       background-color: #d45008 !important;
+}
+
 .navbar__logo {
        /* margin-bottom: 40px; */
        position: absolute;
@@ -17,6 +30,7 @@
 .logo_img {
        height: 70px !important;
 }
+
 .icon-box {
        width: 10%;
        display: flex;

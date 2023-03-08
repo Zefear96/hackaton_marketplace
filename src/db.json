@@ -7,15 +7,21 @@
       "passConf": "aaa",
       "favorites": [
         {
-          "id": 3,
-          "name": "Rum Bacardi Superior",
-          "category": "Rum",
-          "price": 1000,
-          "volume": 0.75,
-          "alcohol_percentage": 37.5,
-          "description": "A white rum with a crisp and clean taste, perfect for making cocktails.",
-          "image": "https://vmarketpr.com/wp-content/uploads/2022/12/Untitled-design-2022-12-07T161924.288.png",
-          "comments": []
+          "id": 1,
+          "name": "Whiskey Jack Daniel's Old No. 7",
+          "category": "Whiskey",
+          "price": 5000,
+          "volume": 0.7,
+          "alcohol_percentage": 40,
+          "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
+          "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
+          "comments": [
+            {
+              "author": null,
+              "descr": "wow",
+              "date": "07.03.2023, 23:43"
+            }
+          ]
         }
       ],
       "saved": [],

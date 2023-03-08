@@ -78,12 +78,12 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static" className="navbar">
-            <div className="navbar__logo">
-            <img
-              className="logo_img"
-              src="https://www.glenfiddich.com/themes/custom/gf_theme/images/logo_white.svg"
-              alt="Logo"
-            />
+      <div className="navbar__logo">
+        <img
+          className="logo_img"
+          src="https://www.glenfiddich.com/themes/custom/gf_theme/images/logo_white.svg"
+          alt="Logo"
+        />
       </div>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -102,6 +102,7 @@ function ResponsiveAppBar() {
               cursor: "pointer",
             }}
             onClick={() => navigate("/")}
+            id="label-name"
           >
             le'Monarch
           </Typography>
@@ -141,6 +142,7 @@ function ResponsiveAppBar() {
                   <Typography
                     textalign="center"
                     onClick={() => navigate(page.path)}
+                    id="box-nav-btns"
                   >
                     {page.type}
                   </Typography>
@@ -168,19 +170,23 @@ function ResponsiveAppBar() {
           ></Typography>
 
           {/* <DESKTOP></DESKTOP> */}
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            className=""
+          >
             {pages.map((page) => (
               <Button
                 key={page.type}
                 sx={{ my: 2, color: "white", display: "block" }}
                 onClick={() => navigate(page.path)}
+                className="icon-btns-nav"
               >
                 {page.type}
               </Button>
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }} className='icon-box'>
+          <Box sx={{ flexGrow: 0 }} className="icon-box">
             <IconButton
               size="medium"
               color="inherit"
@@ -200,6 +206,7 @@ function ResponsiveAppBar() {
               size="large"
               color="inherit"
               onClick={() => navigate("/cart")}
+              className="icon-btns-nav"
             >
               <Badge
                 badgeContent={cartLength}
@@ -210,7 +217,11 @@ function ResponsiveAppBar() {
               </Badge>
             </IconButton>
             <Tooltip title="Account">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: '12px' }}>
+              <IconButton
+                onClick={handleOpenUserMenu}
+                sx={{ p: "12px" }}
+                className="icon-btns-nav"
+              >
                 <Avatar src="..." />
               </IconButton>
             </Tooltip>

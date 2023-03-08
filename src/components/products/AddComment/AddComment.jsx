@@ -39,6 +39,19 @@ const AddComment = () => {
     setComment({ descr: "" });
   }
 
+  const [auth, setAuth] = useState("");
+
+  function checkUserInSystem() {
+    const userInSystem = JSON.parse(localStorage.getItem("username"));
+    if (userInSystem) {
+      return setAuth(true);
+    } else return setAuth(false);
+  }
+
+  useEffect(() => {
+    checkUserInSystem();
+  });
+
   // MUI
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
@@ -60,7 +73,7 @@ const AddComment = () => {
         </AccordionSummary>
 
         <AccordionDetails>
-          {username ? (
+          {auth ? (
             <>
               <TextField
                 id="filled-basic"

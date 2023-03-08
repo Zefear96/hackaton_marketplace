@@ -1,0 +1,17 @@
+#cleanFav-btn {
+    width: 10%;
+    height: 50px;
+    background: #bc9366;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    color: white;
+
+  }
+  
+  #cleanFav-btn:hover{
+    background: rgba(0, 0, 0, 0.84);
+    /* background-color: #bc9366; */
+    box-shadow: 4px 4px 8px 0px rgba(10, 16, 20, 0.801);
+    border: none;
+  }

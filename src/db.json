@@ -15,24 +15,8 @@
           "alcohol_percentage": 40,
           "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
           "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
-          "comments": [
-            {
-              "author": null,
-              "descr": "wow",
-              "date": "07.03.2023, 23:43"
-            }
-          ]
-        }
-      ],
-      "saved": [],
-      "id": 1
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "passConf": "",
-      "favorites": [
+          "comments": []
+        },
         {
           "id": 2,
           "name": "Vodka Beluga Noble Russian",
@@ -42,27 +26,22 @@
           "alcohol_percentage": 40,
           "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
           "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
-          "comments": [
-            {
-              "author": "\"aaa\"",
-              "descr": "ololo"
-            }
-          ]
+          "comments": []
         },
         {
-          "id": 5,
-          "name": "Tequila Don Julio Blanco",
-          "category": "Tequila",
-          "price": 2800,
+          "id": 3,
+          "name": "Rum Bacardi Superior",
+          "category": "Rum",
+          "price": 1000,
           "volume": 0.75,
-          "alcohol_percentage": 38,
-          "description": "A premium tequila with a clean and crisp taste, made from 100% blue agave.",
-          "image": "https://images.freshop.com/00674545000001/4852886d4174659643cd0c75eaac486f_large.png",
+          "alcohol_percentage": 37.5,
+          "description": "A white rum with a crisp and clean taste, perfect for making cocktails.",
+          "image": "https://vmarketpr.com/wp-content/uploads/2022/12/Untitled-design-2022-12-07T161924.288.png",
           "comments": []
         }
       ],
       "saved": [],
-      "id": 2
+      "id": 1
     }
   ],
   "orderlist": [],
@@ -76,13 +55,7 @@
       "alcohol_percentage": 40,
       "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
       "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
-      "comments": [
-        {
-          "author": null,
-          "descr": "wow",
-          "date": "07.03.2023, 23:43"
-        }
-      ]
+      "comments": []
     },
     {
       "id": 2,
@@ -93,13 +66,7 @@
       "alcohol_percentage": 40,
       "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
       "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
-      "comments": [
-        {
-          "author": "aaa",
-          "descr": "ololo",
-          "date": "07.03.2023, 22:44"
-        }
-      ]
+      "comments": []
     },
     {
       "id": 3,

@@ -8,11 +8,11 @@
        width: 100% !important;
 }
 
-.MuiToolbar-root>button:hover  {
+/* .MuiToolbar-root>button:hover  {
        color: #bc9366 !important;
        transform: scale(1.1);
        transition: 0.4s;
-}
+} */
 
 .MuiBadge-badge {
        background-color: #d45008 !important;
@@ -20,7 +20,7 @@
 
 .navbar__logo {
        position: absolute;
-       width: 100vw !important;
+       width: 100% !important;
        display: flex;
        justify-content: center;
        margin: auto;
@@ -50,6 +50,6 @@
 
 #label-name:hover {
        color: #bc9366 !important;
-       transition: 0.6s;
+       transition: 0.7s;
 }
 

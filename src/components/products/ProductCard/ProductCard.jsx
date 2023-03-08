@@ -16,6 +16,8 @@ import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutl
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
 
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContextProvider";
@@ -48,6 +50,17 @@ const ProductCard = ({ item }) => {
     getFavorites();
   }, []);
 
+  // MUI
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleMenuClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <Card className="card-prod">
       <div
@@ -60,9 +73,22 @@ const ProductCard = ({ item }) => {
           alignItems: "end ",
         }}
       >
-        <IconButton aria-label="settings">
+        <IconButton aria-label="settings" onClick={handleMenuClick}>
           <MoreVertIcon />
         </IconButton>
+
+        <Menu
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={handleMenuClose}
+        >
+          <MenuItem onClick={() => navigate(`/edit/${item.id}`)}>
+            Edit <SettingsSuggestIcon fontSize="small" color="warning" />
+          </MenuItem>
+          <MenuItem onClick={() => deleteProduct(item.id)}>
+            Delete <DeleteIcon fontSize="small" color="error" />
+          </MenuItem>
+        </Menu>
       </div>
 
       <CardMedia
@@ -70,13 +96,16 @@ const ProductCard = ({ item }) => {
         image={item.image}
         alt="error:("
         className="card-image"
+        onClick={() => navigate(`/details/${item.id}`)}
       />
+
       <div className="content-block">
         <CardHeader
           className="card-title"
           title={item.name}
           subheader={`VOLUME : ${item.volume}L | ABV : ${item.alcohol_percentage}%`}
           style={{ fontWeight: "bold !important" }}
+          onClick={() => navigate(`/details/${item.id}`)}
         />
 
         <CardContent className="card-text">
@@ -108,7 +137,7 @@ const ProductCard = ({ item }) => {
           </div>
 
           <div className="btns-admin">
-            <Button
+            {/* <Button
               variant="outlined"
               className="btns-prod"
               id="btn-prod-details"
@@ -116,8 +145,8 @@ const ProductCard = ({ item }) => {
             >
               More
               <ContactSupportIcon fontSize="small" />
-            </Button>
-            <Button
+            </Button> */}
+            {/* <Button
               variant="outlined"
               className="btns-prod"
               id="btn-prod-edit"
@@ -132,7 +161,7 @@ const ProductCard = ({ item }) => {
               onClick={() => deleteProduct(item.id)}
             >
               Delete <DeleteIcon fontSize="small" />
-            </Button>
+            </Button> */}
           </div>
         </CardActions>
       </div>

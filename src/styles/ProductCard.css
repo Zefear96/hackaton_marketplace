@@ -7,7 +7,7 @@
 
 .card-prod:hover {
       transform: scale(1.02);
-      box-shadow: 4px 4px 2px 2px rgba(148, 149, 114, 0.801);
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;      
       transition: 0.8s;
 }
 
@@ -16,27 +16,30 @@
        height: 200px;
        object-fit: contain !important;
        margin: auto;
+       cursor: pointer;
 }
 
 .card-title {
-       margin: 0;
+       padding-top: 40px !important;
+       margin-top: 0;
        display: flex;
        align-items: start;
        height: 100px;
+       cursor: pointer;
 }
 
 .card-text {
-       height: 80px;
-       padding-top: 0 !important;
+       height: 50px;
+       padding: 0 !important;
 }
 
 #prodcard-price {
        font-size: 1.5rem;
        margin-top: 0;
-       padding: 0;
 }
 
 .btns-block-prod {
+       margin-top: 10px;
        display: flex;
        flex-direction: column;
 }

@@ -21,6 +21,8 @@ import { useAuth } from "../../contexts/AuthContextProvider";
 import { useFavorites } from "../../contexts/FavoritesContextProvider";
 import { useState } from "react";
 import "../../styles/Navbar.css";
+import { useEffect } from "react";
+import { func } from "prop-types";
 
 const pages = [
   {
@@ -66,15 +68,22 @@ function ResponsiveAppBar() {
   // custom
   const navigate = useNavigate();
   const { cartLength } = useCart();
-  const { logout } = useAuth();
+  const { logout, user } = useAuth();
   const { favLength } = useFavorites();
 
-  // React.useEffect( () => {
-  //   if (localStorage.getItem('token')) {
-  //     let user = localStorage.getItem('username')
-  //     checkAuth(user.username, user.password);
-  //   }
-  // }, []);
+  const [auth, setAuth] = useState(null);
+
+  function checkUserInSystem() {
+    let user = JSON.parse(localStorage.getItem("username"));
+
+    if (user) {
+      return setAuth(true);
+    } else return setAuth(false);
+  }
+
+  useEffect(() => {
+    checkUserInSystem();
+  });
 
   return (
     <AppBar position="static" className="navbar">
@@ -222,7 +231,7 @@ function ResponsiveAppBar() {
                 sx={{ p: "12px" }}
                 className="icon-btns-nav"
               >
-                <Avatar src="..." />
+                <Avatar alt={user} src="..." />
               </IconButton>
             </Tooltip>
 
@@ -252,11 +261,15 @@ function ResponsiveAppBar() {
                   </Typography>
                 </MenuItem>
               ))}
-              <MenuItem onClick={handleCloseUserMenu}>
-                <Typography textalign="center" onClick={logout}>
-                  Logout
-                </Typography>
-              </MenuItem>
+              {auth ? (
+                <MenuItem onClick={handleCloseUserMenu}>
+                  <Typography textalign="center" onClick={logout}>
+                    Logout
+                  </Typography>
+                </MenuItem>
+              ) : (
+                ""
+              )}
             </Menu>
           </Box>
         </Toolbar>

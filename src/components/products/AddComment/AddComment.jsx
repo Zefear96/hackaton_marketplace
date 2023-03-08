@@ -58,31 +58,42 @@ const AddComment = () => {
         >
           <Typography>Comments</Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <TextField
-            id="filled-basic"
-            label="Comments..."
-            variant="filled"
-            name="comments"
-            onChange={(e) =>
-              setComment({
-                author: user,
-                descr: e.target.value,
-                date: new Date().toLocaleString("ru-US", {
-                  year: "numeric",
-                  month: "2-digit",
-                  day: "2-digit",
-                  hour: "2-digit",
-                  minute: "2-digit",
-                }),
-              })
-            }
-            value={comment.descr}
-          />
 
-          <Button onClick={saveComment} variant="contained" id="btn-comments">
-            Save
-          </Button>
+        <AccordionDetails>
+          {username ? (
+            <>
+              <TextField
+                id="filled-basic"
+                label="Comments..."
+                variant="filled"
+                name="comments"
+                onChange={(e) =>
+                  setComment({
+                    author: user,
+                    descr: e.target.value,
+                    date: new Date().toLocaleString("ru-US", {
+                      year: "numeric",
+                      month: "2-digit",
+                      day: "2-digit",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                    }),
+                  })
+                }
+                value={comment.descr}
+              />
+
+              <Button
+                onClick={saveComment}
+                variant="contained"
+                id="btn-comments"
+              >
+                Save
+              </Button>
+            </>
+          ) : (
+            ""
+          )}
 
           <Typography>
             {productDetails.comments ? (

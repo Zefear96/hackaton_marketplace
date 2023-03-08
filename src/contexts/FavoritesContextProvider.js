@@ -14,7 +14,7 @@ const FavoritesContextProvider = ({ children }) => {
 
   const getFavUser = async () => {
     let { data } = await axios(API);
-    console.log(data);
+    // console.log(data);
 
     let username = JSON.parse(localStorage.getItem("username"));
     let userObj = data.find((item) => item.username === username);
@@ -31,7 +31,9 @@ const FavoritesContextProvider = ({ children }) => {
     let username = JSON.parse(localStorage.getItem("username"));
     let userObj = data.find((item) => item.username === username);
 
-    setFavLength(userObj.favorites.length);
+    userObj.favorites
+      ? setFavLength(userObj.favorites.length)
+      : setFavLength(0);
     setFavorites(userObj.favorites);
   };
 

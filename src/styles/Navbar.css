@@ -8,18 +8,11 @@
        transition: 0.4s;
 }
 
-/* .MuiToolbar-root>a:hover {
-       color: #bc9366;
-       transform: scale(1.1);
-       transition: 0.4s;
-} */
-
 .MuiBadge-badge {
        background-color: #d45008 !important;
 }
 
 .navbar__logo {
-       /* margin-bottom: 40px; */
        position: absolute;
        width: 100vw !important;
        display: flex;
@@ -36,10 +29,6 @@
        display: flex;
        justify-content: space-between;
 }
-
-/* .icon-box:hover {
-       color:#bc9366;
-} */
 
 .icon-btns-nav:hover {
        color: #bc9366 !important;

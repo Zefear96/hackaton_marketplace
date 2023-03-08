@@ -55,14 +55,18 @@
 
 #card-left {
        position: relative;
+       margin: 150px auto;
 }
 
 #card-center {
        position: relative;
+       margin: 150px auto;
 }
 
 #card-right {
        position: relative;
+       margin: 150px auto;
+       
 }
 
 .card-descr {
@@ -120,3 +124,5 @@
 h1{
        color: white;
 }
+
+/* @media all and (m) */

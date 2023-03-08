@@ -43,8 +43,8 @@ const Favorites = () => {
   return (
     <div className='products-list'>
       <div className="container-prods">
+       
         {favorites.length !== 0 ? (favorites?.map(item => (
-      
               <Card className="card-prod" key={item.id}> 
               <div
                 style={{
@@ -133,16 +133,18 @@ const Favorites = () => {
                 </CardActions>
               </div>
             </Card>
-          
             ))) : ( <div style={{height: '50vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <h1 style={{fontSize: '30px', color: 'black', marginBottom: '20px'}}>Your Favorites List is empty!</h1>
             </div>)}
-      </div>
+        
+        <div style={{width: '70%'}}>
       <Button id='cleanFav-btn'
       variant="outlined" style={{width: '20%', margin: 'auto'}}
       onClick={() => favCleaner(favUser.id)}>
       Clean my favList <DeleteIcon fontSize="medium" style={{color: '#bf4545', marginLeft: '2px'}}/>
       </Button>
+      </div>
+      </div>
     </div>
   )
 }

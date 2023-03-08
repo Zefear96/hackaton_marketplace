@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-bottom: 5px !important;
+    margin-bottom: 20px !important;
 
   }
   
@@ -18,3 +18,16 @@
     box-shadow: 4px 4px 8px 0px rgba(10, 16, 20, 0.801);
     border: none;
   }
+
+@media all and (max-width: 768px) {
+  #cleanFav-btn {
+    width: 50% !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #cleanFav-btn {
+    width: 100% !important;
+    font-size: 13px;
+  }
+}

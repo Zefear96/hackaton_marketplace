@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContextProvider";
+import '../styles/Registration.css'
 
 //mui
 import Avatar from '@mui/material/Avatar';
@@ -78,7 +79,7 @@ const RegistrationPage = () => {
      <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
-        <Box
+        <Box className='reg-block'
           sx={{
             marginTop: 0,
             padding: 10,

@@ -2,22 +2,35 @@ import React from "react";
 import { useProducts } from "../../../contexts/ProductContextProvider";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import alcohol from '../../../media/image/alcohol.png'
+import alcohol from "../../../media/image/alcohol.png";
 
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const AddProduct = () => {
+  const [admin, setAdmin] = useState(false);
+
+  function checkAdmin() {
+    let admin = JSON.parse(localStorage.getItem("username"));
+
+    if (admin === "Alex") {
+      setAdmin(true);
+    } else setAdmin(false);
+  }
+
+  React.useEffect(() => {
+    checkAdmin();
+  });
+
   const navigate = useNavigate();
   const { addProduct } = useProducts();
 
@@ -29,7 +42,6 @@ const AddProduct = () => {
     category: "",
     volume: "",
     alcohol_percentage: "",
-
   });
 
   const handleInp = (e) => {
@@ -59,132 +71,149 @@ const AddProduct = () => {
       setProduct(obj);
     }
   };
-  
-  //styles 
+
+  //styles
 
   const theme = createTheme({
     palette: {
-      mode: 'dark',
+      mode: "dark",
       primary: {
-        main: '#bc9366',
+        main: "#bc9366",
       },
     },
   });
 
   return (
-    
-    <div>
-
-    <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Box className='main-add'
-          sx={{
-            marginTop: 0,
-            padding: 10,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            bgcolor: '#111111'
-          }}
-        >
-          <Avatar sx={{ m: 5, bgcolor: '#111111', width: '50px', height: '50px', mb: 1 }}>
-          <img src={alcohol} alt="" width='50px' height='50px'/>
-          </Avatar>
-          <Typography component="h1" variant="h5" color='#ffffff' sx={{mb: 2}}>
-            Add Product
-          </Typography>
-          <Box component="form" noValidate sx={{ mt: 0 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="name"
-                  label="Title"
-                  name="name" onChange={handleInp}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="category"
-                  label="Category"
-                  name="category"
-                  onChange={handleInp}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="description"
-                  label="Description"
-                  name="description"
-                  onChange={handleInp}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="price"
-                  label="Price"
-                  name="price"
-                  onChange={handleInp}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="volume"
-                  label="Volume"
-                  name="volume"
-                  onChange={handleInp}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="alcohol_percentage"
-                  label="Alcohol Percentage"
-                  name="alcohol_percentage"
-                  onChange={handleInp}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="image"
-                  label="Image URL"
-                  name="image"
-                  onChange={handleInp}
-                />
-              </Grid>
-
-            </Grid>
-            <Button
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 4 }}
-              onClick={() => {
-                addProduct(product);
-                navigate("/products");
+    <>
+      {admin ? (
+        <div>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <Box
+              className="main-add"
+              sx={{
+                marginTop: 0,
+                padding: 10,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                bgcolor: "#111111",
               }}
             >
-              Add Product
-            </Button>
-          </Box>
-        </Box>
-        </ThemeProvider>
-      
-    </div>
-   
+              <Avatar
+                sx={{
+                  m: 5,
+                  bgcolor: "#111111",
+                  width: "50px",
+                  height: "50px",
+                  mb: 1,
+                }}
+              >
+                <img src={alcohol} alt="" width="50px" height="50px" />
+              </Avatar>
+              <Typography
+                component="h1"
+                variant="h5"
+                color="#ffffff"
+                sx={{ mb: 2 }}
+              >
+                Add Product
+              </Typography>
+              <Box component="form" noValidate sx={{ mt: 0 }}>
+                <Grid container spacing={2}>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      fullWidth
+                      id="name"
+                      label="Title"
+                      name="name"
+                      onChange={handleInp}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      fullWidth
+                      id="category"
+                      label="Category"
+                      name="category"
+                      onChange={handleInp}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      fullWidth
+                      id="description"
+                      label="Description"
+                      name="description"
+                      onChange={handleInp}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      fullWidth
+                      id="price"
+                      label="Price"
+                      name="price"
+                      onChange={handleInp}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      fullWidth
+                      id="volume"
+                      label="Volume"
+                      name="volume"
+                      onChange={handleInp}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      fullWidth
+                      id="alcohol_percentage"
+                      label="Alcohol Percentage"
+                      name="alcohol_percentage"
+                      onChange={handleInp}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      fullWidth
+                      id="image"
+                      label="Image URL"
+                      name="image"
+                      onChange={handleInp}
+                    />
+                  </Grid>
+                </Grid>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  sx={{ mt: 3, mb: 4 }}
+                  onClick={() => {
+                    addProduct(product);
+                    navigate("/products");
+                  }}
+                >
+                  Add Product
+                </Button>
+              </Box>
+            </Box>
+          </ThemeProvider>
+        </div>
+      ) : (
+        <>
+          <p>Only admin can add products</p>
+        </>
+      )}
+    </>
   );
-
 };
 
 export default AddProduct;

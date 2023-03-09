@@ -24,6 +24,7 @@ const RegistrationPage = () => {
     email: "",
     password: "",
     passConf: "",
+    photo: "",
     favorites: [],
     saved: []
   };
@@ -122,6 +123,7 @@ const RegistrationPage = () => {
                 <TextField
                   required
                   fullWidth
+                  type='password'
                   id="password"
                   label="Password"
                   name="password"
@@ -133,10 +135,23 @@ const RegistrationPage = () => {
                 <TextField
                   required
                   fullWidth
+                  type='password'
                   id="confpassword"
                   label="Confirm Password"
                   name="passConf"
                   autoComplete="confpassword"
+                  onChange={handleInp}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                 
+                  id="img-reguser"
+                  label="Photo URL"
+                  name="photo"
+                  autoComplete="photo"
                   onChange={handleInp}
                 />
               </Grid>

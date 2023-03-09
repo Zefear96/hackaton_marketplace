@@ -44,7 +44,7 @@ const PaymentPage = () => {
     setOrder(obj);
   };
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   //styles
   const theme2 = createTheme({

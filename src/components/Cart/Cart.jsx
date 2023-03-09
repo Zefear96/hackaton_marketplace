@@ -29,7 +29,11 @@ export default function Cart() {
     getCart();
   }, []);
 
-  React.useEffect(() => {}, [cart]);
+  React.useEffect(() => {
+    // if (!cart.products) {
+    //   getCart()
+    // }
+  }, [cart.products]);
 
   function cartCleaner() {
     localStorage.removeItem("cart");

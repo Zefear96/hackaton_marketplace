@@ -39,27 +39,40 @@ const AddComment = () => {
     setComment({ descr: "" });
   }
 
-  const [auth, setAuth] = useState("");
+  const [auth, setAuth] = useState(null);
 
   function checkUserInSystem() {
     const userInSystem = JSON.parse(localStorage.getItem("username"));
+    console.log(userInSystem);
     if (userInSystem) {
+      setOpen(true)
       return setAuth(true);
-    } else return setAuth(false);
+    } else 
+    setOpen(false);
+    return setAuth(false);
   }
 
   useEffect(() => {
-    checkUserInSystem();
+    checkUserInSystem()
   });
+
+
+  // useEffect(() => {
+  //   console.log('user here or not?');
+  // }, [auth, ])
 
   // MUI
   const [open, setOpen] = React.useState(false);
   const handleClose = () => {
     setOpen(false);
   };
+
   const handleToggle = () => {
     setOpen(!open);
   };
+  useEffect(() => {
+    console.log('check');
+  }, [open, ])
 
   return (
     <div className="comments-container">
@@ -73,7 +86,7 @@ const AddComment = () => {
         </AccordionSummary>
 
         <AccordionDetails>
-          {auth ? (
+          {open ? (
             <>
               <TextField
                 id="filled-basic"
@@ -105,11 +118,11 @@ const AddComment = () => {
               </Button>
             </>
           ) : (
-            ""
+            <><p>Login to leave a comment</p></>
           )}
 
           <Typography>
-            {productDetails.comments ? (
+            {productDetails.comments.length !== 0 ? (
               productDetails.comments.map((item) => (
                 <div
                   style={{ borderBottom: "1px solid gainsboro" }}

@@ -70,6 +70,24 @@ function ResponsiveAppBar() {
   const { cartLength } = useCart();
   const { logout, user } = useAuth();
   const { favLength } = useFavorites();
+  // const [userAuthed, setUserAuthed] = React.useState('');
+
+
+  //логика фото юзера 
+  // React.useEffect(() => {
+  //   let username = JSON.parse(localStorage.getItem('username'));
+  //   console.log(username);
+  //   if(username) {
+  //     let userObj = checkUserInUsers(username);
+  //     console.log(userObj);
+  //     setUserAuthed(userObj)
+  //   } else {
+  //     console.log('user has not logged in yet');
+  //     return
+  //   }
+  // }, []);
+  // {userAuthed  ? (<Avatar src={userAuthed.photo} alt={userAuthed.name} />) : ( <Avatar src='' />) }
+
 
   const [auth, setAuth] = useState(null);
 
@@ -85,7 +103,7 @@ function ResponsiveAppBar() {
     checkUserInSystem();
   });
 
-  useEffect(() => {}, []);
+  // useEffect(() => {}, []);
 
   return (
     <AppBar position="static" className="navbar">

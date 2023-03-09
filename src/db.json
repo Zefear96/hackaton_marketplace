@@ -1,13 +1,62 @@
 {
   "users": [
     {
-      "username": "aaa",
-      "email": "aaa",
-      "password": "aaa",
-      "passConf": "aaa",
-      "favorites": [],
+      "username": "Jika",
+      "email": "jika1995@gmail.com",
+      "password": "pass123",
+      "passConf": "pass123",
+      "photo": "https://scontent.ffru9-1.fna.fbcdn.net/v/t31.18172-8/14691917_841665669270543_8099820585771698176_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=St9PnNOvPJwAX-D7FvM&_nc_ht=scontent.ffru9-1.fna&oh=00_AfAzUVVSiVKA8Kw_Up1iitPWHNWmx1OoRwb4kIQ1OaL-Kg&oe=642FF378",
+      "favorites": [
+        {
+          "id": 1,
+          "name": "Whiskey Jack Daniel's Old No. 7",
+          "category": "Whiskey",
+          "price": 5000,
+          "volume": 0.7,
+          "alcohol_percentage": 40,
+          "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
+          "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
+          "comments": [
+            {
+              "author": "Jika",
+              "descr": "pam ",
+              "date": "09.03.2023, 08:58"
+            },
+            {
+              "author": "Jika",
+              "descr": "wow",
+              "date": "09.03.2023, 09:01"
+            },
+            {
+              "author": "Jika",
+              "descr": "test",
+              "date": "09.03.2023, 09:05"
+            }
+          ]
+        }
+      ],
       "saved": [],
       "id": 1
+    },
+    {
+      "username": "Alex",
+      "email": "alex@gmail.com",
+      "password": "pass123",
+      "passConf": "pass123",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpor4NTYf4TS7iJ5AjRcg2xdiQJyzWAAnsNsj4heOw2Q&s",
+      "favorites": [],
+      "saved": [],
+      "id": 2
+    },
+    {
+      "username": "Zamir",
+      "email": "superxero1996@gmail.com",
+      "password": "pass123",
+      "passConf": "pass123",
+      "photo": "blob:https://web.telegram.org/d7f73e64-c2af-4966-ae88-51acbab57135",
+      "favorites": [],
+      "saved": [],
+      "id": 3
     }
   ],
   "orderlist": [
@@ -20,74 +69,22 @@
       "products": [
         {
           "item": {
-            "id": 2,
-            "name": "Vodka Beluga Noble Russian",
-            "category": "Vodka",
-            "price": 3500,
-            "volume": 1,
+            "id": 1,
+            "name": "Whiskey Jack Daniel's Old No. 7",
+            "category": "Whiskey",
+            "price": 5000,
+            "volume": 0.7,
             "alcohol_percentage": 40,
-            "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
-            "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
+            "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
+            "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
             "comments": []
           },
           "count": 1,
-          "subPrice": 3500
+          "subPrice": 5000
         }
       ],
-      "totalPrice": 3500,
+      "totalPrice": 5000,
       "id": 1
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "address": "",
-      "email": "",
-      "phone": "",
-      "products": [
-        {
-          "item": {
-            "id": 2,
-            "name": "Vodka Beluga Noble Russian",
-            "category": "Vodka",
-            "price": 3500,
-            "volume": 1,
-            "alcohol_percentage": 40,
-            "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
-            "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
-            "comments": []
-          },
-          "count": 1,
-          "subPrice": 3500
-        }
-      ],
-      "totalPrice": 3500,
-      "id": 2
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "address": "",
-      "email": "",
-      "phone": "",
-      "products": [
-        {
-          "item": {
-            "id": 2,
-            "name": "Vodka Beluga Noble Russian",
-            "category": "Vodka",
-            "price": 3500,
-            "volume": 1,
-            "alcohol_percentage": 40,
-            "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
-            "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
-            "comments": []
-          },
-          "count": 1,
-          "subPrice": 3500
-        }
-      ],
-      "totalPrice": 3500,
-      "id": 3
     }
   ],
   "products": [
@@ -100,7 +97,13 @@
       "alcohol_percentage": 40,
       "description": "A classic Tennessee whiskey with a sweet and oaky flavor, distilled and bottled in Lynchburg, Tennessee.",
       "image": "https://www.shjones.com/wp-content/uploads/2020/03/jack-daniels-tennessee-whiskey-transparent-image.png",
-      "comments": []
+      "comments": [
+        {
+          "author": "Jika",
+          "descr": "wow",
+          "date": "09.03.2023, 09:51"
+        }
+      ]
     },
     {
       "id": 2,
@@ -111,7 +114,13 @@
       "alcohol_percentage": 40,
       "description": "A premium vodka made from malted barley and artesian water, with a smooth and creamy taste.",
       "image": "https://cdn11.bigcommerce.com/s-b0811/images/stencil/1280x1280/products/7437/20853/beluganoble__11070.1659726541.jpg?c=2",
-      "comments": []
+      "comments": [
+        {
+          "author": "Jika",
+          "descr": "wow",
+          "date": "09.03.2023, 09:26"
+        }
+      ]
     },
     {
       "id": 3,

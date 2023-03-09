@@ -50,6 +50,19 @@ const ProductCard = ({ item }) => {
     getFavorites();
   }, []);
 
+  const [admin, setAdmin] = useState(false);
+
+  function checkAdmin() {
+    let admin = JSON.parse(localStorage.getItem('username'));
+
+    if(admin === 'Alex') {
+      setAdmin(true)
+    } else setAdmin(false)
+  }
+
+  useEffect(() => {
+    checkAdmin();
+  })
   // MUI
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -76,8 +89,7 @@ const ProductCard = ({ item }) => {
         <IconButton aria-label="settings" onClick={handleMenuClick}>
           <MoreVertIcon />
         </IconButton>
-
-        <Menu
+        {admin ? ( <Menu
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={handleMenuClose}
@@ -88,7 +100,8 @@ const ProductCard = ({ item }) => {
           <MenuItem onClick={() => deleteProduct(item.id)}>
             Delete <DeleteIcon fontSize="small" color="error" />
           </MenuItem>
-        </Menu>
+        </Menu>) : ('')}
+       
       </div>
 
       <CardMedia

@@ -4,7 +4,7 @@ import axios from "axios";
 export const orderContext = React.createContext();
 export const useOrder = () => useContext(orderContext);
 
-const JSON_API_ORDERLIST = "http://localhost:8000/orderlist";
+const JSON_API_ORDERLIST = "https://db-json-for-marketplace-project.vercel.app/orderlist";
 
 const OrderContextProvider = ({ children }) => {
   

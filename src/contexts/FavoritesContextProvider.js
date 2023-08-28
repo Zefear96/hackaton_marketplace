@@ -5,7 +5,7 @@ import { useAuth } from "./AuthContextProvider";
 export const favoritesContext = createContext();
 export const useFavorites = () => useContext(favoritesContext);
 
-const API = "http://localhost:8000/users";
+const API = "https://db-json-for-marketplace-project.vercel.app/users";
 
 const FavoritesContextProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);

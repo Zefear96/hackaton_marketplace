@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext); //custom hook
 
-const API = "http://localhost:8000/users";
+const API = "https://db-json-for-marketplace-project.vercel.app/users";
 
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");
